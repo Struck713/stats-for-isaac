@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+/* The look is the game's paper menus (pause screen, stats page, death note) laid over a dark
+   basement. It's always this way round, so there's no separate dark theme. */
+:root {
+  --basement: #17100c;
+  --basement-light: #2a1d15;
+  --paper: #e6d8bb;
+  --paper-dark: #cdb88f;
+  --paper-shade: rgb(110 75 40 / 0.35);
+  --ink: #2a1c13;
+  --ink-soft: #5a4433;
+  --blood: #a3221b;
+  --soul: #3d5d93;
+  --gold: #b8860b;
+  --moss: #4d6b2f;
+}
+
+@theme inline {
+  --color-basement: var(--basement);
+  --color-paper: var(--paper);
+  --color-paper-dark: var(--paper-dark);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-blood: var(--blood);
+  --color-soul: var(--soul);
+  --color-gold: var(--gold);
+  --color-moss: var(--moss);
+  --font-isaac: var(--font-isaac-game), "Comic Sans MS", "Chalkboard SE", cursive;
+  --font-body: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100dvh;
+  color: var(--paper);
+  font-family: var(--font-body);
+  background-color: var(--basement);
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgb(120 80 50 / 0.25), transparent 60%),
+    radial-gradient(ellipse at 50% 120%, rgb(0 0 0 / 0.7), transparent 60%),
+    repeating-linear-gradient(0deg, rgb(0 0 0 / 0.18) 0 2px, transparent 2px 64px),
+    repeating-linear-gradient(90deg, rgb(0 0 0 / 0.12) 0 2px, transparent 2px 96px),
+    linear-gradient(var(--basement-light), var(--basement));
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+.font-isaac {
+  font-family: var(--font-isaac);
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+/* A sheet of the game's parchment: grainy, shaded at the edges, with a wobbly inked border. */
+.paper {
+  position: relative;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.24 0 0 0 0 0.12 0 0 0 0.22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 30% 20%, rgb(255 250 235 / 0.45), transparent 55%);
+  border: 3px solid var(--ink);
+  border-radius: 14px 6px 18px 5px / 6px 16px 5px 14px;
+  box-shadow:
+    inset 0 0 28px var(--paper-shade),
+    inset 0 0 4px rgb(80 50 20 / 0.5),
+    0 6px 0 rgb(0 0 0 / 0.35),
+    0 12px 30px rgb(0 0 0 / 0.5);
+}
+
+.paper a {
+  text-decoration-color: var(--ink-soft);
+}
+
+/* A hand-drawn rule between sections on a sheet. */
+.ink-rule {
+  height: 3px;
+  border: 0;
+  background: var(--ink);
+  border-radius: 50% 40% 60% 45%;
+  opacity: 0.8;
+}
+
+.ink-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem 0.35rem;
+  font-family: var(--font-isaac);
+  font-size: 1.1rem;
+  color: var(--ink);
+  background: var(--paper-dark);
+  border: 3px solid var(--ink);
+  border-radius: 10px 4px 12px 5px / 5px 12px 4px 10px;
+  box-shadow: 0 3px 0 var(--ink);
+  transition: transform 80ms ease, box-shadow 80ms ease;
+  cursor: pointer;
+}
+
+.ink-button:hover {
+  transform: translateY(-1px) rotate(-0.5deg);
+  box-shadow: 0 4px 0 var(--ink);
+}
+
+.ink-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+.ink-button[data-variant="danger"] {
+  color: var(--paper);
+  background: var(--blood);
+}
+
+.ink-input {
+  padding: 0.4rem 0.6rem;
+  color: var(--ink);
+  background: rgb(255 250 235 / 0.6);
+  border: 2px solid var(--ink);
+  border-radius: 6px 3px 7px 3px;
+}
+
+/* Rows in run lists. */
+.ledger-row {
+  border-bottom: 2px dashed rgb(42 28 19 / 0.35);
+}
+
+.ledger-row:last-child {
+  border-bottom: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
