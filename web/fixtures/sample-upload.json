@@ -1,0 +1,1585 @@
+{
+ "schemaVersion": 3,
+ "runs": [
+  {
+   "id": "ABCD 1234#1",
+   "uid": "0f3a9c2b7d4e1a65",
+   "number": 1,
+   "seed": "ABCD 1234",
+   "character": 0,
+   "characterName": "Isaac",
+   "difficulty": 0,
+   "challenge": 0,
+   "greedMode": false,
+   "status": "died",
+   "totalFrames": 7150,
+   "startingItems": [
+    {
+     "kind": "collectible",
+     "id": 105,
+     "name": "#THE_D6_NAME",
+     "count": 1
+    }
+   ],
+   "floors": [
+    {
+     "index": 1,
+     "stage": 1,
+     "stageType": 0,
+     "absoluteStage": 1,
+     "name": "Basement I",
+     "curses": 0,
+     "curseName": "",
+     "enterFrame": 0,
+     "exitFrame": 4850,
+     "durationFrames": 4850,
+     "statsOnEnter": [
+      {
+       "player": 0,
+       "type": 0,
+       "name": "Isaac",
+       "damage": 3.5,
+       "maxFireDelay": 10,
+       "tearRange": 260,
+       "shotSpeed": 1,
+       "moveSpeed": 1,
+       "luck": 0,
+       "collectibleCount": 1,
+       "coins": 0,
+       "bombs": 1,
+       "gigaBombs": 0,
+       "keys": 0,
+       "hearts": 6,
+       "maxHearts": 6,
+       "soulHearts": 0,
+       "blackHearts": 0,
+       "boneHearts": 0,
+       "eternalHearts": 0,
+       "goldenHearts": 0,
+       "rottenHearts": 0,
+       "brokenHearts": 0
+      }
+     ],
+     "statsOnExit": [
+      {
+       "player": 0,
+       "type": 0,
+       "name": "Isaac",
+       "damage": 5.27,
+       "maxFireDelay": 8.37,
+       "tearRange": 260,
+       "shotSpeed": 1,
+       "moveSpeed": 1,
+       "luck": 0,
+       "collectibleCount": 2,
+       "coins": 0,
+       "bombs": 1,
+       "gigaBombs": 0,
+       "keys": 0,
+       "hearts": 6,
+       "maxHearts": 6,
+       "soulHearts": 0,
+       "blackHearts": 0,
+       "boneHearts": 0,
+       "eternalHearts": 0,
+       "goldenHearts": 0,
+       "rottenHearts": 0,
+       "brokenHearts": 0
+      }
+     ],
+     "map": [
+      {
+       "gridIndex": 84,
+       "safeGridIndex": 84,
+       "listIndex": 0,
+       "shape": 1,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1000,
+       "name": "room",
+       "visitedCount": 2,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 85,
+       "safeGridIndex": 85,
+       "listIndex": 1,
+       "shape": 1,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1001,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 71,
+       "safeGridIndex": 71,
+       "listIndex": 2,
+       "shape": 1,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1002,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 86,
+       "safeGridIndex": 86,
+       "listIndex": 3,
+       "shape": 1,
+       "type": 4,
+       "typeName": "ROOM_TREASURE",
+       "variant": 1003,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 58,
+       "safeGridIndex": 58,
+       "listIndex": 4,
+       "shape": 1,
+       "type": 5,
+       "typeName": "ROOM_BOSS",
+       "variant": 1004,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 70,
+       "safeGridIndex": 70,
+       "listIndex": 5,
+       "shape": 1,
+       "type": 2,
+       "typeName": "ROOM_SHOP",
+       "variant": 1005,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 97,
+       "safeGridIndex": 97,
+       "listIndex": 6,
+       "shape": 6,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1006,
+       "name": "room",
+       "visitedCount": 0,
+       "clear": false,
+       "displayFlags": 0
+      },
+      {
+       "gridIndex": 72,
+       "safeGridIndex": 72,
+       "listIndex": 7,
+       "shape": 1,
+       "type": 7,
+       "typeName": "ROOM_SECRET",
+       "variant": 1007,
+       "name": "room",
+       "visitedCount": 0,
+       "clear": false,
+       "displayFlags": 0
+      }
+     ],
+     "rooms": [
+      {
+       "gridIndex": 84,
+       "safeGridIndex": 84,
+       "listIndex": 0,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1000,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": true,
+       "enterFrame": 0,
+       "exitFrame": 120,
+       "durationFrames": 120,
+       "pickups": [],
+       "resources": [],
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 85,
+       "safeGridIndex": 85,
+       "listIndex": 1,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1001,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 120,
+       "exitFrame": 1020,
+       "durationFrames": 900,
+       "pickups": [
+        {
+         "variant": 20,
+         "variantName": "PICKUP_COIN",
+         "subtype": 1,
+         "frame": 850,
+         "player": 0
+        }
+       ],
+       "resources": {
+        "coins": {
+         "gained": 1,
+         "spent": 0
+        }
+       },
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": [
+        {
+         "type": 10,
+         "typeName": "ENTITY_GAPER",
+         "variant": 0,
+         "subtype": 0,
+         "isBoss": false,
+         "frame": 400
+        },
+        {
+         "type": 13,
+         "typeName": "ENTITY_FLY",
+         "variant": 0,
+         "subtype": 0,
+         "isBoss": false,
+         "frame": 700
+        }
+       ],
+       "clearedAtFrame": 780,
+       "clearFrames": 660
+      },
+      {
+       "gridIndex": 86,
+       "safeGridIndex": 86,
+       "listIndex": 3,
+       "type": 4,
+       "typeName": "ROOM_TREASURE",
+       "shape": 1,
+       "variant": 1003,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": true,
+       "enterFrame": 1020,
+       "exitFrame": 1320,
+       "durationFrames": 300,
+       "pickups": [],
+       "resources": [],
+       "items": [
+        {
+         "kind": "collectible",
+         "id": 1,
+         "name": "#THE_SAD_ONION_NAME",
+         "frame": 1400,
+         "player": 0
+        }
+       ],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 85,
+       "safeGridIndex": 85,
+       "listIndex": 1,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1001,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 1320,
+       "exitFrame": 1410,
+       "durationFrames": 90,
+       "pickups": [],
+       "resources": [],
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 84,
+       "safeGridIndex": 84,
+       "listIndex": 0,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1000,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": true,
+       "enterFrame": 1410,
+       "exitFrame": 1490,
+       "durationFrames": 80,
+       "pickups": [],
+       "resources": [],
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 71,
+       "safeGridIndex": 71,
+       "listIndex": 2,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1002,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 1490,
+       "exitFrame": 2590,
+       "durationFrames": 1100,
+       "pickups": [],
+       "resources": {
+        "hearts": {
+         "gained": 0,
+         "spent": 1
+        }
+       },
+       "items": [],
+       "used": [],
+       "damage": [
+        {
+         "amount": 1,
+         "flags": 0,
+         "sourceType": 10,
+         "sourceTypeName": "ENTITY_GAPER",
+         "sourceVariant": 0,
+         "frame": 2000,
+         "player": 0
+        }
+       ],
+       "kills": [
+        {
+         "type": 10,
+         "typeName": "ENTITY_GAPER",
+         "variant": 0,
+         "subtype": 0,
+         "isBoss": false,
+         "frame": 2500
+        }
+       ],
+       "clearedAtFrame": 2600,
+       "clearFrames": 1010
+      },
+      {
+       "gridIndex": 70,
+       "safeGridIndex": 70,
+       "listIndex": 5,
+       "type": 2,
+       "typeName": "ROOM_SHOP",
+       "shape": 1,
+       "variant": 1005,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": true,
+       "enterFrame": 2590,
+       "exitFrame": 2990,
+       "durationFrames": 400,
+       "pickups": [
+        {
+         "variant": 10,
+         "variantName": "PICKUP_HEART",
+         "subtype": 1,
+         "price": 3,
+         "frame": 2900,
+         "player": 0
+        }
+       ],
+       "resources": {
+        "coins": {
+         "gained": 0,
+         "spent": 3
+        },
+        "hearts": {
+         "gained": 2,
+         "spent": 0
+        }
+       },
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 71,
+       "safeGridIndex": 71,
+       "listIndex": 2,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1002,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 2990,
+       "exitFrame": 3050,
+       "durationFrames": 60,
+       "pickups": [],
+       "resources": [],
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 58,
+       "safeGridIndex": 58,
+       "listIndex": 4,
+       "type": 5,
+       "typeName": "ROOM_BOSS",
+       "shape": 1,
+       "variant": 1004,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 3050,
+       "exitFrame": 4850,
+       "durationFrames": 1800,
+       "pickups": [],
+       "resources": [],
+       "items": [
+        {
+         "kind": "collectible",
+         "id": 7,
+         "name": "#BLOOD_OF_THE_MARTYR_NAME",
+         "frame": 5100,
+         "player": 0
+        }
+       ],
+       "used": [],
+       "damage": [],
+       "kills": [
+        {
+         "type": 20,
+         "typeName": "ENTITY_MONSTRO",
+         "variant": 0,
+         "subtype": 0,
+         "isBoss": true,
+         "frame": 4890
+        }
+       ],
+       "bossId": 1,
+       "clearedAtFrame": 4900,
+       "clearFrames": 1510
+      }
+     ],
+     "summary": {
+      "roomsInLayout": 8,
+      "roomsExplored": 6,
+      "roomsCleared": 6,
+      "roomVisits": 9,
+      "pickups": {
+       "PICKUP_COIN": 1,
+       "PICKUP_HEART": 1
+      },
+      "resources": {
+       "coins": {
+        "gained": 1,
+        "spent": 3
+       },
+       "hearts": {
+        "gained": 2,
+        "spent": 1
+       }
+      },
+      "items": 2,
+      "used": 0,
+      "hits": 1,
+      "damageTaken": 1,
+      "kills": 4,
+      "bossKills": 1,
+      "durationSeconds": 161.7
+     }
+    },
+    {
+     "index": 2,
+     "stage": 2,
+     "stageType": 0,
+     "absoluteStage": 2,
+     "name": "Basement II",
+     "curses": 1,
+     "curseName": "Curse of Darkness",
+     "enterFrame": 4850,
+     "exitFrame": 7150,
+     "durationFrames": 2300,
+     "statsOnEnter": [
+      {
+       "player": 0,
+       "type": 0,
+       "name": "Isaac",
+       "damage": 5.27,
+       "maxFireDelay": 8.37,
+       "tearRange": 260,
+       "shotSpeed": 1,
+       "moveSpeed": 1,
+       "luck": 0,
+       "collectibleCount": 2,
+       "coins": 0,
+       "bombs": 1,
+       "gigaBombs": 0,
+       "keys": 0,
+       "hearts": 6,
+       "maxHearts": 6,
+       "soulHearts": 0,
+       "blackHearts": 0,
+       "boneHearts": 0,
+       "eternalHearts": 0,
+       "goldenHearts": 0,
+       "rottenHearts": 0,
+       "brokenHearts": 0
+      }
+     ],
+     "statsOnExit": [
+      {
+       "player": 0,
+       "type": 0,
+       "name": "Isaac",
+       "damage": 5.27,
+       "maxFireDelay": 8.37,
+       "tearRange": 260,
+       "shotSpeed": 1,
+       "moveSpeed": 1,
+       "luck": 0,
+       "collectibleCount": 2,
+       "coins": 0,
+       "bombs": 1,
+       "gigaBombs": 0,
+       "keys": 0,
+       "hearts": 0,
+       "maxHearts": 6,
+       "soulHearts": 0,
+       "blackHearts": 0,
+       "boneHearts": 0,
+       "eternalHearts": 0,
+       "goldenHearts": 0,
+       "rottenHearts": 0,
+       "brokenHearts": 0
+      }
+     ],
+     "map": [
+      {
+       "gridIndex": 84,
+       "safeGridIndex": 84,
+       "listIndex": 0,
+       "shape": 1,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1000,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 83,
+       "safeGridIndex": 83,
+       "listIndex": 1,
+       "shape": 8,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1001,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": false,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 98,
+       "safeGridIndex": 98,
+       "listIndex": 2,
+       "shape": 1,
+       "type": 4,
+       "typeName": "ROOM_TREASURE",
+       "variant": 1002,
+       "name": "room",
+       "visitedCount": 0,
+       "clear": false,
+       "displayFlags": 0
+      },
+      {
+       "gridIndex": 85,
+       "safeGridIndex": 85,
+       "listIndex": 3,
+       "shape": 4,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1003,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 86,
+       "safeGridIndex": 86,
+       "listIndex": 4,
+       "shape": 1,
+       "type": 5,
+       "typeName": "ROOM_BOSS",
+       "variant": 1004,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": false,
+       "displayFlags": 5
+      }
+     ],
+     "rooms": [
+      {
+       "gridIndex": 84,
+       "safeGridIndex": 84,
+       "listIndex": 0,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1000,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": true,
+       "enterFrame": 4850,
+       "exitFrame": 4950,
+       "durationFrames": 100,
+       "pickups": [],
+       "resources": [],
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 85,
+       "safeGridIndex": 85,
+       "listIndex": 3,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 4,
+       "variant": 1003,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 4950,
+       "exitFrame": 5650,
+       "durationFrames": 700,
+       "pickups": [],
+       "resources": [],
+       "items": [],
+       "used": [
+        {
+         "kind": "pill",
+         "id": 0,
+         "flags": 0,
+         "frame": 5050,
+         "player": 0
+        }
+       ],
+       "damage": [],
+       "kills": [
+        {
+         "type": 14,
+         "typeName": "ENTITY_POOTER",
+         "variant": 0,
+         "subtype": 0,
+         "isBoss": false,
+         "frame": 5550
+        }
+       ],
+       "clearedAtFrame": 5600,
+       "clearFrames": 650
+      },
+      {
+       "gridIndex": 86,
+       "safeGridIndex": 86,
+       "listIndex": 4,
+       "type": 5,
+       "typeName": "ROOM_BOSS",
+       "shape": 1,
+       "variant": 1004,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 5650,
+       "exitFrame": 7150,
+       "durationFrames": 1500,
+       "pickups": [],
+       "resources": {
+        "hearts": {
+         "gained": 0,
+         "spent": 6
+        }
+       },
+       "items": [],
+       "used": [],
+       "damage": [
+        {
+         "amount": 2,
+         "flags": 0,
+         "sourceType": 19,
+         "sourceTypeName": "ENTITY_LARRYJR",
+         "sourceVariant": 0,
+         "frame": 6150,
+         "player": 0
+        },
+        {
+         "amount": 2,
+         "flags": 0,
+         "sourceType": 19,
+         "sourceTypeName": "ENTITY_LARRYJR",
+         "sourceVariant": 0,
+         "frame": 7050,
+         "player": 0
+        }
+       ],
+       "kills": [],
+       "bossId": 6
+      }
+     ],
+     "summary": {
+      "roomsInLayout": 5,
+      "roomsExplored": 3,
+      "roomsCleared": 2,
+      "roomVisits": 3,
+      "pickups": [],
+      "resources": {
+       "hearts": {
+        "gained": 0,
+        "spent": 6
+       }
+      },
+      "items": 0,
+      "used": 1,
+      "hits": 2,
+      "damageTaken": 4,
+      "kills": 1,
+      "bossKills": 0,
+      "durationSeconds": 76.7
+     }
+    }
+   ],
+   "endedOnFloor": 2,
+   "deathCause": {
+    "hit": {
+     "amount": 2,
+     "flags": 0,
+     "sourceType": 19,
+     "sourceTypeName": "ENTITY_LARRYJR",
+     "sourceVariant": 0,
+     "frame": 7050,
+     "player": 0
+    },
+    "floor": 2,
+    "roomType": "ROOM_BOSS",
+    "gridIndex": 86
+   },
+   "startedAt": 1792000000,
+   "endedAt": 1792000278,
+   "uploaded": false
+  },
+  {
+   "id": "WXYZ 9876#2",
+   "uid": "9e8d7c6b5a493827",
+   "number": 2,
+   "seed": "WXYZ 9876",
+   "character": 21,
+   "characterName": "Isaac",
+   "difficulty": 0,
+   "challenge": 0,
+   "greedMode": false,
+   "status": "won",
+   "totalFrames": 7150,
+   "startingItems": [
+    {
+     "kind": "collectible",
+     "id": 105,
+     "name": "#THE_D6_NAME",
+     "count": 1
+    }
+   ],
+   "floors": [
+    {
+     "index": 1,
+     "stage": 1,
+     "stageType": 0,
+     "absoluteStage": 1,
+     "name": "Basement I",
+     "curses": 0,
+     "curseName": "",
+     "enterFrame": 0,
+     "exitFrame": 4850,
+     "durationFrames": 4850,
+     "statsOnEnter": [
+      {
+       "player": 0,
+       "type": 0,
+       "name": "Isaac",
+       "damage": 3.5,
+       "maxFireDelay": 10,
+       "tearRange": 260,
+       "shotSpeed": 1,
+       "moveSpeed": 1,
+       "luck": 0,
+       "collectibleCount": 1,
+       "coins": 0,
+       "bombs": 1,
+       "gigaBombs": 0,
+       "keys": 0,
+       "hearts": 6,
+       "maxHearts": 6,
+       "soulHearts": 0,
+       "blackHearts": 0,
+       "boneHearts": 0,
+       "eternalHearts": 0,
+       "goldenHearts": 0,
+       "rottenHearts": 0,
+       "brokenHearts": 0
+      }
+     ],
+     "statsOnExit": [
+      {
+       "player": 0,
+       "type": 0,
+       "name": "Isaac",
+       "damage": 5.27,
+       "maxFireDelay": 8.37,
+       "tearRange": 260,
+       "shotSpeed": 1,
+       "moveSpeed": 1,
+       "luck": 0,
+       "collectibleCount": 2,
+       "coins": 0,
+       "bombs": 1,
+       "gigaBombs": 0,
+       "keys": 0,
+       "hearts": 6,
+       "maxHearts": 6,
+       "soulHearts": 0,
+       "blackHearts": 0,
+       "boneHearts": 0,
+       "eternalHearts": 0,
+       "goldenHearts": 0,
+       "rottenHearts": 0,
+       "brokenHearts": 0
+      }
+     ],
+     "map": [
+      {
+       "gridIndex": 84,
+       "safeGridIndex": 84,
+       "listIndex": 0,
+       "shape": 1,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1000,
+       "name": "room",
+       "visitedCount": 2,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 85,
+       "safeGridIndex": 85,
+       "listIndex": 1,
+       "shape": 1,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1001,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 71,
+       "safeGridIndex": 71,
+       "listIndex": 2,
+       "shape": 1,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1002,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 86,
+       "safeGridIndex": 86,
+       "listIndex": 3,
+       "shape": 1,
+       "type": 4,
+       "typeName": "ROOM_TREASURE",
+       "variant": 1003,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 58,
+       "safeGridIndex": 58,
+       "listIndex": 4,
+       "shape": 1,
+       "type": 5,
+       "typeName": "ROOM_BOSS",
+       "variant": 1004,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 70,
+       "safeGridIndex": 70,
+       "listIndex": 5,
+       "shape": 1,
+       "type": 2,
+       "typeName": "ROOM_SHOP",
+       "variant": 1005,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 97,
+       "safeGridIndex": 97,
+       "listIndex": 6,
+       "shape": 6,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1006,
+       "name": "room",
+       "visitedCount": 0,
+       "clear": false,
+       "displayFlags": 0
+      },
+      {
+       "gridIndex": 72,
+       "safeGridIndex": 72,
+       "listIndex": 7,
+       "shape": 1,
+       "type": 7,
+       "typeName": "ROOM_SECRET",
+       "variant": 1007,
+       "name": "room",
+       "visitedCount": 0,
+       "clear": false,
+       "displayFlags": 0
+      }
+     ],
+     "rooms": [
+      {
+       "gridIndex": 84,
+       "safeGridIndex": 84,
+       "listIndex": 0,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1000,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": true,
+       "enterFrame": 0,
+       "exitFrame": 120,
+       "durationFrames": 120,
+       "pickups": [],
+       "resources": [],
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 85,
+       "safeGridIndex": 85,
+       "listIndex": 1,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1001,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 120,
+       "exitFrame": 1020,
+       "durationFrames": 900,
+       "pickups": [
+        {
+         "variant": 20,
+         "variantName": "PICKUP_COIN",
+         "subtype": 1,
+         "frame": 850,
+         "player": 0
+        }
+       ],
+       "resources": {
+        "coins": {
+         "gained": 1,
+         "spent": 0
+        }
+       },
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": [
+        {
+         "type": 10,
+         "typeName": "ENTITY_GAPER",
+         "variant": 0,
+         "subtype": 0,
+         "isBoss": false,
+         "frame": 400
+        },
+        {
+         "type": 13,
+         "typeName": "ENTITY_FLY",
+         "variant": 0,
+         "subtype": 0,
+         "isBoss": false,
+         "frame": 700
+        }
+       ],
+       "clearedAtFrame": 780,
+       "clearFrames": 660
+      },
+      {
+       "gridIndex": 86,
+       "safeGridIndex": 86,
+       "listIndex": 3,
+       "type": 4,
+       "typeName": "ROOM_TREASURE",
+       "shape": 1,
+       "variant": 1003,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": true,
+       "enterFrame": 1020,
+       "exitFrame": 1320,
+       "durationFrames": 300,
+       "pickups": [],
+       "resources": [],
+       "items": [
+        {
+         "kind": "collectible",
+         "id": 1,
+         "name": "#THE_SAD_ONION_NAME",
+         "frame": 1400,
+         "player": 0
+        }
+       ],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 85,
+       "safeGridIndex": 85,
+       "listIndex": 1,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1001,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 1320,
+       "exitFrame": 1410,
+       "durationFrames": 90,
+       "pickups": [],
+       "resources": [],
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 84,
+       "safeGridIndex": 84,
+       "listIndex": 0,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1000,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": true,
+       "enterFrame": 1410,
+       "exitFrame": 1490,
+       "durationFrames": 80,
+       "pickups": [],
+       "resources": [],
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 71,
+       "safeGridIndex": 71,
+       "listIndex": 2,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1002,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 1490,
+       "exitFrame": 2590,
+       "durationFrames": 1100,
+       "pickups": [],
+       "resources": {
+        "hearts": {
+         "gained": 0,
+         "spent": 1
+        }
+       },
+       "items": [],
+       "used": [],
+       "damage": [
+        {
+         "amount": 1,
+         "flags": 0,
+         "sourceType": 10,
+         "sourceTypeName": "ENTITY_GAPER",
+         "sourceVariant": 0,
+         "frame": 2000,
+         "player": 0
+        }
+       ],
+       "kills": [
+        {
+         "type": 10,
+         "typeName": "ENTITY_GAPER",
+         "variant": 0,
+         "subtype": 0,
+         "isBoss": false,
+         "frame": 2500
+        }
+       ],
+       "clearedAtFrame": 2600,
+       "clearFrames": 1010
+      },
+      {
+       "gridIndex": 70,
+       "safeGridIndex": 70,
+       "listIndex": 5,
+       "type": 2,
+       "typeName": "ROOM_SHOP",
+       "shape": 1,
+       "variant": 1005,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": true,
+       "enterFrame": 2590,
+       "exitFrame": 2990,
+       "durationFrames": 400,
+       "pickups": [
+        {
+         "variant": 10,
+         "variantName": "PICKUP_HEART",
+         "subtype": 1,
+         "price": 3,
+         "frame": 2900,
+         "player": 0
+        }
+       ],
+       "resources": {
+        "coins": {
+         "gained": 0,
+         "spent": 3
+        },
+        "hearts": {
+         "gained": 2,
+         "spent": 0
+        }
+       },
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 71,
+       "safeGridIndex": 71,
+       "listIndex": 2,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1002,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 2990,
+       "exitFrame": 3050,
+       "durationFrames": 60,
+       "pickups": [],
+       "resources": [],
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 58,
+       "safeGridIndex": 58,
+       "listIndex": 4,
+       "type": 5,
+       "typeName": "ROOM_BOSS",
+       "shape": 1,
+       "variant": 1004,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 3050,
+       "exitFrame": 4850,
+       "durationFrames": 1800,
+       "pickups": [],
+       "resources": [],
+       "items": [
+        {
+         "kind": "collectible",
+         "id": 7,
+         "name": "#BLOOD_OF_THE_MARTYR_NAME",
+         "frame": 5100,
+         "player": 0
+        }
+       ],
+       "used": [],
+       "damage": [],
+       "kills": [
+        {
+         "type": 20,
+         "typeName": "ENTITY_MONSTRO",
+         "variant": 0,
+         "subtype": 0,
+         "isBoss": true,
+         "frame": 4890
+        }
+       ],
+       "bossId": 1,
+       "clearedAtFrame": 4900,
+       "clearFrames": 1510
+      }
+     ],
+     "summary": {
+      "roomsInLayout": 8,
+      "roomsExplored": 6,
+      "roomsCleared": 6,
+      "roomVisits": 9,
+      "pickups": {
+       "PICKUP_COIN": 1,
+       "PICKUP_HEART": 1
+      },
+      "resources": {
+       "coins": {
+        "gained": 1,
+        "spent": 3
+       },
+       "hearts": {
+        "gained": 2,
+        "spent": 1
+       }
+      },
+      "items": 2,
+      "used": 0,
+      "hits": 1,
+      "damageTaken": 1,
+      "kills": 4,
+      "bossKills": 1,
+      "durationSeconds": 161.7
+     }
+    },
+    {
+     "index": 2,
+     "stage": 2,
+     "stageType": 0,
+     "absoluteStage": 2,
+     "name": "Basement II",
+     "curses": 1,
+     "curseName": "Curse of Darkness",
+     "enterFrame": 4850,
+     "exitFrame": 7150,
+     "durationFrames": 2300,
+     "statsOnEnter": [
+      {
+       "player": 0,
+       "type": 0,
+       "name": "Isaac",
+       "damage": 5.27,
+       "maxFireDelay": 8.37,
+       "tearRange": 260,
+       "shotSpeed": 1,
+       "moveSpeed": 1,
+       "luck": 0,
+       "collectibleCount": 2,
+       "coins": 0,
+       "bombs": 1,
+       "gigaBombs": 0,
+       "keys": 0,
+       "hearts": 6,
+       "maxHearts": 6,
+       "soulHearts": 0,
+       "blackHearts": 0,
+       "boneHearts": 0,
+       "eternalHearts": 0,
+       "goldenHearts": 0,
+       "rottenHearts": 0,
+       "brokenHearts": 0
+      }
+     ],
+     "statsOnExit": [
+      {
+       "player": 0,
+       "type": 0,
+       "name": "Isaac",
+       "damage": 5.27,
+       "maxFireDelay": 8.37,
+       "tearRange": 260,
+       "shotSpeed": 1,
+       "moveSpeed": 1,
+       "luck": 0,
+       "collectibleCount": 2,
+       "coins": 0,
+       "bombs": 1,
+       "gigaBombs": 0,
+       "keys": 0,
+       "hearts": 0,
+       "maxHearts": 6,
+       "soulHearts": 0,
+       "blackHearts": 0,
+       "boneHearts": 0,
+       "eternalHearts": 0,
+       "goldenHearts": 0,
+       "rottenHearts": 0,
+       "brokenHearts": 0
+      }
+     ],
+     "map": [
+      {
+       "gridIndex": 84,
+       "safeGridIndex": 84,
+       "listIndex": 0,
+       "shape": 1,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1000,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 83,
+       "safeGridIndex": 83,
+       "listIndex": 1,
+       "shape": 8,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1001,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": false,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 98,
+       "safeGridIndex": 98,
+       "listIndex": 2,
+       "shape": 1,
+       "type": 4,
+       "typeName": "ROOM_TREASURE",
+       "variant": 1002,
+       "name": "room",
+       "visitedCount": 0,
+       "clear": false,
+       "displayFlags": 0
+      },
+      {
+       "gridIndex": 85,
+       "safeGridIndex": 85,
+       "listIndex": 3,
+       "shape": 4,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "variant": 1003,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": true,
+       "displayFlags": 5
+      },
+      {
+       "gridIndex": 86,
+       "safeGridIndex": 86,
+       "listIndex": 4,
+       "shape": 1,
+       "type": 5,
+       "typeName": "ROOM_BOSS",
+       "variant": 1004,
+       "name": "room",
+       "visitedCount": 1,
+       "clear": false,
+       "displayFlags": 5
+      }
+     ],
+     "rooms": [
+      {
+       "gridIndex": 84,
+       "safeGridIndex": 84,
+       "listIndex": 0,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 1,
+       "variant": 1000,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": true,
+       "enterFrame": 4850,
+       "exitFrame": 4950,
+       "durationFrames": 100,
+       "pickups": [],
+       "resources": [],
+       "items": [],
+       "used": [],
+       "damage": [],
+       "kills": []
+      },
+      {
+       "gridIndex": 85,
+       "safeGridIndex": 85,
+       "listIndex": 3,
+       "type": 1,
+       "typeName": "ROOM_DEFAULT",
+       "shape": 4,
+       "variant": 1003,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 4950,
+       "exitFrame": 5650,
+       "durationFrames": 700,
+       "pickups": [],
+       "resources": [],
+       "items": [],
+       "used": [
+        {
+         "kind": "pill",
+         "id": 0,
+         "flags": 0,
+         "frame": 5050,
+         "player": 0
+        }
+       ],
+       "damage": [],
+       "kills": [
+        {
+         "type": 14,
+         "typeName": "ENTITY_POOTER",
+         "variant": 0,
+         "subtype": 0,
+         "isBoss": false,
+         "frame": 5550
+        }
+       ],
+       "clearedAtFrame": 5600,
+       "clearFrames": 650
+      },
+      {
+       "gridIndex": 86,
+       "safeGridIndex": 86,
+       "listIndex": 4,
+       "type": 5,
+       "typeName": "ROOM_BOSS",
+       "shape": 1,
+       "variant": 1004,
+       "name": "room",
+       "firstVisit": true,
+       "wasClearOnEnter": false,
+       "enterFrame": 5650,
+       "exitFrame": 7150,
+       "durationFrames": 1500,
+       "pickups": [],
+       "resources": {
+        "hearts": {
+         "gained": 0,
+         "spent": 6
+        }
+       },
+       "items": [],
+       "used": [],
+       "damage": [
+        {
+         "amount": 2,
+         "flags": 0,
+         "sourceType": 19,
+         "sourceTypeName": "ENTITY_LARRYJR",
+         "sourceVariant": 0,
+         "frame": 6150,
+         "player": 0
+        },
+        {
+         "amount": 2,
+         "flags": 0,
+         "sourceType": 19,
+         "sourceTypeName": "ENTITY_LARRYJR",
+         "sourceVariant": 0,
+         "frame": 7050,
+         "player": 0
+        }
+       ],
+       "kills": [],
+       "bossId": 6
+      }
+     ],
+     "summary": {
+      "roomsInLayout": 5,
+      "roomsExplored": 3,
+      "roomsCleared": 2,
+      "roomVisits": 3,
+      "pickups": [],
+      "resources": {
+       "hearts": {
+        "gained": 0,
+        "spent": 6
+       }
+      },
+      "items": 0,
+      "used": 1,
+      "hits": 2,
+      "damageTaken": 4,
+      "kills": 1,
+      "bossKills": 0,
+      "durationSeconds": 76.7
+     }
+    }
+   ],
+   "endedOnFloor": 2,
+   "startedAt": 1792100000,
+   "endedAt": 1792101000,
+   "uploaded": false
+  }
+ ]
+}
