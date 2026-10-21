@@ -11,7 +11,8 @@ local game = Game()
 function Run.start(isPartial)
   local seeds = game:GetSeeds()
   local player = Isaac.GetPlayer(0)
-  local number = #State.data.runs + 1
+  State.data.runCount = (State.data.runCount or 0) + 1
+  local number = State.data.runCount
   local run = {
     id = seeds:GetStartSeedString() .. "#" .. number,
     number = number,
@@ -45,7 +46,8 @@ function Run.resume()
   return false
 end
 
--- Ends a run: closes its last room and floor, sets its final status and moves it into `runs`.
+-- Ends a run: closes its last room and floor, sets its final status and queues it in `runs` to be
+-- uploaded.
 -- `live` is true when the run is the one being played right now, so final player stats can be
 -- read from the game.
 function Run.closeOut(run, status, live)

@@ -2,11 +2,12 @@
 local json = require("json")
 local Util = require("statsforisaac.util")
 
-local SCHEMA_VERSION = 3
+local SCHEMA_VERSION = 4
 
 local State = {
   mod = nil,
-  data = nil,         -- the whole decoded save file: { schemaVersion, currentRun, runs }
+  data = nil,         -- the decoded save file { schemaVersion, currentRun, runCount }, plus `runs`:
+                      -- finished runs waiting to upload, which are kept in memory only
   run = nil,          -- the Run currently being recorded
   floor = nil,        -- the Floor currently being recorded
   room = nil,         -- the RoomVisit currently being recorded
@@ -23,7 +24,9 @@ function State.load()
   if State.mod:HasData() then
     local raw = State.mod:LoadData()
     local ok, decoded = pcall(json.decode, raw)
-    if ok and type(decoded) == "table" and type(decoded.runs) == "table" then
+    local valid = ok and type(decoded) == "table"
+      and ((decoded.schemaVersion or 0) >= 4 or type(decoded.runs) == "table")
+    if valid then
       data = decoded
     elseif raw ~= "" then
       -- Never silently throw away a file we couldn't read; keep it around so it can be recovered by hand.
@@ -42,9 +45,19 @@ function State.load()
     end
     data.currentRunId = nil
   end
-  -- Version 3 gives every run a `uid` for uploading.
-  for _, run in ipairs(data.runs) do
-    run.uid = run.uid or Util.newUid()
+  if (data.schemaVersion or 1) < 4 then
+    -- Before version 4 every finished run was kept in the file. Those not uploaded yet get one more
+    -- try this session; the next save drops them from the file either way.
+    data.runCount = data.runCount or #data.runs
+    local pending = {}
+    for _, run in ipairs(data.runs) do
+      if not run.uploaded then
+        -- Version 3 gave every run a `uid` for uploading.
+        run.uid = run.uid or Util.newUid()
+        pending[#pending + 1] = run
+      end
+    end
+    data.runs = pending
   end
   if data.currentRun then
     data.currentRun.uid = data.currentRun.uid or Util.newUid()
@@ -56,7 +69,8 @@ end
 -- Writes the save file. This is only done when a run ends or when the player saves and quits,
 -- never while a floor is being played, so the file can't be read to look ahead. When an
 -- unfinished run is written, the map of the floor it's on is left out for the same reason; it's
--- re-taken from the game on continue.
+-- re-taken from the game on continue. Finished runs are never written: they reach the website or
+-- are lost, which keeps this small and fast however many runs have been played.
 function State.persist()
   if not State.data then
     return
@@ -70,7 +84,10 @@ function State.persist()
   if openFloor then
     openFloor.map = {}
   end
+  local runs = State.data.runs
+  State.data.runs = nil
   local ok, encoded = pcall(json.encode, State.data)
+  State.data.runs = runs
   if openFloor then
     openFloor.map = map
   end

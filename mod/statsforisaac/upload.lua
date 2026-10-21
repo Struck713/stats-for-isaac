@@ -81,16 +81,34 @@ local function baseUrl()
   return (config.url or DEFAULT_URL):gsub("/+$", "")
 end
 
+-- Finished runs waiting to upload. They're only held in memory, so whatever is left when the game
+-- closes is lost.
 function Upload.pendingRuns()
-  local pending = {}
-  if State.data then
-    for _, run in ipairs(State.data.runs) do
-      if not run.uploaded then
-        pending[#pending + 1] = run
+  return State.data and State.data.runs or {}
+end
+
+-- Each run's JSON, encoded one run per frame so a batch never costs one long frame.
+local encoded = setmetatable({}, { __mode = "k" })
+local wanted = false
+
+-- Encodes the first run in the next batch that isn't encoded yet. Returns false once there's none.
+local function encodeNext()
+  local pending = Upload.pendingRuns()
+  for i = 1, math.min(BATCH_SIZE, #pending) do
+    local run = pending[i]
+    if not encoded[run] then
+      local ok, text = pcall(json.encode, run)
+      if ok then
+        encoded[run] = text
+      else
+        table.remove(pending, i)
+        Upload.last = "dropped a run that couldn't be encoded: " .. tostring(text)
+        Isaac.DebugString("[Stats for Isaac] " .. Upload.last)
       end
+      return true
     end
   end
-  return pending
+  return false
 end
 
 local function handleResponse(done)
@@ -106,45 +124,47 @@ local function handleResponse(done)
     Upload.last = "upload failed: " .. tostring(message)
     return false
   end
-  local byUid = {}
+  -- The site has seen every run in the batch. Rejected ones wouldn't do better on a retry, so they
+  -- are dropped along with the accepted ones.
+  local sentSet = {}
   for _, run in ipairs(sent) do
-    byUid[run.uid] = run
+    sentSet[run] = true
   end
-  local accepted = 0
-  for _, entry in ipairs(decoded.accepted or {}) do
-    local run = byUid[entry.uid]
-    if run then
-      run.uploaded = true
-      accepted = accepted + 1
+  local pending = Upload.pendingRuns()
+  for i = #pending, 1, -1 do
+    if sentSet[pending[i]] then
+      table.remove(pending, i)
     end
   end
+  local accepted = #(decoded.accepted or {})
   local rejected = #(decoded.rejected or {})
   Upload.last = "uploaded " .. accepted .. " run(s)" .. (rejected > 0 and (", " .. rejected .. " rejected") or "")
   Isaac.DebugString("[Stats for Isaac] " .. Upload.last)
-  -- Rejected runs stay pending; only keep going if this batch made progress.
-  return accepted > 0
+  return #sent > 0
 end
 
--- Starts uploading the next batch of runs that haven't been uploaded yet, unless one is already
--- in flight.
-function Upload.sync()
+-- Sends the next batch if every run in it has been encoded.
+local function start()
   if not Upload.available or req or not config.token then
     return
   end
   local pending = Upload.pendingRuns()
   if #pending == 0 then
+    wanted = false
     return
   end
+  local parts = {}
   batch = {}
   for i = 1, math.min(BATCH_SIZE, #pending) do
+    local text = encoded[pending[i]]
+    if not text then
+      batch = nil
+      return
+    end
     batch[i] = pending[i]
+    parts[i] = text
   end
-  local ok, body = pcall(json.encode, { schemaVersion = State.data.schemaVersion, runs = batch })
-  if not ok then
-    batch = nil
-    Upload.last = "couldn't encode runs: " .. tostring(body)
-    return
-  end
+  wanted = false
   req = Http.request({
     method = "POST",
     url = baseUrl() .. "/api/runs",
@@ -152,34 +172,48 @@ function Upload.sync()
       ["Authorization"] = "Bearer " .. config.token,
       ["Content-Type"] = "application/json",
     },
-    body = body,
+    body = '{"schemaVersion":' .. State.data.schemaVersion .. ',"runs":[' .. table.concat(parts, ",") .. "]}",
   })
 end
 
--- Called every frame to advance the request in flight.
+-- Uploads the runs that haven't been uploaded yet, a batch at a time, over the next frames.
+function Upload.sync()
+  wanted = true
+  start()
+end
+
+-- Called every frame to advance the request in flight, or to encode one more run for the next.
 function Upload.tick()
-  if not req then
-    return
-  end
-  Http.step(req)
-  if req.done and handleResponse(req) then
-    Upload.sync()
+  if req then
+    Http.step(req)
+    if req.done and handleResponse(req) then
+      wanted = true
+    end
+  elseif wanted and Upload.available and config.token then
+    if not encodeNext() then
+      start()
+    end
   end
 end
 
 -- The game is exiting, so there won't be frames to step a request on. Finishes the request in
--- flight (or sends one batch) within a few seconds; anything left is retried next game.
+-- flight (or sends one batch) within a few seconds. Runs still waiting after that are lost.
 function Upload.flush()
-  if not Upload.available then
-    return
+  if Upload.available and config.token then
+    if not req then
+      while encodeNext() do
+      end
+      start()
+    end
+    if req then
+      local current = req
+      Http.wait(current, EXIT_WAIT_SECONDS)
+      handleResponse(current)
+    end
   end
-  if not req then
-    Upload.sync()
-  end
-  if req then
-    local current = req
-    Http.wait(current, EXIT_WAIT_SECONDS)
-    handleResponse(current)
+  local lost = #Upload.pendingRuns()
+  if lost > 0 then
+    Isaac.DebugString("[Stats for Isaac] " .. lost .. " run(s) were not uploaded and are lost")
   end
 end
 
@@ -199,6 +233,7 @@ function Upload.command(params)
       lines[#lines + 1] = "URL: " .. baseUrl()
       lines[#lines + 1] = "Token: " .. maskToken(config.token)
       lines[#lines + 1] = "Runs waiting to upload: " .. (State.data and #Upload.pendingRuns() or "?")
+        .. " (lost if the game closes first)"
       lines[#lines + 1] = "In flight: " .. (req and "yes" or "no")
       lines[#lines + 1] = "Last result: " .. (Upload.last or "none")
     end
@@ -222,7 +257,7 @@ function Upload.command(params)
       return "Set a token first: sfi token <token>"
     end
     Upload.sync()
-    return req and "Uploading..." or "Nothing to upload"
+    return #Upload.pendingRuns() > 0 and "Uploading..." or "Nothing to upload"
   else
     return nil
   end

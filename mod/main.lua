@@ -46,7 +46,7 @@ function mod:onGameStarted(isContinued)
   if runEnded then
     State.persist()
   end
-  -- Also retries anything a previous session couldn't upload.
+  -- Also sends anything still waiting: a failed upload, or runs from an older save file.
   Upload.sync()
 end
 
@@ -75,7 +75,7 @@ function mod:onGameExit(shouldSave)
     end
   end
   if State.data then
-    -- Before persisting, so runs it manages to upload are saved as uploaded.
+    -- Finished runs are never saved, so this is their last chance to reach the website.
     Upload.flush()
     State.persist()
   end
