@@ -8,6 +8,9 @@ local Http = {}
 
 local socket, ssl, cafile
 
+-- socket.dns.toip blocks and can't yield, so each host is only looked up once per session.
+local resolved = {}
+
 local CONNECT_TIMEOUT = 10
 local TOTAL_TIMEOUT = 30
 
@@ -87,9 +90,14 @@ local function run(req)
     error("plain http is only allowed for localhost", 0)
   end
 
-  local ip, dnsErr = socket.dns.toip(host)
+  local ip = resolved[host]
   if not ip then
-    error("dns: " .. tostring(dnsErr), 0)
+    local dnsErr
+    ip, dnsErr = socket.dns.toip(host)
+    if not ip then
+      error("dns: " .. tostring(dnsErr), 0)
+    end
+    resolved[host] = ip
   end
 
   local conn = socket.tcp()
@@ -97,6 +105,8 @@ local function run(req)
   conn:settimeout(0)
   local ok, err = conn:connect(ip, port)
   if not ok and err ~= "timeout" then
+    -- The address may have changed; look it up again next time.
+    resolved[host] = nil
     error("connect: " .. tostring(err), 0)
   end
   if not ok then
@@ -107,6 +117,7 @@ local function run(req)
         break
       end
       if socket.gettime() > deadline then
+        resolved[host] = nil
         error("connect: timed out", 0)
       end
       coroutine.yield()
