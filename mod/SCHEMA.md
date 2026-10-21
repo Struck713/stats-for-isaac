@@ -6,7 +6,9 @@ The mod writes a single JSON document with `mod:SaveData()`. Each game save slot
 <Isaac install>\data\statsforisaac\save1.dat   (save2.dat / save3.dat for the other slots)
 ```
 
-Despite the `.dat` extension the file is plain JSON, so a web viewer can `JSON.parse` it directly.
+Despite the `.dat` extension the file is plain JSON. Since v4 it only holds the run in progress:
+finished runs are uploaded to the website and never written to disk (see [Uploading](#uploading)).
+The Run object described below is what's uploaded.
 
 ## Conventions
 
@@ -22,9 +24,9 @@ Despite the `.dat` extension the file is plain JSON, so a web viewer can `JSON.p
 
 | Field | Type | Notes |
 |---|---|---|
-| `schemaVersion` | int | Currently `3`. |
-| `currentRun` | Run? | The unfinished run, only present after the player saved and quit mid-run. The map of the floor it's on is left out (`map` is empty). **Don't upload it.** |
-| `runs` | Run[] | Every finished run (`won`, `died` or `abandoned`), in the order they ended. Nothing is pruned. These are the ones to upload. |
+| `schemaVersion` | int | Currently `4`. |
+| `currentRun` | Run? | The unfinished run, only present after the player saved and quit mid-run. The map of the floor it's on is left out (`map` is empty). |
+| `runCount` | int? | The last run `number` handed out. |
 | `recoveredRaw` | string? | Only present if an older file couldn't be decoded. Holds the original text so it isn't lost. |
 
 ## Run
@@ -32,10 +34,9 @@ Despite the `.dat` extension the file is plain JSON, so a web viewer can `JSON.p
 | Field | Type | Notes |
 |---|---|---|
 | `id` | string | `"<seed>#<number>"`. Not unique across save slots. |
-| `uid` | string | 16 random hex characters. Identifies the run for uploading; the site de-duplicates on it. Added in v3 (older runs get one when the file is loaded). |
+| `uid` | string | 16 random hex characters. Identifies the run for uploading; the site de-duplicates on it. |
 | `startedAt` / `endedAt` | int? | Unix time in seconds. Only recorded with `--luadebug` (the game hides `os` otherwise). |
-| `uploaded` | bool? | `true` once the site has accepted the run. |
-| `number` | int | 1-based run counter, assigned when the run starts. |
+| `number` | int | 1-based run counter, assigned when the run starts. Resets that are dropped (see Caveats) give their number back. |
 | `seed` | string | Start seed, e.g. `"ABCD 1234"`. |
 | `character` / `characterName` | int / string | `PlayerType` of player 0 at run start. |
 | `difficulty` | int | `Difficulty` enum. 0 normal, 1 hard, 2 greed, 3 greedier. |
@@ -134,14 +135,15 @@ Tears per second = `30 / (maxFireDelay + 1)`. `tearRange` is in world units; div
 
 ## Uploading
 
-With `--luadebug`, the mod POSTs finished runs to `<url>/api/runs` as `{ schemaVersion, runs: Run[] }` (batches of 25) with `Authorization: Bearer <token>`. It does this when a run ends, when a game starts (retrying anything still pending) and, for up to 3 seconds, when exiting to the menu. The token and URL are kept in `sfi-config.json` in the mod folder, set with the `sfi token` / `sfi url` console commands. `sfi status` shows what's pending.
+With `--luadebug`, the mod POSTs finished runs to `<url>/api/runs` as `{ schemaVersion, runs: Run[] }` (batches of 25) with `Authorization: Bearer <token>`. It does this when a run ends, when a game starts (retrying anything still pending) and, for up to 3 seconds, when exiting to the menu. Runs are encoded one per frame before a batch is sent, so uploading never stalls the game for long. The token and URL are kept in `sfi-config.json` in the mod folder, set with the `sfi token` / `sfi url` console commands. `sfi status` shows what's pending.
+
+Finished runs wait in memory only. A run the site has answered for (accepted or rejected) is dropped, and anything still waiting when the game exits to the menu is lost. Without `--luadebug` or a token, runs are tracked but never kept. When a pre-v4 save file is loaded, its runs that weren't uploaded yet get one more try that session; the file is then rewritten without them.
 
 ## When the file is written
 
-Only when a run ends (death, ending, restart, starting a new run over an unfinished one, or exiting without saving) and when the player saves and quits. It's never written during a floor, so it can't be used to look ahead at the current floor's layout. `sfi dump` in the debug console prints the current floor's summary.
+Only when a run ends (death, ending, restart, starting a new run over an unfinished one, or exiting without saving) and when the player saves and quits. It's small, so writing it is quick. It's never written during a floor, so it can't be used to look ahead at the current floor's layout. `sfi dump` in the debug console prints the current floor's summary.
 
 ## Caveats
 
-- The whole file is rewritten on every save and runs are never pruned. If it ever becomes noticeably slow after hundreds of runs, move old runs out by hand. Delete the `.dat` file to start fresh.
 - The vanilla API has no "pickup collected" event. A pickup is counted when a player touches it and, within 10 frames, it plays its `Collect` animation or is removed. `resources` is the authoritative record of inventory changes.
-- If a run is restarted (holding R) or a new run is started over an unfinished one, the old run is marked `abandoned` and keeps everything recorded so far. A game crash loses everything recorded since the run started or was last continued.
+- If a run is restarted (holding R) or a new run is started over an unfinished one, the old run is marked `abandoned` and keeps everything recorded so far. An abandoned run that never left the starting room of floor 1 is dropped instead (unless it's `partial`). A game crash loses everything recorded since the run started or was last continued.

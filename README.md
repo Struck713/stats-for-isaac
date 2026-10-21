@@ -16,7 +16,8 @@ each run gets a shareable page.
    `mklink /J "<Isaac>\mods\statsforisaac" "<repo>\mod"`
 2. Add `--luadebug` to the game's Steam launch options. Uploads need it (for LuaSocket and the
    bundled `lib/ssl.dll`). **This gives every installed mod full file and network access.**
-   Without it, the mod still records runs locally.
+   Finished runs are only kept by uploading them, so without it (or without a token) nothing is
+   kept.
 3. Sign in on the website, make a token on the Account page, and run `sfi token <token>` in the
    debug console. `sfi status` shows whether uploads are working.
 
