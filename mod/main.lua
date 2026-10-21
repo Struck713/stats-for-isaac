@@ -43,11 +43,13 @@ function mod:onGameStarted(isContinued)
   end
   Rooms.enter(resumed)
   State.ready = true
+  local startTime = Isaac.GetTime()
   if runEnded then
     State.persist()
   end
   -- Also sends anything still waiting: a failed upload, or runs from an older save file.
   Upload.sync()
+  Isaac.DebugString("[Stats for Isaac] game start: save and upload took " .. (Isaac.GetTime() - startTime) .. "ms")
 end
 
 function mod:onPlayerInit()
