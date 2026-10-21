@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Stats for Isaac</name>
+    <directory>statsforisaac</directory>
+    <id>0</id>
+    <description>Records detailed per-run stats (map exploration, pickups per room, floor times, items, damage, kills, player stats) to a JSON save file for use in a web viewer.</description>
+    <version>0.1</version>
+    <visibility>Private</visibility>
+    <tag id="Lua"/>
+</metadata>

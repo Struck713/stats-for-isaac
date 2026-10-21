@@ -1,0 +1,4 @@
+sfi-config.json
+native/.build/
+native/.vcpkg/
+native/vcpkg_installed/
