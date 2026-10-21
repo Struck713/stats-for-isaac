@@ -46,8 +46,14 @@ function Run.resume()
   return false
 end
 
+-- A reset before leaving the first room (e.g. holding R for a better start) isn't worth keeping.
+local function isTrivial(run)
+  local floor = run.floors[1]
+  return not run.partial and #run.floors <= 1 and (not floor or #floor.rooms <= 1)
+end
+
 -- Ends a run: closes its last room and floor, sets its final status and queues it in `runs` to be
--- uploaded.
+-- uploaded, unless it was abandoned without getting anywhere.
 -- `live` is true when the run is the one being played right now, so final player stats can be
 -- read from the game.
 function Run.closeOut(run, status, live)
@@ -67,7 +73,13 @@ function Run.closeOut(run, status, live)
     run.deathCause = run.lastHit
   end
   run.lastHit = nil
-  table.insert(State.data.runs, run)
+  if status == "abandoned" and isTrivial(run) then
+    if run.number == State.data.runCount then
+      State.data.runCount = run.number - 1
+    end
+  else
+    table.insert(State.data.runs, run)
+  end
   if State.data.currentRun == run then
     State.data.currentRun = nil
   end
