@@ -20,10 +20,12 @@ export function TokenForm() {
       {state.token && (
         <div className="rounded-md border-2 border-dashed border-ink bg-[rgb(255_250_235_/_0.6)] p-3">
           <p className="mb-2">
-            Here&apos;s your token. It&apos;s only shown this once. Open the game&apos;s debug console
-            (the <kbd>~</kbd> key) and paste:
+            Here&apos;s your token. It&apos;s only shown this once. Save this as{" "}
+            <code className="font-mono">sfi-config.json</code> in the mod&apos;s folder, then restart the game:
           </p>
-          <code className="block break-all font-mono text-base select-all">sfi token {state.token}</code>
+          <code className="block break-all font-mono text-base select-all">
+            {JSON.stringify({ token: state.token })}
+          </code>
         </div>
       )}
     </div>

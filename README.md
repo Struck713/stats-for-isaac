@@ -18,10 +18,13 @@ each run gets a shareable page.
    bundled `lib/ssl.dll`). **This gives every installed mod full file and network access.**
    Finished runs are only kept by uploading them, so without it (or without a token) nothing is
    kept.
-3. Sign in on the website, make a token on the Account page, and run `sfi token <token>` in the
-   debug console. `sfi status` shows whether uploads are working.
+3. Sign in on the website, make a token on the Account page, and save it as `sfi-config.json` in
+   the mod folder: `{ "token": "sfi_xxxxxxxx" }`. Add `"url": "http://localhost:3000"` to point at
+   a dev server (it defaults to `https://isaac.nstruck.dev`). `sfi status` in the debug console
+   shows whether uploads are working.
 
-Other console commands: `sfi upload` (retry now) and `sfi dump` (current floor summary).
+Other console commands: `sfi upload` (re-read the config and retry now) and `sfi dump` (current
+floor summary).
 
 ### Native library (`mod/native/`)
 
