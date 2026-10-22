@@ -9,7 +9,11 @@ import { TokenForm } from "./TokenForm";
 
 export const metadata: Metadata = { title: "Account" };
 
-const dateFormat = new Intl.DateTimeFormat("en", { dateStyle: "medium" });
+// Rolling release that .github/workflows/mod-release.yml re-publishes on every push to main.
+const MOD_DOWNLOAD_URL =
+  "https://github.com/Struck713/stats-for-isaac/releases/download/mod-latest/statsforisaac.zip";
+
+const dateFormat =new Intl.DateTimeFormat("en", { dateStyle: "medium" });
 
 export default function AccountPage() {
   return (
@@ -55,8 +59,13 @@ async function Account() {
         <SectionTitle>Setting up the mod</SectionTitle>
         <ol className="list-decimal space-y-3 pl-6 text-lg">
           <li>
-            Put the mod&apos;s folder in the game&apos;s <code>mods</code> folder and name it{" "}
-            <code>statsforisaac</code>.
+            Download the latest version of the mod and extract it into the game&apos;s <code>mods</code>{" "}
+            folder. You should end up with a <code>statsforisaac</code> folder inside <code>mods</code>.
+            <div className="mt-2">
+              <a href={MOD_DOWNLOAD_URL} className="ink-button" download>
+                Download the mod
+              </a>
+            </div>
           </li>
           <li>
             In Steam, right-click the game, open <em>Properties</em>, and add <code>--luadebug</code> to the
