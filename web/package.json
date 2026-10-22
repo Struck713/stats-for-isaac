@@ -11,6 +11,7 @@
     "test": "vitest run",
     "db:generate": "drizzle-kit generate",
     "gen:names": "tsx scripts/gen-names.ts",
+    "gen:wiki": "tsx scripts/gen-wiki.ts",
     "dev:seed": "tsx scripts/dev-seed.ts"
   },
   "dependencies": {
