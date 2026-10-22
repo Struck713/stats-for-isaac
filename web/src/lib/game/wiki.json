@@ -1,0 +1,3634 @@
+{
+ "collectibles": {
+  "1": {
+   "page": "The Sad Onion",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Sad_Onion_icon.png?8c8748"
+  },
+  "2": {
+   "page": "The Inner Eye",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Inner_Eye_icon.png?cab9af"
+  },
+  "3": {
+   "page": "Spoon Bender",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spoon_Bender_icon.png?2ec767"
+  },
+  "4": {
+   "page": "Cricket's Head",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cricket%27s_Head_icon.png?8a8301"
+  },
+  "5": {
+   "page": "My Reflection",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_My_Reflection_icon.png?7c2455"
+  },
+  "6": {
+   "page": "Number One",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Number_One_icon.png?236366"
+  },
+  "7": {
+   "page": "Blood of the Martyr",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blood_of_the_Martyr_icon.png?962e42"
+  },
+  "8": {
+   "page": "Brother Bobby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Brother_Bobby_icon.png?a6c489"
+  },
+  "9": {
+   "page": "Skatole",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Skatole_icon.png?1dd4f3"
+  },
+  "10": {
+   "page": "Halo of Flies",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Halo_of_Flies_icon.png?3efe7f"
+  },
+  "11": {
+   "page": "1up!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_1up%21_icon.png?7f3c14"
+  },
+  "12": {
+   "page": "Magic Mushroom",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Magic_Mushroom_icon.png?e8b78a"
+  },
+  "13": {
+   "page": "The Virus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Virus_icon.png?785dc4"
+  },
+  "14": {
+   "page": "Roid Rage",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Roid_Rage_icon.png?9c3f4a"
+  },
+  "15": {
+   "page": "Less Than Three",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Less_Than_Three_icon.png?529d4e"
+  },
+  "16": {
+   "page": "Raw Liver",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Raw_Liver_icon.png?711453"
+  },
+  "17": {
+   "page": "Skeleton Key",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Skeleton_Key_icon.png?9ed07a"
+  },
+  "18": {
+   "page": "A Dollar",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_A_Dollar_icon.png?117fc5"
+  },
+  "19": {
+   "page": "Boom!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Boom%21_icon.png?4b4755"
+  },
+  "20": {
+   "page": "Transcendence",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Transcendence_icon.png?5ad625"
+  },
+  "21": {
+   "page": "The Compass",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Compass_icon.png?afc9ae"
+  },
+  "22": {
+   "page": "Lunch",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lunch_icon.png?2e3cb8"
+  },
+  "23": {
+   "page": "Dinner",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dinner_icon.png?54a8fd"
+  },
+  "24": {
+   "page": "Dessert",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dessert_icon.png?596295"
+  },
+  "25": {
+   "page": "Breakfast",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Breakfast_icon.png?739d13"
+  },
+  "26": {
+   "page": "Rotten Meat",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Rotten_Meat_icon.png?c78d8b"
+  },
+  "27": {
+   "page": "Wooden Spoon",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Wooden_Spoon_icon.png?3294af"
+  },
+  "28": {
+   "page": "The Belt",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Belt_icon.png?4ee552"
+  },
+  "29": {
+   "page": "Mom's Underwear",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Underwear_icon.png?2c0c38"
+  },
+  "30": {
+   "page": "Mom's Heels",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Heels_icon.png?5396bc"
+  },
+  "31": {
+   "page": "Mom's Lipstick",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Lipstick_icon.png?441d68"
+  },
+  "32": {
+   "page": "Wire Coat Hanger",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Wire_Coat_Hanger_icon.png?40e21d"
+  },
+  "33": {
+   "page": "The Bible",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Bible_icon.png?f9765a"
+  },
+  "34": {
+   "page": "The Book of Belial",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Book_of_Belial_icon.png?b81809"
+  },
+  "35": {
+   "page": "The Necronomicon",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Necronomicon_icon.png?d56c9b"
+  },
+  "36": {
+   "page": "The Poop",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Poop_icon.png?dc55dd"
+  },
+  "37": {
+   "page": "Mr. Boom",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mr._Boom_icon.png?98b0cd"
+  },
+  "38": {
+   "page": "Tammy's Head",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tammy%27s_Head_icon.png?1072dc"
+  },
+  "39": {
+   "page": "Mom's Bra",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Bra_icon.png?88a238"
+  },
+  "40": {
+   "page": "Kamikaze!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Kamikaze%21_icon.png?66d7ec"
+  },
+  "41": {
+   "page": "Mom's Pad",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Pad_icon.png?73b95c"
+  },
+  "42": {
+   "page": "Bob's Rotten Head",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bob%27s_Rotten_Head_icon.png?e99ba1"
+  },
+  "44": {
+   "page": "Teleport!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Teleport%21_icon.png?25bb8b"
+  },
+  "45": {
+   "page": "Yum Heart",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Yum_Heart_icon.png?454c54"
+  },
+  "46": {
+   "page": "Lucky Foot",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lucky_Foot_icon.png?6fdddd"
+  },
+  "47": {
+   "page": "Doctor's Remote",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Doctor%27s_Remote_icon.png?7eef1f"
+  },
+  "48": {
+   "page": "Cupid's Arrow",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cupid%27s_Arrow_icon.png?e8d835"
+  },
+  "49": {
+   "page": "Shoop da Whoop!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Shoop_da_Whoop%21_icon.png?925229"
+  },
+  "50": {
+   "page": "Steven (Item)",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Steven_icon.png?717e08"
+  },
+  "51": {
+   "page": "Pentagram",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pentagram_icon.png?361d97"
+  },
+  "52": {
+   "page": "Dr. Fetus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dr._Fetus_icon.png?59ffa2"
+  },
+  "53": {
+   "page": "Magneto",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Magneto_icon.png?3cb79c"
+  },
+  "54": {
+   "page": "Treasure Map",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Treasure_Map_icon.png?1f1f96"
+  },
+  "55": {
+   "page": "Mom's Eye",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Eye_icon.png?5f3651"
+  },
+  "56": {
+   "page": "Lemon Mishap",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lemon_Mishap_icon.png?10a846"
+  },
+  "57": {
+   "page": "Distant Admiration",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Distant_Admiration_icon.png?19074f"
+  },
+  "58": {
+   "page": "Book of Shadows",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Book_of_Shadows_icon.png?2b4d24"
+  },
+  "60": {
+   "page": "The Ladder",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Ladder_icon.png?6bdd4e"
+  },
+  "62": {
+   "page": "Charm of the Vampire",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Charm_of_the_Vampire_icon.png?e83b84"
+  },
+  "63": {
+   "page": "The Battery",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Battery_icon.png?8e7e55"
+  },
+  "64": {
+   "page": "Steam Sale",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Steam_Sale_icon.png?870b41"
+  },
+  "65": {
+   "page": "Anarchist Cookbook",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Anarchist_Cookbook_icon.png?55d150"
+  },
+  "66": {
+   "page": "The Hourglass",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Hourglass_icon.png?3e9401"
+  },
+  "67": {
+   "page": "Sister Maggy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sister_Maggy_icon.png?13f896"
+  },
+  "68": {
+   "page": "Technology",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Technology_icon.png?922467"
+  },
+  "69": {
+   "page": "Chocolate Milk",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Chocolate_Milk_icon.png?eb68c9"
+  },
+  "70": {
+   "page": "Growth Hormones",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Growth_Hormones_icon.png?184676"
+  },
+  "71": {
+   "page": "Mini Mush",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mini_Mush_icon.png?d8fb41"
+  },
+  "72": {
+   "page": "Rosary",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Rosary_icon.png?e0bb92"
+  },
+  "73": {
+   "page": "Cube of Meat",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cube_of_Meat_icon.png?e6b7ae"
+  },
+  "74": {
+   "page": "A Quarter",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_A_Quarter_icon.png?b64fa9"
+  },
+  "75": {
+   "page": "PHD",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_PHD_icon.png?722ea1"
+  },
+  "76": {
+   "page": "X-Ray Vision",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_X-Ray_Vision_icon.png?68b63d"
+  },
+  "77": {
+   "page": "My Little Unicorn",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_My_Little_Unicorn_icon.png?60f9a5"
+  },
+  "78": {
+   "page": "Book of Revelations",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Book_of_Revelations_icon.png?7f5758"
+  },
+  "79": {
+   "page": "The Mark",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Mark_icon.png?5eb6e4"
+  },
+  "80": {
+   "page": "The Pact",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Pact_icon.png?f5408a"
+  },
+  "81": {
+   "page": "Dead Cat",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dead_Cat_icon.png?b272a3"
+  },
+  "82": {
+   "page": "Lord of the Pit",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lord_of_the_Pit_icon.png?ed73ad"
+  },
+  "83": {
+   "page": "The Nail",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Nail_icon.png?c30aa8"
+  },
+  "84": {
+   "page": "We Need To Go Deeper!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_We_Need_To_Go_Deeper%21_icon.png?95df68"
+  },
+  "85": {
+   "page": "Deck of Cards",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Deck_of_Cards_icon.png?9f53cd"
+  },
+  "86": {
+   "page": "Monstro's Tooth",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Monstro%27s_Tooth_icon.png?cbb087"
+  },
+  "87": {
+   "page": "Loki's Horns",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Loki%27s_Horns_icon.png?d41cdb"
+  },
+  "88": {
+   "page": "Little Chubby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Little_Chubby_icon.png?ffb9c8"
+  },
+  "89": {
+   "page": "Spider Bite",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spider_Bite_icon.png?42f9c0"
+  },
+  "90": {
+   "page": "The Small Rock",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Small_Rock_icon.png?269162"
+  },
+  "91": {
+   "page": "Spelunker Hat",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spelunker_Hat_icon.png?3407d8"
+  },
+  "92": {
+   "page": "Super Bandage",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Super_Bandage_icon.png?ab7059"
+  },
+  "93": {
+   "page": "The Gamekid",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Gamekid_icon.png?b0f12d"
+  },
+  "94": {
+   "page": "Sack of Pennies",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sack_of_Pennies_icon.png?3a4f0c"
+  },
+  "95": {
+   "page": "Robo-Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Robo-Baby_icon.png?4b89ff"
+  },
+  "96": {
+   "page": "Little C.H.A.D.",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Little_C.H.A.D._icon.png?e645d4"
+  },
+  "97": {
+   "page": "The Book of Sin",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Book_of_Sin_icon.png?33ff91"
+  },
+  "98": {
+   "page": "The Relic",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Relic_icon.png?f428a6"
+  },
+  "99": {
+   "page": "Little Gish",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Little_Gish_icon.png?8bf6d1"
+  },
+  "100": {
+   "page": "Little Steven",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Little_Steven_icon.png?44ce4f"
+  },
+  "101": {
+   "page": "The Halo",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Halo_icon.png?3b1bbd"
+  },
+  "102": {
+   "page": "Mom's Bottle of Pills",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Bottle_of_Pills_icon.png?5de2bb"
+  },
+  "103": {
+   "page": "The Common Cold",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Common_Cold_icon.png?f8bd5f"
+  },
+  "104": {
+   "page": "The Parasite",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Parasite_icon.png?efabb1"
+  },
+  "105": {
+   "page": "The D6",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_D6_icon.png?d91969"
+  },
+  "106": {
+   "page": "Mr. Mega",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mr._Mega_icon.png?57c93e"
+  },
+  "107": {
+   "page": "The Pinking Shears",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Pinking_Shears_icon.png?89ff6d"
+  },
+  "108": {
+   "page": "The Wafer",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Wafer_icon.png?c718fd"
+  },
+  "109": {
+   "page": "Money = Power",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Money_%3D_Power_icon.png?404679"
+  },
+  "110": {
+   "page": "Mom's Contacts",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Contacts_icon.png?806fcd"
+  },
+  "111": {
+   "page": "The Bean",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Bean_icon.png?887e03"
+  },
+  "112": {
+   "page": "Guardian Angel",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Guardian_Angel_icon.png?1442bc"
+  },
+  "113": {
+   "page": "Demon Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Demon_Baby_icon.png?aef14c"
+  },
+  "114": {
+   "page": "Mom's Knife",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Knife_icon.png?dffc5f"
+  },
+  "115": {
+   "page": "Ouija Board",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ouija_Board_icon.png?c91600"
+  },
+  "116": {
+   "page": "9 Volt",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_9_Volt_icon.png?ef3454"
+  },
+  "117": {
+   "page": "Dead Bird",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dead_Bird_icon.png?bb37fc"
+  },
+  "118": {
+   "page": "Brimstone",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Brimstone_icon.png?205c38"
+  },
+  "119": {
+   "page": "Blood Bag",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blood_Bag_icon.png?d25bad"
+  },
+  "120": {
+   "page": "Odd Mushroom (Thin)",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Odd_Mushroom_%28Thin%29_icon.png?f622ac"
+  },
+  "121": {
+   "page": "Odd Mushroom (Large)",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Odd_Mushroom_%28Large%29_icon.png?9ac62a"
+  },
+  "122": {
+   "page": "Whore of Babylon",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Whore_of_Babylon_icon.png?ae87da"
+  },
+  "123": {
+   "page": "Monster Manual",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Monster_Manual_icon.png?1ff16f"
+  },
+  "124": {
+   "page": "Dead Sea Scrolls",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dead_Sea_Scrolls_icon.png?cdc39b"
+  },
+  "125": {
+   "page": "Bobby-Bomb",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bobby-Bomb_icon.png?f1c28a"
+  },
+  "126": {
+   "page": "Razor Blade",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Razor_Blade_icon.png?aa952f"
+  },
+  "127": {
+   "page": "Forget Me Now",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Forget_Me_Now_icon.png?1c9b8f"
+  },
+  "128": {
+   "page": "Forever alone",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Forever_alone_icon.png?923d98"
+  },
+  "129": {
+   "page": "Bucket of Lard",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bucket_of_Lard_icon.png?c7e7dc"
+  },
+  "130": {
+   "page": "A Pony",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_A_Pony_icon.png?d84207"
+  },
+  "131": {
+   "page": "Bomb Bag",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bomb_Bag_icon.png?daeb5d"
+  },
+  "132": {
+   "page": "A Lump of Coal",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_A_Lump_of_Coal_icon.png?13123d"
+  },
+  "133": {
+   "page": "Guppy's Paw",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Guppy%27s_Paw_icon.png?8e07fa"
+  },
+  "134": {
+   "page": "Guppy's Tail",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Guppy%27s_Tail_icon.png?5993ce"
+  },
+  "135": {
+   "page": "IV Bag",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_IV_Bag_icon.png?b59186"
+  },
+  "136": {
+   "page": "Best Friend",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Best_Friend_icon.png?7d6532"
+  },
+  "137": {
+   "page": "Remote Detonator",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Remote_Detonator_icon.png?59391d"
+  },
+  "138": {
+   "page": "Stigmata",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Stigmata_icon.png?2631d8"
+  },
+  "139": {
+   "page": "Mom's Purse",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Purse_icon.png?548928"
+  },
+  "140": {
+   "page": "Bob's Curse",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bob%27s_Curse_icon.png?19cc53"
+  },
+  "141": {
+   "page": "Pageant Boy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pageant_Boy_icon.png?a9a589"
+  },
+  "142": {
+   "page": "Scapular",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Scapular_icon.png?a2df52"
+  },
+  "143": {
+   "page": "Speed Ball",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Speed_Ball_icon.png?e1df28"
+  },
+  "144": {
+   "page": "Bum Friend",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bum_Friend_icon.png?3cc3d0"
+  },
+  "145": {
+   "page": "Guppy's Head",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Guppy%27s_Head_icon.png?f5958b"
+  },
+  "146": {
+   "page": "Prayer Card",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Prayer_Card_icon.png?3638fe"
+  },
+  "147": {
+   "page": "Notched Axe",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Notched_Axe_icon.png?8078cf"
+  },
+  "148": {
+   "page": "Infestation",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Infestation_icon.png?49ee08"
+  },
+  "149": {
+   "page": "Ipecac",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ipecac_icon.png?a48b39"
+  },
+  "150": {
+   "page": "Tough Love",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tough_Love_icon.png?e81ce5"
+  },
+  "151": {
+   "page": "The Mulligan",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Mulligan_icon.png?d2336a"
+  },
+  "152": {
+   "page": "Technology 2",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Technology_2_icon.png?1e7cef"
+  },
+  "153": {
+   "page": "Mutant Spider",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mutant_Spider_icon.png?325ddc"
+  },
+  "154": {
+   "page": "Chemical Peel",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Chemical_Peel_icon.png?9afa54"
+  },
+  "155": {
+   "page": "The Peeper",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Peeper_icon.png?de5bef"
+  },
+  "156": {
+   "page": "Habit",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Habit_icon.png?b29b82"
+  },
+  "157": {
+   "page": "Bloody Lust",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bloody_Lust_icon.png?5d69ca"
+  },
+  "158": {
+   "page": "Crystal Ball",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Crystal_Ball_icon.png?49eb27"
+  },
+  "159": {
+   "page": "Spirit of the Night",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spirit_of_the_Night_icon.png?5df616"
+  },
+  "160": {
+   "page": "Crack the Sky",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Crack_the_Sky_icon.png?7c7b03"
+  },
+  "161": {
+   "page": "Ankh",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ankh_icon.png?c166b1"
+  },
+  "162": {
+   "page": "Celtic Cross",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Celtic_Cross_icon.png?ba866e"
+  },
+  "163": {
+   "page": "Ghost Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ghost_Baby_icon.png?a9d55a"
+  },
+  "164": {
+   "page": "The Candle",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Candle_icon.png?a2f860"
+  },
+  "165": {
+   "page": "Cat-o-nine-tails",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cat-o-nine-tails_icon.png?5f670e"
+  },
+  "166": {
+   "page": "D20",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D20_icon.png?95c84e"
+  },
+  "167": {
+   "page": "Harlequin Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Harlequin_Baby_icon.png?1cf6ba"
+  },
+  "168": {
+   "page": "Epic Fetus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Epic_Fetus_icon.png?7af4b0"
+  },
+  "169": {
+   "page": "Polyphemus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Polyphemus_icon.png?5c04ff"
+  },
+  "170": {
+   "page": "Daddy Longlegs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Daddy_Longlegs_icon.png?bd0bc2"
+  },
+  "171": {
+   "page": "Spider Butt",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spider_Butt_icon.png?93d900"
+  },
+  "172": {
+   "page": "Sacrificial Dagger",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sacrificial_Dagger_icon.png?e4482c"
+  },
+  "173": {
+   "page": "Mitre",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mitre_icon.png?e97dae"
+  },
+  "174": {
+   "page": "Rainbow Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Rainbow_Baby_icon.png?a445f6"
+  },
+  "175": {
+   "page": "Dad's Key",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dad%27s_Key_icon.png?7b5272"
+  },
+  "176": {
+   "page": "Stem Cells",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Stem_Cells_icon.png?952cae"
+  },
+  "177": {
+   "page": "Portable Slot",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Portable_Slot_icon.png?f7a4ce"
+  },
+  "178": {
+   "page": "Holy Water",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Holy_Water_icon.png?f779cc"
+  },
+  "179": {
+   "page": "Fate",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Fate_icon.png?705636"
+  },
+  "180": {
+   "page": "The Black Bean",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Black_Bean_icon.png?9c95b5"
+  },
+  "181": {
+   "page": "White Pony",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_White_Pony_icon.png?51088d"
+  },
+  "182": {
+   "page": "Sacred Heart",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sacred_Heart_icon.png?44f140"
+  },
+  "183": {
+   "page": "Tooth Picks",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tooth_Picks_icon.png?260f0c"
+  },
+  "184": {
+   "page": "Holy Grail",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Holy_Grail_icon.png?3ad7ac"
+  },
+  "185": {
+   "page": "Dead Dove",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dead_Dove_icon.png?ebb7bf"
+  },
+  "186": {
+   "page": "Blood Rights",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blood_Rights_icon.png?8e8c1c"
+  },
+  "187": {
+   "page": "Guppy's Hairball",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Guppy%27s_Hairball_icon.png?c68c00"
+  },
+  "188": {
+   "page": "Abel",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Abel_icon.png?473d01"
+  },
+  "189": {
+   "page": "SMB Super Fan",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_SMB_Super_Fan_icon.png?ad7555"
+  },
+  "190": {
+   "page": "Pyro",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pyro_icon.png?6f76a5"
+  },
+  "191": {
+   "page": "3 Dollar Bill",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_3_Dollar_Bill_icon.png?fb2d2e"
+  },
+  "192": {
+   "page": "Telepathy For Dummies",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Telepathy_For_Dummies_icon.png?bc2bd9"
+  },
+  "193": {
+   "page": "MEAT!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_MEAT%21_icon.png?81c9a7"
+  },
+  "194": {
+   "page": "Magic 8 Ball",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Magic_8_Ball_icon.png?a1c76c"
+  },
+  "195": {
+   "page": "Mom's Coin Purse",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Coin_Purse_icon.png?5327ce"
+  },
+  "196": {
+   "page": "Squeezy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Squeezy_icon.png?1a804c"
+  },
+  "197": {
+   "page": "Jesus Juice",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Jesus_Juice_icon.png?b84121"
+  },
+  "198": {
+   "page": "Box",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Box_icon.png?6b2df1"
+  },
+  "199": {
+   "page": "Mom's Key",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Key_icon.png?acaffc"
+  },
+  "200": {
+   "page": "Mom's Eyeshadow",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Eyeshadow_icon.png?6f8f3f"
+  },
+  "201": {
+   "page": "Iron Bar",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Iron_Bar_icon.png?f53996"
+  },
+  "202": {
+   "page": "Midas' Touch",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Midas%27_Touch_icon.png?cd7baf"
+  },
+  "203": {
+   "page": "Humbleing Bundle",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Humbleing_Bundle_icon.png?45b5af"
+  },
+  "204": {
+   "page": "Fanny Pack",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Fanny_Pack_icon.png?2b84e4"
+  },
+  "205": {
+   "page": "Sharp Plug",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sharp_Plug_icon.png?386441"
+  },
+  "206": {
+   "page": "Guillotine",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Guillotine_icon.png?958e66"
+  },
+  "207": {
+   "page": "Ball of Bandages",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ball_of_Bandages_icon.png?323894"
+  },
+  "208": {
+   "page": "Champion Belt",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Champion_Belt_icon.png?16fa14"
+  },
+  "209": {
+   "page": "Butt Bombs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Butt_Bombs_icon.png?d4d150"
+  },
+  "210": {
+   "page": "Gnawed Leaf",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Gnawed_Leaf_icon.png?25e57f"
+  },
+  "211": {
+   "page": "Spiderbaby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spiderbaby_icon.png?c2f451"
+  },
+  "212": {
+   "page": "Guppy's Collar",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Guppy%27s_Collar_icon.png?fb4e60"
+  },
+  "213": {
+   "page": "Lost Contact",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lost_Contact_icon.png?ce2d2b"
+  },
+  "214": {
+   "page": "Anemic",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Anemic_icon.png?567173"
+  },
+  "215": {
+   "page": "Goat Head",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Goat_Head_icon.png?55311a"
+  },
+  "216": {
+   "page": "Ceremonial Robes",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ceremonial_Robes_icon.png?f05ac9"
+  },
+  "217": {
+   "page": "Mom's Wig",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Wig_icon.png?82e444"
+  },
+  "218": {
+   "page": "Placenta",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Placenta_icon.png?d86f75"
+  },
+  "219": {
+   "page": "Old Bandage",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Old_Bandage_icon.png?baca91"
+  },
+  "220": {
+   "page": "Sad Bombs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sad_Bombs_icon.png?271d7b"
+  },
+  "221": {
+   "page": "Rubber Cement",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Rubber_Cement_icon.png?10e246"
+  },
+  "222": {
+   "page": "Anti-Gravity",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Anti-Gravity_icon.png?495acf"
+  },
+  "223": {
+   "page": "Pyromaniac",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pyromaniac_icon.png?b343b1"
+  },
+  "224": {
+   "page": "Cricket's Body",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cricket%27s_Body_icon.png?5dfb0d"
+  },
+  "225": {
+   "page": "Gimpy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Gimpy_icon.png?a9c105"
+  },
+  "226": {
+   "page": "Black Lotus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Black_Lotus_icon.png?e90f0d"
+  },
+  "227": {
+   "page": "Piggy Bank",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Piggy_Bank_icon.png?6c8ad6"
+  },
+  "228": {
+   "page": "Mom's Perfume",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Perfume_icon.png?ac43af"
+  },
+  "229": {
+   "page": "Monstro's Lung",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Monstro%27s_Lung_icon.png?a46721"
+  },
+  "230": {
+   "page": "Abaddon",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Abaddon_icon.png?75eac8"
+  },
+  "231": {
+   "page": "Ball of Tar",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ball_of_Tar_icon.png?a9ba55"
+  },
+  "232": {
+   "page": "Stop Watch",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Stop_Watch_icon.png?38f8f7"
+  },
+  "233": {
+   "page": "Tiny Planet",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tiny_Planet_icon.png?9e0eb4"
+  },
+  "234": {
+   "page": "Infestation 2",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Infestation_2_icon.png?7ab085"
+  },
+  "236": {
+   "page": "E. Coli",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_E._Coli_icon.png?dac83c"
+  },
+  "237": {
+   "page": "Death's Touch",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Death%27s_Touch_icon.png?8ab6f7"
+  },
+  "238": {
+   "page": "Key Piece 1",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Key_Piece_1_icon.png?236bec"
+  },
+  "239": {
+   "page": "Key Piece 2",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Key_Piece_2_icon.png?8ed324"
+  },
+  "240": {
+   "page": "Experimental Treatment",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Experimental_Treatment_icon.png?98c08e"
+  },
+  "241": {
+   "page": "Contract From Below",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Contract_From_Below_icon.png?de8121"
+  },
+  "242": {
+   "page": "Infamy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Infamy_icon.png?d6b25a"
+  },
+  "243": {
+   "page": "Trinity Shield",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Trinity_Shield_icon.png?68b705"
+  },
+  "244": {
+   "page": "Tech.5",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tech.5_icon.png?4e91c7"
+  },
+  "245": {
+   "page": "20/20",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_20_20_icon.png?dc34be"
+  },
+  "246": {
+   "page": "Blue Map",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blue_Map_icon.png?6bb8fe"
+  },
+  "247": {
+   "page": "BFFS!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_BFFS%21_icon.png?870a7f"
+  },
+  "248": {
+   "page": "Hive Mind",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Hive_Mind_icon.png?7a84ab"
+  },
+  "249": {
+   "page": "There's Options",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_There%27s_Options_icon.png?6bc866"
+  },
+  "250": {
+   "page": "BOGO Bombs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_BOGO_Bombs_icon.png?4746a2"
+  },
+  "251": {
+   "page": "Starter Deck",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Starter_Deck_icon.png?4722f5"
+  },
+  "252": {
+   "page": "Little Baggy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Little_Baggy_icon.png?6f174a"
+  },
+  "253": {
+   "page": "Magic Scab",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Magic_Scab_icon.png?204125"
+  },
+  "254": {
+   "page": "Blood Clot",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blood_Clot_icon.png?ccb080"
+  },
+  "255": {
+   "page": "Screw",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Screw_icon.png?1e48db"
+  },
+  "256": {
+   "page": "Hot Bombs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Hot_Bombs_icon.png?9ca922"
+  },
+  "257": {
+   "page": "Fire Mind",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Fire_Mind_icon.png?717071"
+  },
+  "258": {
+   "page": "Missing No.",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Missing_No._icon.png?edc05c"
+  },
+  "259": {
+   "page": "Dark Matter",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dark_Matter_icon.png?162950"
+  },
+  "260": {
+   "page": "Black Candle",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Black_Candle_icon.png?826a99"
+  },
+  "261": {
+   "page": "Proptosis",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Proptosis_icon.png?62791d"
+  },
+  "262": {
+   "page": "Missing Page 2",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Missing_Page_2_icon.png?7e4cfa"
+  },
+  "263": {
+   "page": "Clear Rune",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Clear_Rune_icon.png?5dfdb1"
+  },
+  "264": {
+   "page": "Smart Fly",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Smart_Fly_icon.png?5a3766"
+  },
+  "265": {
+   "page": "Dry Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dry_Baby_icon.png?f40259"
+  },
+  "266": {
+   "page": "Juicy Sack",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Juicy_Sack_icon.png?373ba3"
+  },
+  "267": {
+   "page": "Robo-Baby 2.0",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Robo-Baby_2.0_icon.png?2bddda"
+  },
+  "268": {
+   "page": "Rotten Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Rotten_Baby_icon.png?ecc06e"
+  },
+  "269": {
+   "page": "Headless Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Headless_Baby_icon.png?8e5b90"
+  },
+  "270": {
+   "page": "Leech",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Leech_icon.png?682ee1"
+  },
+  "271": {
+   "page": "Mystery Sack",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mystery_Sack_icon.png?e0803d"
+  },
+  "272": {
+   "page": "BBF",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_BBF_icon.png?cd5ce3"
+  },
+  "273": {
+   "page": "Bob's Brain",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bob%27s_Brain_icon.png?fbb51c"
+  },
+  "274": {
+   "page": "Best Bud",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Best_Bud_icon.png?cfab80"
+  },
+  "275": {
+   "page": "Lil Brimstone",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Brimstone_icon.png?cd76e9"
+  },
+  "276": {
+   "page": "Isaac's Heart",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Isaac%27s_Heart_icon.png?83c017"
+  },
+  "277": {
+   "page": "Lil Haunt",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Haunt_icon.png?288125"
+  },
+  "278": {
+   "page": "Dark Bum",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dark_Bum_icon.png?dc408c"
+  },
+  "279": {
+   "page": "Big Fan",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Big_Fan_icon.png?57fc56"
+  },
+  "280": {
+   "page": "Sissy Longlegs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sissy_Longlegs_icon.png?852f17"
+  },
+  "281": {
+   "page": "Punching Bag",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Punching_Bag_icon.png?c9b9d3"
+  },
+  "282": {
+   "page": "How to Jump",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_How_to_Jump_icon.png?815fb5"
+  },
+  "283": {
+   "page": "D100",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D100_icon.png?aeebac"
+  },
+  "284": {
+   "page": "D4",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D4_icon.png?d78d10"
+  },
+  "285": {
+   "page": "D10",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D10_icon.png?baedd2"
+  },
+  "286": {
+   "page": "Blank Card",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blank_Card_icon.png?a1624b"
+  },
+  "287": {
+   "page": "Book of Secrets",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Book_of_Secrets_icon.png?e66000"
+  },
+  "288": {
+   "page": "Box of Spiders",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Box_of_Spiders_icon.png?832b1d"
+  },
+  "289": {
+   "page": "Red Candle",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Red_Candle_icon.png?1979fa"
+  },
+  "290": {
+   "page": "The Jar",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Jar_icon.png?93d6a5"
+  },
+  "291": {
+   "page": "Flush!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Flush%21_icon.png?788a3a"
+  },
+  "292": {
+   "page": "Satanic Bible",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Satanic_Bible_icon.png?982ba3"
+  },
+  "293": {
+   "page": "Head of Krampus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Head_of_Krampus_icon.png?1be1d4"
+  },
+  "294": {
+   "page": "Butter Bean",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Butter_Bean_icon.png?b3d1d9"
+  },
+  "295": {
+   "page": "Magic Fingers",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Magic_Fingers_icon.png?c2007a"
+  },
+  "296": {
+   "page": "Converter",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Converter_icon.png?f3befc"
+  },
+  "297": {
+   "page": "Pandora's Box",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pandora%27s_Box_icon.png?14d3c0"
+  },
+  "298": {
+   "page": "Unicorn Stump",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Unicorn_Stump_icon.png?6b553c"
+  },
+  "299": {
+   "page": "Taurus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Taurus_icon.png?ce322d"
+  },
+  "300": {
+   "page": "Aries",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Aries_icon.png?10c104"
+  },
+  "301": {
+   "page": "Cancer",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cancer_icon.png?7af729"
+  },
+  "302": {
+   "page": "Leo",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Leo_icon.png?a93745"
+  },
+  "303": {
+   "page": "Virgo",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Virgo_icon.png?f6cf40"
+  },
+  "304": {
+   "page": "Libra",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Libra_icon.png?ac48e7"
+  },
+  "305": {
+   "page": "Scorpio",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Scorpio_icon.png?89c728"
+  },
+  "306": {
+   "page": "Sagittarius",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sagittarius_icon.png?235d17"
+  },
+  "307": {
+   "page": "Capricorn",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Capricorn_icon.png?e17cb6"
+  },
+  "308": {
+   "page": "Aquarius",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Aquarius_icon.png?621df1"
+  },
+  "309": {
+   "page": "Pisces",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pisces_icon.png?9f0db0"
+  },
+  "310": {
+   "page": "Eve's Mascara",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eve%27s_Mascara_icon.png?2d89ba"
+  },
+  "311": {
+   "page": "Judas' Shadow",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Judas%27_Shadow_icon.png?f793ce"
+  },
+  "312": {
+   "page": "Maggy's Bow",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Maggy%27s_Bow_icon.png?d54114"
+  },
+  "313": {
+   "page": "Holy Mantle",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Holy_Mantle_icon.png?acf2de"
+  },
+  "314": {
+   "page": "Thunder Thighs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Thunder_Thighs_icon.png?35ac5f"
+  },
+  "315": {
+   "page": "Strange Attractor",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Strange_Attractor_icon.png?eae470"
+  },
+  "316": {
+   "page": "Cursed Eye",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cursed_Eye_icon.png?cc885a"
+  },
+  "317": {
+   "page": "Mysterious Liquid",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mysterious_Liquid_icon.png?5ab8d7"
+  },
+  "318": {
+   "page": "Gemini (Item)",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Gemini_icon.png?42437d"
+  },
+  "319": {
+   "page": "Cain's Other Eye",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cain%27s_Other_Eye_icon.png?91d030"
+  },
+  "320": {
+   "page": "???'s Only Friend",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blue_Baby%27s_Only_Friend_icon.png?aaa764"
+  },
+  "321": {
+   "page": "Samson's Chains",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Samson%27s_Chains_icon.png?efd198"
+  },
+  "322": {
+   "page": "Mongo Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mongo_Baby_icon.png?7cf6c2"
+  },
+  "323": {
+   "page": "Isaac's Tears",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Isaac%27s_Tears_icon.png?ba2304"
+  },
+  "324": {
+   "page": "Undefined",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Undefined_icon.png?98cb3d"
+  },
+  "325": {
+   "page": "Scissors",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Scissors_icon.png?fff7a5"
+  },
+  "326": {
+   "page": "Breath of Life",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Breath_of_Life_icon.png?68ff1d"
+  },
+  "327": {
+   "page": "The Polaroid",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Polaroid_icon.png?75486f"
+  },
+  "328": {
+   "page": "The Negative",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Negative_icon.png?d6421d"
+  },
+  "329": {
+   "page": "The Ludovico Technique",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Ludovico_Technique_icon.png?b7e5bd"
+  },
+  "330": {
+   "page": "Soy Milk",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Soy_Milk_icon.png?52b0a1"
+  },
+  "331": {
+   "page": "Godhead",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Godhead_icon.png?cb6c61"
+  },
+  "332": {
+   "page": "Lazarus' Rags",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lazarus%27_Rags_icon.png?f1044b"
+  },
+  "333": {
+   "page": "The Mind",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Mind_icon.png?5684b4"
+  },
+  "334": {
+   "page": "The Body",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Body_icon.png?fcca18"
+  },
+  "335": {
+   "page": "The Soul",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Soul_icon.png?623f0b"
+  },
+  "336": {
+   "page": "Dead Onion",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dead_Onion_icon.png?7c9293"
+  },
+  "337": {
+   "page": "Broken Watch",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Broken_Watch_icon.png?1454cd"
+  },
+  "338": {
+   "page": "The Boomerang",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Boomerang_icon.png?c5111a"
+  },
+  "339": {
+   "page": "Safety Pin",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Safety_Pin_icon.png?454c0d"
+  },
+  "340": {
+   "page": "Caffeine Pill",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Caffeine_Pill_icon.png?2fe88d"
+  },
+  "341": {
+   "page": "Torn Photo",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Torn_Photo_icon.png?a13544"
+  },
+  "342": {
+   "page": "Blue Cap",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blue_Cap_icon.png?15edc0"
+  },
+  "343": {
+   "page": "Latch Key",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Latch_Key_icon.png?a9b093"
+  },
+  "344": {
+   "page": "Match Book",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Match_Book_icon.png?c0e912"
+  },
+  "345": {
+   "page": "Synthoil",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Synthoil_icon.png?fe3b20"
+  },
+  "346": {
+   "page": "A Snack",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_A_Snack_icon.png?1b9bce"
+  },
+  "347": {
+   "page": "Diplopia",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Diplopia_icon.png?5077ad"
+  },
+  "348": {
+   "page": "Placebo",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Placebo_icon.png?efcc2b"
+  },
+  "349": {
+   "page": "Wooden Nickel",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Wooden_Nickel_icon.png?122bb2"
+  },
+  "350": {
+   "page": "Toxic Shock",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Toxic_Shock_icon.png?9225cf"
+  },
+  "351": {
+   "page": "Mega Bean",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mega_Bean_icon.png?885f8b"
+  },
+  "352": {
+   "page": "Glass Cannon",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Glass_Cannon_icon.png?e8c61b"
+  },
+  "353": {
+   "page": "Bomber Boy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bomber_Boy_icon.png?22df50"
+  },
+  "354": {
+   "page": "Crack Jacks",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Crack_Jacks_icon.png?d04fa4"
+  },
+  "355": {
+   "page": "Mom's Pearls",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Pearls_icon.png?cfbd72"
+  },
+  "356": {
+   "page": "Car Battery",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Car_Battery_icon.png?1b83a2"
+  },
+  "357": {
+   "page": "Box of Friends",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Box_of_Friends_icon.png?24dfe9"
+  },
+  "358": {
+   "page": "The Wiz",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Wiz_icon.png?9a1f59"
+  },
+  "359": {
+   "page": "8 Inch Nails",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_8_Inch_Nails_icon.png?6b2fc3"
+  },
+  "360": {
+   "page": "Incubus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Incubus_icon.png?b3a1ae"
+  },
+  "361": {
+   "page": "Fate's Reward",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Fate%27s_Reward_icon.png?e22539"
+  },
+  "362": {
+   "page": "Lil Chest",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Chest_icon.png?5648fd"
+  },
+  "363": {
+   "page": "Sworn Protector",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sworn_Protector_icon.png?dc5699"
+  },
+  "364": {
+   "page": "Friend Zone",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Friend_Zone_icon.png?74a0e3"
+  },
+  "365": {
+   "page": "Lost Fly",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lost_Fly_icon.png?37d14e"
+  },
+  "366": {
+   "page": "Scatter Bombs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Scatter_Bombs_icon.png?14c1c0"
+  },
+  "367": {
+   "page": "Sticky Bombs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sticky_Bombs_icon.png?de0d53"
+  },
+  "368": {
+   "page": "Epiphora",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Epiphora_icon.png?e153d7"
+  },
+  "369": {
+   "page": "Continuum",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Continuum_icon.png?e0b06a"
+  },
+  "370": {
+   "page": "Mr. Dolly",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mr._Dolly_icon.png?8db8bc"
+  },
+  "371": {
+   "page": "Curse of the Tower",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Curse_of_the_Tower_icon.png?9b69b5"
+  },
+  "372": {
+   "page": "Charged Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Charged_Baby_icon.png?33ab6f"
+  },
+  "373": {
+   "page": "Dead Eye",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dead_Eye_icon.png?5748aa"
+  },
+  "374": {
+   "page": "Holy Light",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Holy_Light_icon.png?d7966e"
+  },
+  "375": {
+   "page": "Host Hat",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Host_Hat_icon.png?10d225"
+  },
+  "376": {
+   "page": "Restock",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Restock_icon.png?cb7edc"
+  },
+  "377": {
+   "page": "Bursting Sack",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bursting_Sack_icon.png?9674d9"
+  },
+  "378": {
+   "page": "No. 2",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_No._2_icon.png?cff9a7"
+  },
+  "379": {
+   "page": "Pupula Duplex",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pupula_Duplex_icon.png?bcb2fd"
+  },
+  "380": {
+   "page": "Pay To Play",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pay_To_Play_icon.png?75bcc2"
+  },
+  "381": {
+   "page": "Eden's Blessing",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eden%27s_Blessing_icon.png?da7f47"
+  },
+  "382": {
+   "page": "Friendly Ball",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Friendly_Ball_icon.png?b33b60"
+  },
+  "383": {
+   "page": "Tear Detonator",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tear_Detonator_icon.png?c31a5a"
+  },
+  "384": {
+   "page": "Lil Gurdy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Gurdy_icon.png?dfa715"
+  },
+  "385": {
+   "page": "Bumbo",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bumbo_icon.png?ccac92"
+  },
+  "386": {
+   "page": "D12",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D12_icon.png?2c7b71"
+  },
+  "387": {
+   "page": "Censer",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Censer_icon.png?c82c77"
+  },
+  "388": {
+   "page": "Key Bum",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Key_Bum_icon.png?6d4d04"
+  },
+  "389": {
+   "page": "Rune Bag",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Rune_Bag_icon.png?481a2e"
+  },
+  "390": {
+   "page": "Seraphim",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Seraphim_icon.png?7d43ef"
+  },
+  "391": {
+   "page": "Betrayal",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Betrayal_icon.png?dca9bc"
+  },
+  "392": {
+   "page": "Zodiac",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Zodiac_icon.png?42c4f4"
+  },
+  "393": {
+   "page": "Serpent's Kiss",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Serpent%27s_Kiss_icon.png?ed2231"
+  },
+  "394": {
+   "page": "Marked",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Marked_icon.png?20c342"
+  },
+  "395": {
+   "page": "Tech X",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tech_X_icon.png?87f53e"
+  },
+  "396": {
+   "page": "Ventricle Razor",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ventricle_Razor_icon.png?866c25"
+  },
+  "397": {
+   "page": "Tractor Beam",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tractor_Beam_icon.png?1718a2"
+  },
+  "398": {
+   "page": "God's Flesh",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_God%27s_Flesh_icon.png?d304cb"
+  },
+  "399": {
+   "page": "Maw Of The Void",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Maw_Of_The_Void_icon.png?1bb067"
+  },
+  "400": {
+   "page": "Spear Of Destiny",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spear_Of_Destiny_icon.png?cf31a1"
+  },
+  "401": {
+   "page": "Explosivo",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Explosivo_icon.png?65b8f5"
+  },
+  "402": {
+   "page": "Chaos",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Chaos_icon.png?63904e"
+  },
+  "403": {
+   "page": "Spider Mod",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spider_Mod_icon.png?f4fabb"
+  },
+  "404": {
+   "page": "Farting Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Farting_Baby_icon.png?81e89d"
+  },
+  "405": {
+   "page": "GB Bug",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_GB_Bug_icon.png?4433aa"
+  },
+  "406": {
+   "page": "D8",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D8_icon.png?d5c924"
+  },
+  "407": {
+   "page": "Purity",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Purity_icon.png?19a347"
+  },
+  "408": {
+   "page": "Athame",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Athame_icon.png?34252b"
+  },
+  "409": {
+   "page": "Empty Vessel",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Empty_Vessel_icon.png?5394cb"
+  },
+  "410": {
+   "page": "Evil Eye",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Evil_Eye_icon.png?eb75cb"
+  },
+  "411": {
+   "page": "Lusty Blood",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lusty_Blood_icon.png?27d1d3"
+  },
+  "412": {
+   "page": "Cambion Conception",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cambion_Conception_icon.png?ccb90c"
+  },
+  "413": {
+   "page": "Immaculate Conception",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Immaculate_Conception_icon.png?496b6c"
+  },
+  "414": {
+   "page": "More Options",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_More_Options_icon.png?108593"
+  },
+  "415": {
+   "page": "Crown Of Light",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Crown_Of_Light_icon.png?d3e454"
+  },
+  "416": {
+   "page": "Deep Pockets",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Deep_Pockets_icon.png?edd66e"
+  },
+  "417": {
+   "page": "Succubus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Succubus_icon.png?f921b7"
+  },
+  "418": {
+   "page": "Fruit Cake",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Fruit_Cake_icon.png?c0703d"
+  },
+  "419": {
+   "page": "Teleport 2.0",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Teleport_2.0_icon.png?41dfeb"
+  },
+  "420": {
+   "page": "Black Powder",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Black_Powder_icon.png?6f6a75"
+  },
+  "421": {
+   "page": "Kidney Bean",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Kidney_Bean_icon.png?af687e"
+  },
+  "422": {
+   "page": "Glowing Hourglass",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Glowing_Hourglass_icon.png?2b9906"
+  },
+  "423": {
+   "page": "Circle of Protection",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Circle_of_Protection_icon.png?2225cb"
+  },
+  "424": {
+   "page": "Sack Head",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sack_Head_icon.png?f2f77a"
+  },
+  "425": {
+   "page": "Night Light",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Night_Light_icon.png?f92ec5"
+  },
+  "426": {
+   "page": "Obsessed Fan",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Obsessed_Fan_icon.png?9474d1"
+  },
+  "427": {
+   "page": "Mine Crafter",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mine_Crafter_icon.png?cd51f2"
+  },
+  "428": {
+   "page": "PJs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_PJs_icon.png?d4f595"
+  },
+  "429": {
+   "page": "Head of the Keeper",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Head_of_the_Keeper_icon.png?7d41e1"
+  },
+  "430": {
+   "page": "Papa Fly",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Papa_Fly_icon.png?8a798d"
+  },
+  "431": {
+   "page": "Multidimensional Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Multidimensional_Baby_icon.png?d5aedb"
+  },
+  "432": {
+   "page": "Glitter Bombs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Glitter_Bombs_icon.png?95076f"
+  },
+  "433": {
+   "page": "My Shadow",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_My_Shadow_icon.png?608a35"
+  },
+  "434": {
+   "page": "Jar of Flies",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Jar_of_Flies_icon.png?a4001d"
+  },
+  "435": {
+   "page": "Lil Loki",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Loki_icon.png?bf6ab3"
+  },
+  "436": {
+   "page": "Milk!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Milk%21_icon.png?553c18"
+  },
+  "437": {
+   "page": "D7",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D7_icon.png?676e1e"
+  },
+  "438": {
+   "page": "Binky",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Binky_icon.png?1f7357"
+  },
+  "439": {
+   "page": "Mom's Box",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Box_icon.png?390ed0"
+  },
+  "440": {
+   "page": "Kidney Stone",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Kidney_Stone_icon.png?1567d3"
+  },
+  "441": {
+   "page": "Mega Blast",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mega_Blast_icon.png?f78de8"
+  },
+  "442": {
+   "page": "Dark Prince's Crown",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dark_Prince%27s_Crown_icon.png?4a0bee"
+  },
+  "443": {
+   "page": "Apple!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Apple%21_icon.png?94e505"
+  },
+  "444": {
+   "page": "Lead Pencil",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lead_Pencil_icon.png?8a7b41"
+  },
+  "445": {
+   "page": "Dog Tooth",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dog_Tooth_icon.png?fdec6c"
+  },
+  "446": {
+   "page": "Dead Tooth",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dead_Tooth_icon.png?d3c03f"
+  },
+  "447": {
+   "page": "Linger Bean",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Linger_Bean_icon.png?b0b18f"
+  },
+  "448": {
+   "page": "Shard of Glass",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Shard_of_Glass_icon.png?3ee5b4"
+  },
+  "449": {
+   "page": "Metal Plate",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Metal_Plate_icon.png?1a0297"
+  },
+  "450": {
+   "page": "Eye of Greed",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eye_of_Greed_icon.png?44283a"
+  },
+  "451": {
+   "page": "Tarot Cloth",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tarot_Cloth_icon.png?4ece32"
+  },
+  "452": {
+   "page": "Varicose Veins",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Varicose_Veins_icon.png?69dead"
+  },
+  "453": {
+   "page": "Compound Fracture",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Compound_Fracture_icon.png?4a8218"
+  },
+  "454": {
+   "page": "Polydactyly",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Polydactyly_icon.png?5f8cd8"
+  },
+  "455": {
+   "page": "Dad's Lost Coin",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dad%27s_Lost_Coin_icon.png?db4a03"
+  },
+  "456": {
+   "page": "Midnight Snack",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Midnight_Snack_icon.png?9dde6c"
+  },
+  "457": {
+   "page": "Cone Head",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cone_Head_icon.png?e94f2e"
+  },
+  "458": {
+   "page": "Belly Button",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Belly_Button_icon.png?bc6f67"
+  },
+  "459": {
+   "page": "Sinus Infection",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sinus_Infection_icon.png?451e8a"
+  },
+  "460": {
+   "page": "Glaucoma",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Glaucoma_icon.png?59ee53"
+  },
+  "461": {
+   "page": "Parasitoid",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Parasitoid_icon.png?b1fd11"
+  },
+  "462": {
+   "page": "Eye of Belial",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eye_of_Belial_icon.png?698553"
+  },
+  "463": {
+   "page": "Sulfuric Acid",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sulfuric_Acid_icon.png?5aa5f4"
+  },
+  "464": {
+   "page": "Glyph of Balance",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Glyph_of_Balance_icon.png?125796"
+  },
+  "465": {
+   "page": "Analog Stick",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Analog_Stick_icon.png?bb9e93"
+  },
+  "466": {
+   "page": "Contagion",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Contagion_icon.png?76b6a0"
+  },
+  "467": {
+   "page": "Finger!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Finger%21_icon.png?f9e6c6"
+  },
+  "468": {
+   "page": "Shade",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Shade_icon.png?7dc1ee"
+  },
+  "469": {
+   "page": "Depression",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Depression_icon.png?dd74ba"
+  },
+  "470": {
+   "page": "Hushy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Hushy_icon.png?240688"
+  },
+  "471": {
+   "page": "Lil Monstro",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Monstro_icon.png?d24a10"
+  },
+  "472": {
+   "page": "King Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_King_Baby_icon.png?30545c"
+  },
+  "473": {
+   "page": "Big Chubby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Big_Chubby_icon.png?5fca98"
+  },
+  "474": {
+   "page": "Broken Glass Cannon",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Broken_Glass_Cannon_icon.png?26f437"
+  },
+  "475": {
+   "page": "Plan C",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Plan_C_icon.png?b4adfb"
+  },
+  "476": {
+   "page": "D1",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D1_icon.png?47a45b"
+  },
+  "477": {
+   "page": "Void",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Void_icon.png?a5275a"
+  },
+  "478": {
+   "page": "Pause",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pause_icon.png?84fd47"
+  },
+  "479": {
+   "page": "Smelter",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Smelter_icon.png?fe7bd7"
+  },
+  "480": {
+   "page": "Compost",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Compost_icon.png?fe701c"
+  },
+  "481": {
+   "page": "Dataminer",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dataminer_icon.png?5ff593"
+  },
+  "482": {
+   "page": "Clicker",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Clicker_icon.png?f54e4c"
+  },
+  "483": {
+   "page": "Mama Mega!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mama_Mega%21_icon.png?fecfa4"
+  },
+  "484": {
+   "page": "Wait What?",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Wait_What_icon.png?baee50"
+  },
+  "485": {
+   "page": "Crooked Penny",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Crooked_Penny_icon.png?1303de"
+  },
+  "486": {
+   "page": "Dull Razor",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dull_Razor_icon.png?b19196"
+  },
+  "487": {
+   "page": "Potato Peeler",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Potato_Peeler_icon.png?e63c82"
+  },
+  "488": {
+   "page": "Metronome",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Metronome_icon.png?f59fbf"
+  },
+  "489": {
+   "page": "D infinity",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_D_infinity_icon.png?469b78"
+  },
+  "490": {
+   "page": "Eden's Soul",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eden%27s_Soul_icon.png?c9aa3a"
+  },
+  "491": {
+   "page": "Acid Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Acid_Baby_icon.png?e7aa7a"
+  },
+  "492": {
+   "page": "YO LISTEN!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_YO_LISTEN%21_icon.png?45be64"
+  },
+  "493": {
+   "page": "Adrenaline",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Adrenaline_icon.png?e1680c"
+  },
+  "494": {
+   "page": "Jacob's Ladder",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Jacob%27s_Ladder_icon.png?457cf9"
+  },
+  "495": {
+   "page": "Ghost Pepper",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ghost_Pepper_icon.png?ff8567"
+  },
+  "496": {
+   "page": "Euthanasia",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Euthanasia_icon.png?73c40b"
+  },
+  "497": {
+   "page": "Camo Undies",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Camo_Undies_icon.png?305609"
+  },
+  "498": {
+   "page": "Duality",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Duality_icon.png?551404"
+  },
+  "499": {
+   "page": "Eucharist",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eucharist_icon.png?c420cd"
+  },
+  "500": {
+   "page": "Sack of Sacks",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sack_of_Sacks_icon.png?5148a5"
+  },
+  "501": {
+   "page": "Greed's Gullet",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Greed%27s_Gullet_icon.png?593746"
+  },
+  "502": {
+   "page": "Large Zit",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Large_Zit_icon.png?ef5355"
+  },
+  "503": {
+   "page": "Little Horn (Item)",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Little_Horn_icon.png?853fb8"
+  },
+  "504": {
+   "page": "Brown Nugget",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Brown_Nugget_icon.png?3372e4"
+  },
+  "505": {
+   "page": "Poke Go",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Poke_Go_icon.png?e4afc1"
+  },
+  "506": {
+   "page": "Backstabber",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Backstabber_icon.png?37ce9c"
+  },
+  "507": {
+   "page": "Sharp Straw",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sharp_Straw_icon.png?ca0601"
+  },
+  "508": {
+   "page": "Mom's Razor",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Razor_icon.png?f1d411"
+  },
+  "509": {
+   "page": "Bloodshot Eye",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bloodshot_Eye_icon.png?74702f"
+  },
+  "510": {
+   "page": "Delirious",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Delirious_icon.png?9f576a"
+  },
+  "511": {
+   "page": "Angry Fly",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Angry_Fly_icon.png?5acfac"
+  },
+  "512": {
+   "page": "Black Hole",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Black_Hole_icon.png?c56e87"
+  },
+  "513": {
+   "page": "Bozo",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bozo_icon.png?6bf85a"
+  },
+  "514": {
+   "page": "Broken Modem",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Broken_Modem_icon.png?8966ca"
+  },
+  "515": {
+   "page": "Mystery Gift",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mystery_Gift_icon.png?e5ec0b"
+  },
+  "516": {
+   "page": "Sprinkler",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sprinkler_icon.png?11ac65"
+  },
+  "517": {
+   "page": "Fast Bombs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Fast_Bombs_icon.png?803647"
+  },
+  "518": {
+   "page": "Buddy in a Box",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Buddy_in_a_Box_icon.png?ad3e07"
+  },
+  "519": {
+   "page": "Lil Delirium",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Delirium_icon.png?c8ef4e"
+  },
+  "520": {
+   "page": "Jumper Cables",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Jumper_Cables_icon.png?284649"
+  },
+  "521": {
+   "page": "Coupon",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Coupon_icon.png?868208"
+  },
+  "522": {
+   "page": "Telekinesis",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Telekinesis_icon.png?ac5161"
+  },
+  "523": {
+   "page": "Moving Box",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Moving_Box_icon.png?465ac2"
+  },
+  "524": {
+   "page": "Technology Zero",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Technology_Zero_icon.png?40b673"
+  },
+  "525": {
+   "page": "Leprosy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Leprosy_icon.png?ff291a"
+  },
+  "526": {
+   "page": "7 Seals",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_7_Seals_icon.png?c524d1"
+  },
+  "527": {
+   "page": "Mr. ME!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mr._ME%21_icon.png?65612e"
+  },
+  "528": {
+   "page": "Angelic Prism",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Angelic_Prism_icon.png?8c6319"
+  },
+  "529": {
+   "page": "Pop!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pop%21_icon.png?3d95f8"
+  },
+  "530": {
+   "page": "Death's List",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Death%27s_List_icon.png?449ac8"
+  },
+  "531": {
+   "page": "Haemolacria",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Haemolacria_icon.png?401958"
+  },
+  "532": {
+   "page": "Lachryphagy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lachryphagy_icon.png?fa9e90"
+  },
+  "533": {
+   "page": "Trisagion",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Trisagion_icon.png?fcf771"
+  },
+  "534": {
+   "page": "Schoolbag",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Schoolbag_icon.png?ca2bcc"
+  },
+  "535": {
+   "page": "Blanket",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blanket_icon.png?3827df"
+  },
+  "536": {
+   "page": "Sacrificial Altar",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sacrificial_Altar_icon.png?ce7cdb"
+  },
+  "537": {
+   "page": "Lil Spewer",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Spewer_icon.png?6ab996"
+  },
+  "538": {
+   "page": "Marbles",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Marbles_icon.png?943a93"
+  },
+  "539": {
+   "page": "Mystery Egg",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mystery_Egg_icon.png?68474a"
+  },
+  "540": {
+   "page": "Flat Stone",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Flat_Stone_icon.png?ca4dfd"
+  },
+  "541": {
+   "page": "Marrow",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Marrow_icon.png?89d56d"
+  },
+  "542": {
+   "page": "Slipped Rib",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Slipped_Rib_icon.png?bca17c"
+  },
+  "543": {
+   "page": "Hallowed Ground",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Hallowed_Ground_icon.png?731794"
+  },
+  "544": {
+   "page": "Pointy Rib",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pointy_Rib_icon.png?1d27d1"
+  },
+  "545": {
+   "page": "Book of the Dead",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Book_of_the_Dead_icon.png?d83418"
+  },
+  "546": {
+   "page": "Dad's Ring",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dad%27s_Ring_icon.png?6096ac"
+  },
+  "547": {
+   "page": "Divorce Papers",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Divorce_Papers_icon.png?251035"
+  },
+  "548": {
+   "page": "Jaw Bone",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Jaw_Bone_icon.png?9192ba"
+  },
+  "549": {
+   "page": "Brittle Bones",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Brittle_Bones_icon.png?896488"
+  },
+  "550": {
+   "page": "Broken Shovel",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Broken_Shovel_1_icon.png?d078bc"
+  },
+  "551": {
+   "page": "Broken Shovel",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Broken_Shovel_2_icon.png?94e08c"
+  },
+  "552": {
+   "page": "Mom's Shovel",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Shovel_icon.png?efe6ef"
+  },
+  "553": {
+   "page": "Mucormycosis",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mucormycosis_icon.png?714835"
+  },
+  "554": {
+   "page": "2Spooky",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_2Spooky_icon.png?40c86a"
+  },
+  "555": {
+   "page": "Golden Razor",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Golden_Razor_icon.png?b054a9"
+  },
+  "556": {
+   "page": "Sulfur",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sulfur_icon.png?b4b970"
+  },
+  "557": {
+   "page": "Fortune Cookie",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Fortune_Cookie_icon.png?14957e"
+  },
+  "558": {
+   "page": "Eye Sore",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eye_Sore_icon.png?e75a9c"
+  },
+  "559": {
+   "page": "120 Volt",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_120_Volt_icon.png?9a82ef"
+  },
+  "560": {
+   "page": "It Hurts",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_It_Hurts_icon.png?a47934"
+  },
+  "561": {
+   "page": "Almond Milk",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Almond_Milk_icon.png?da7ea0"
+  },
+  "562": {
+   "page": "Rock Bottom",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Rock_Bottom_icon.png?d684d3"
+  },
+  "563": {
+   "page": "Nancy Bombs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Nancy_Bombs_icon.png?89fb6c"
+  },
+  "564": {
+   "page": "A Bar of Soap",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_A_Bar_of_Soap_icon.png?928535"
+  },
+  "565": {
+   "page": "Blood Puppy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blood_Puppy_icon.png?2b26af"
+  },
+  "566": {
+   "page": "Dream Catcher",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dream_Catcher_icon.png?37efe2"
+  },
+  "567": {
+   "page": "Paschal Candle",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Paschal_Candle_icon.png?de55e2"
+  },
+  "568": {
+   "page": "Divine Intervention",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Divine_Intervention_icon.png?8f3fb1"
+  },
+  "569": {
+   "page": "Blood Oath",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blood_Oath_icon.png?6c53df"
+  },
+  "570": {
+   "page": "Playdough Cookie",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Playdough_Cookie_icon.png?9da8d0"
+  },
+  "571": {
+   "page": "Orphan Socks",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Orphan_Socks_icon.png?54bb4f"
+  },
+  "572": {
+   "page": "Eye of the Occult",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eye_of_the_Occult_icon.png?4adf3f"
+  },
+  "573": {
+   "page": "Immaculate Heart",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Immaculate_Heart_icon.png?e570cd"
+  },
+  "574": {
+   "page": "Monstrance",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Monstrance_icon.png?c22107"
+  },
+  "575": {
+   "page": "The Intruder",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Intruder_icon.png?ed96f2"
+  },
+  "576": {
+   "page": "Dirty Mind",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dirty_Mind_icon.png?d6867a"
+  },
+  "577": {
+   "page": "Damocles",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Damocles_icon.png?bd6ce7"
+  },
+  "578": {
+   "page": "Free Lemonade",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Free_Lemonade_icon.png?78456d"
+  },
+  "579": {
+   "page": "Spirit Sword",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spirit_Sword_icon.png?f16594"
+  },
+  "580": {
+   "page": "Red Key",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Red_Key_icon.png?e60eac"
+  },
+  "581": {
+   "page": "Psy Fly",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Psy_Fly_icon.png?2e4b40"
+  },
+  "582": {
+   "page": "Wavy Cap",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Wavy_Cap_icon.png?40cff9"
+  },
+  "583": {
+   "page": "Rocket in a Jar",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Rocket_in_a_Jar_icon.png?6af904"
+  },
+  "584": {
+   "page": "Book of Virtues",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Book_of_Virtues_icon.png?c8bfa5"
+  },
+  "585": {
+   "page": "Alabaster Box",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Alabaster_Box_icon.png?7e88e8"
+  },
+  "586": {
+   "page": "The Stairway",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Stairway_icon.png?f0a39f"
+  },
+  "588": {
+   "page": "Sol",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sol_icon.png?6c10a4"
+  },
+  "589": {
+   "page": "Luna",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Luna_icon.png?453361"
+  },
+  "590": {
+   "page": "Mercurius",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mercurius_icon.png?a44f84"
+  },
+  "591": {
+   "page": "Venus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Venus_icon.png?21cab8"
+  },
+  "592": {
+   "page": "Terra",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Terra_icon.png?d27b10"
+  },
+  "593": {
+   "page": "Mars",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mars_icon.png?868f8a"
+  },
+  "594": {
+   "page": "Jupiter",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Jupiter_icon.png?eed198"
+  },
+  "595": {
+   "page": "Saturnus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Saturnus_icon.png?f51ce9"
+  },
+  "596": {
+   "page": "Uranus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Uranus_icon.png?eb066a"
+  },
+  "597": {
+   "page": "Neptunus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Neptunus_icon.png?e15baa"
+  },
+  "598": {
+   "page": "Pluto",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Pluto_icon.png?c2309b"
+  },
+  "599": {
+   "page": "Voodoo Head",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Voodoo_Head_icon.png?32cb34"
+  },
+  "600": {
+   "page": "Eye Drops",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eye_Drops_icon.png?6a89d7"
+  },
+  "601": {
+   "page": "Act of Contrition",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Act_of_Contrition_icon.png?2907e4"
+  },
+  "602": {
+   "page": "Member Card",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Member_Card_icon.png?a5295d"
+  },
+  "603": {
+   "page": "Battery Pack",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Battery_Pack_icon.png?d11a1d"
+  },
+  "604": {
+   "page": "Mom's Bracelet",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Bracelet_icon.png?4f1b38"
+  },
+  "605": {
+   "page": "The Scooper",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Scooper_icon.png?4e32cb"
+  },
+  "606": {
+   "page": "Ocular Rift",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ocular_Rift_icon.png?e8b7ed"
+  },
+  "607": {
+   "page": "Boiled Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Boiled_Baby_icon.png?a607df"
+  },
+  "608": {
+   "page": "Freezer Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Freezer_Baby_icon.png?752e2f"
+  },
+  "609": {
+   "page": "Eternal D6",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eternal_D6_icon.png?f89499"
+  },
+  "610": {
+   "page": "Bird Cage",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bird_Cage_icon.png?521053"
+  },
+  "611": {
+   "page": "Larynx",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Larynx_icon.png?5fe6df"
+  },
+  "612": {
+   "page": "Lost Soul",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lost_Soul_icon.png?f7c9f6"
+  },
+  "614": {
+   "page": "Blood Bombs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Blood_Bombs_icon.png?5c35ee"
+  },
+  "615": {
+   "page": "Lil Dumpy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Dumpy_icon.png?288886"
+  },
+  "616": {
+   "page": "Bird's Eye",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bird%27s_Eye_icon.png?3fe88f"
+  },
+  "617": {
+   "page": "Lodestone",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lodestone_icon.png?4354be"
+  },
+  "618": {
+   "page": "Rotten Tomato",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Rotten_Tomato_icon.png?49b4d2"
+  },
+  "619": {
+   "page": "Birthright",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Birthright_icon.png?dbd31c"
+  },
+  "621": {
+   "page": "Red Stew",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Red_Stew_icon.png?ae63c4"
+  },
+  "622": {
+   "page": "Genesis",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Genesis_icon.png?b70bc9"
+  },
+  "623": {
+   "page": "Sharp Key",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sharp_Key_icon.png?765d08"
+  },
+  "624": {
+   "page": "Booster Pack (Item)",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Booster_Pack_icon.png?9c9742"
+  },
+  "625": {
+   "page": "Mega Mush",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mega_Mush_icon.png?eb1c89"
+  },
+  "626": {
+   "page": "Knife Piece 1",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Knife_Piece_1_icon.png?fbf97e"
+  },
+  "627": {
+   "page": "Knife Piece 2",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Knife_Piece_2_icon.png?d89a3d"
+  },
+  "628": {
+   "page": "Death Certificate",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Death_Certificate_icon.png?57f600"
+  },
+  "629": {
+   "page": "Bot Fly",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bot_Fly_icon.png?c27844"
+  },
+  "631": {
+   "page": "Meat Cleaver",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Meat_Cleaver_icon.png?3c9f88"
+  },
+  "632": {
+   "page": "Evil Charm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Evil_Charm_icon.png?4bbaa0"
+  },
+  "633": {
+   "page": "Dogma (Item)",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dogma_icon.png?2f30e9"
+  },
+  "634": {
+   "page": "Purgatory",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Purgatory_icon.png?8a23ff"
+  },
+  "635": {
+   "page": "Stitches",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Stitches_icon.png?d53a92"
+  },
+  "636": {
+   "page": "R Key",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_R_Key_icon.png?4e95dc"
+  },
+  "637": {
+   "page": "Knockout Drops",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Knockout_Drops_icon.png?3f250f"
+  },
+  "638": {
+   "page": "Eraser",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Eraser_icon.png?b11559"
+  },
+  "639": {
+   "page": "Yuck Heart",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Yuck_Heart_icon.png?150348"
+  },
+  "640": {
+   "page": "Urn of Souls",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Urn_of_Souls_icon.png?bf9885"
+  },
+  "641": {
+   "page": "Akeldama",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Akeldama_icon.png?1d685d"
+  },
+  "642": {
+   "page": "Magic Skin",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Magic_Skin_icon.png?860ddf"
+  },
+  "643": {
+   "page": "Revelation",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Revelation_icon.png?b1e304"
+  },
+  "644": {
+   "page": "Consolation Prize",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Consolation_Prize_icon.png?c01db6"
+  },
+  "645": {
+   "page": "Tinytoma",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tinytoma_icon.png?3f4139"
+  },
+  "646": {
+   "page": "Brimstone Bombs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Brimstone_Bombs_icon.png?7d6930"
+  },
+  "647": {
+   "page": "4.5 Volt",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_4.5_Volt_icon.png?696df2"
+  },
+  "649": {
+   "page": "Fruity Plum",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Fruity_Plum_icon.png?c578ce"
+  },
+  "650": {
+   "page": "Plum Flute",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Plum_Flute_icon.png?12c6ae"
+  },
+  "651": {
+   "page": "Star of Bethlehem",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Star_of_Bethlehem_icon.png?d3c4ff"
+  },
+  "652": {
+   "page": "Cube Baby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cube_Baby_icon.png?2d3f5c"
+  },
+  "653": {
+   "page": "Vade Retro",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Vade_Retro_icon.png?37b678"
+  },
+  "654": {
+   "page": "False PHD",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_False_PHD_icon.png?75dc99"
+  },
+  "655": {
+   "page": "Spin to Win",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spin_to_Win_icon.png?4e14ba"
+  },
+  "657": {
+   "page": "Vasculitis",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Vasculitis_icon.png?5d2c0c"
+  },
+  "658": {
+   "page": "Giant Cell",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Giant_Cell_icon.png?856395"
+  },
+  "659": {
+   "page": "Tropicamide",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tropicamide_icon.png?4d8c16"
+  },
+  "660": {
+   "page": "Card Reading",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Card_Reading_icon.png?15c677"
+  },
+  "661": {
+   "page": "Quints",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Quints_icon.png?4c6036"
+  },
+  "663": {
+   "page": "Tooth and Nail",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Tooth_and_Nail_icon.png?b63e0b"
+  },
+  "664": {
+   "page": "Binge Eater",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Binge_Eater_icon.png?171094"
+  },
+  "665": {
+   "page": "Guppy's Eye",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Guppy%27s_Eye_icon.png?89b4a9"
+  },
+  "667": {
+   "page": "Strawman",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Strawman_icon.png?8666a5"
+  },
+  "668": {
+   "page": "Dad's Note",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dad%27s_Note_icon.png?98d6e1"
+  },
+  "669": {
+   "page": "Sausage",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sausage_icon.png?381308"
+  },
+  "670": {
+   "page": "Options?",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Options%3F_icon.png?641b07"
+  },
+  "671": {
+   "page": "Candy Heart",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Candy_Heart_icon.png?bd6b7d"
+  },
+  "672": {
+   "page": "A Pound of Flesh",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_A_Pound_of_Flesh_icon.png?3a39c4"
+  },
+  "673": {
+   "page": "Redemption",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Redemption_icon.png?c4a688"
+  },
+  "674": {
+   "page": "Spirit Shackles",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spirit_Shackles_icon.png?667463"
+  },
+  "675": {
+   "page": "Cracked Orb",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Cracked_Orb_icon.png?84757a"
+  },
+  "676": {
+   "page": "Empty Heart",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Empty_Heart_icon.png?eab44e"
+  },
+  "677": {
+   "page": "Astral Projection",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Astral_Projection_icon.png?3b6aee"
+  },
+  "678": {
+   "page": "C Section",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_C_Section_icon.png?684859"
+  },
+  "679": {
+   "page": "Lil Abaddon",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Abaddon_icon.png?79f2d2"
+  },
+  "680": {
+   "page": "Montezuma's Revenge",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Montezuma%27s_Revenge_icon.png?b061f3"
+  },
+  "681": {
+   "page": "Lil Portal",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lil_Portal_icon.png?703e2f"
+  },
+  "682": {
+   "page": "Worm Friend",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Worm_Friend_icon.png?43918e"
+  },
+  "683": {
+   "page": "Bone Spurs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bone_Spurs_icon.png?96983a"
+  },
+  "684": {
+   "page": "Hungry Soul",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Hungry_Soul_icon.png?7d5903"
+  },
+  "685": {
+   "page": "Jar of Wisps",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Jar_of_Wisps_icon.png?98cc4c"
+  },
+  "686": {
+   "page": "Soul Locket",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Soul_Locket_icon.png?7d2d1e"
+  },
+  "687": {
+   "page": "Friend Finder",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Friend_Finder_icon.png?f46f13"
+  },
+  "688": {
+   "page": "Inner Child",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Inner_Child_icon.png?85dac1"
+  },
+  "689": {
+   "page": "Glitched Crown",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Glitched_Crown_icon.png?76b42a"
+  },
+  "690": {
+   "page": "Belly Jelly",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Belly_Jelly_icon.png?b8c497"
+  },
+  "691": {
+   "page": "Sacred Orb",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sacred_Orb_icon.png?3612bf"
+  },
+  "692": {
+   "page": "Sanguine Bond",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sanguine_Bond_icon.png?ad2df2"
+  },
+  "693": {
+   "page": "The Swarm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_The_Swarm_icon.png?576641"
+  },
+  "694": {
+   "page": "Heartbreak",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Heartbreak_icon.png?c48b02"
+  },
+  "695": {
+   "page": "Bloody Gust",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bloody_Gust_icon.png?2d2a9e"
+  },
+  "696": {
+   "page": "Salvation",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Salvation_icon.png?65975d"
+  },
+  "697": {
+   "page": "Vanishing Twin",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Vanishing_Twin_icon.png?304f53"
+  },
+  "698": {
+   "page": "Twisted Pair",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Twisted_Pair_icon.png?ff128b"
+  },
+  "699": {
+   "page": "Azazel's Rage",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Azazel%27s_Rage_icon.png?f26eda"
+  },
+  "700": {
+   "page": "Echo Chamber",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Echo_Chamber_icon.png?e028b2"
+  },
+  "701": {
+   "page": "Isaac's Tomb",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Isaac%27s_Tomb_icon.png?795f12"
+  },
+  "702": {
+   "page": "Vengeful Spirit",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Vengeful_Spirit_icon.png?df3e04"
+  },
+  "703": {
+   "page": "Esau Jr.",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Esau_Jr._icon.png?c10c0d"
+  },
+  "704": {
+   "page": "Berserk!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Berserk%21_icon.png?33a64f"
+  },
+  "705": {
+   "page": "Dark Arts",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Dark_Arts_icon.png?c346f3"
+  },
+  "706": {
+   "page": "Abyss",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Abyss_icon.png?c32320"
+  },
+  "707": {
+   "page": "Supper",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Supper_icon.png?22c840"
+  },
+  "708": {
+   "page": "Stapler",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Stapler_icon.png?df0788"
+  },
+  "709": {
+   "page": "Suplex!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Suplex%21_icon.png?3827bd"
+  },
+  "710": {
+   "page": "Bag of Crafting",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Bag_of_Crafting_icon.png?d0d5dd"
+  },
+  "711": {
+   "page": "Flip",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Flip_icon.png?84b146"
+  },
+  "712": {
+   "page": "Lemegeton",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Lemegeton_icon.png?8ff81e"
+  },
+  "713": {
+   "page": "Sumptorium",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Sumptorium_icon.png?821f97"
+  },
+  "714": {
+   "page": "Recall",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Recall_icon.png?728f19"
+  },
+  "715": {
+   "page": "Hold",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Hold_icon.png?fe737b"
+  },
+  "716": {
+   "page": "Keeper's Sack",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Keeper%27s_Sack_icon.png?a0f519"
+  },
+  "717": {
+   "page": "Keeper's Kin",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Keeper%27s_Kin_icon.png?62b42a"
+  },
+  "719": {
+   "page": "Keeper's Box",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Keeper%27s_Box_icon.png?b17f94"
+  },
+  "720": {
+   "page": "Everything Jar",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Everything_Jar_icon.png?48a0a0"
+  },
+  "721": {
+   "page": "TMTRAINER",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_TMTRAINER_icon.png?e502e0"
+  },
+  "722": {
+   "page": "Anima Sola",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Anima_Sola_icon.png?6eaf82"
+  },
+  "723": {
+   "page": "Spindown Dice",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Spindown_Dice_icon.png?e3a521"
+  },
+  "724": {
+   "page": "Hypercoagulation",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Hypercoagulation_icon.png?5063cb"
+  },
+  "725": {
+   "page": "IBS",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_IBS_icon.png?40bdb6"
+  },
+  "726": {
+   "page": "Hemoptysis",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Hemoptysis_icon.png?9ac0c3"
+  },
+  "727": {
+   "page": "Ghost Bombs",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Ghost_Bombs_icon.png?d06239"
+  },
+  "728": {
+   "page": "Gello",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Gello_icon.png?d7fd8b"
+  },
+  "729": {
+   "page": "Decap Attack",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Decap_Attack_icon.png?8e3a82"
+  },
+  "730": {
+   "page": "Glass Eye",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Glass_Eye_icon.png?43fca8"
+  },
+  "731": {
+   "page": "Stye",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Stye_icon.png?111cd3"
+  },
+  "732": {
+   "page": "Mom's Ring",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Collectible_Mom%27s_Ring_icon.png?fd9ea8"
+  }
+ },
+ "trinkets": {
+  "1": {
+   "page": "Swallowed Penny",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Swallowed_Penny_icon.png?255cec"
+  },
+  "2": {
+   "page": "Petrified Poop",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Petrified_Poop_icon.png?5494a4"
+  },
+  "3": {
+   "page": "AAA Battery",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_AAA_Battery_icon.png?f9ed72"
+  },
+  "4": {
+   "page": "Broken Remote",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Broken_Remote_icon.png?26eadc"
+  },
+  "5": {
+   "page": "Purple Heart",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Purple_Heart_icon.png?ae7eae"
+  },
+  "6": {
+   "page": "Broken Magnet",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Broken_Magnet_icon.png?653b9c"
+  },
+  "7": {
+   "page": "Rosary Bead",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Rosary_Bead_icon.png?3584b9"
+  },
+  "8": {
+   "page": "Cartridge",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Cartridge_icon.png?e3bb1a"
+  },
+  "9": {
+   "page": "Pulse Worm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Pulse_Worm_icon.png?2ca417"
+  },
+  "10": {
+   "page": "Wiggle Worm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Wiggle_Worm_icon.png?feccc7"
+  },
+  "11": {
+   "page": "Ring Worm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Ring_Worm_icon.png?4e1c12"
+  },
+  "12": {
+   "page": "Flat Worm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Flat_Worm_icon.png?c3e80a"
+  },
+  "13": {
+   "page": "Store Credit",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Store_Credit_icon.png?a8ab2a"
+  },
+  "14": {
+   "page": "Callus",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Callus_icon.png?32207b"
+  },
+  "15": {
+   "page": "Lucky Rock",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Lucky_Rock_icon.png?2e6720"
+  },
+  "16": {
+   "page": "Mom's Toenail",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Mom%27s_Toenail_icon.png?3eadd4"
+  },
+  "17": {
+   "page": "Black Lipstick",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Black_Lipstick_icon.png?6b7140"
+  },
+  "18": {
+   "page": "Bible Tract",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Bible_Tract_icon.png?a8d61c"
+  },
+  "19": {
+   "page": "Paper Clip",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Paper_Clip_icon.png?fabec3"
+  },
+  "20": {
+   "page": "Monkey Paw",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Monkey_Paw_icon.png?d387e3"
+  },
+  "21": {
+   "page": "Mysterious Paper",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Mysterious_Paper_icon.png?bf478b"
+  },
+  "22": {
+   "page": "Daemon's Tail",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Daemon%27s_Tail_icon.png?87c16b"
+  },
+  "23": {
+   "page": "Missing Poster",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Missing_Poster_icon.png?8dc5d5"
+  },
+  "24": {
+   "page": "Butt Penny",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Butt_Penny_icon.png?620af9"
+  },
+  "25": {
+   "page": "Mysterious Candy",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Mysterious_Candy_icon.png?9b5dc6"
+  },
+  "26": {
+   "page": "Hook Worm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Hook_Worm_icon.png?4167a4"
+  },
+  "27": {
+   "page": "Whip Worm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Whip_Worm_icon.png?5e30fd"
+  },
+  "28": {
+   "page": "Broken Ankh",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Broken_Ankh_icon.png?405fd6"
+  },
+  "29": {
+   "page": "Fish Head",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Fish_Head_icon.png?86c764"
+  },
+  "30": {
+   "page": "Pinky Eye",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Pinky_Eye_icon.png?5e3152"
+  },
+  "31": {
+   "page": "Push Pin",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Push_Pin_icon.png?f37a12"
+  },
+  "32": {
+   "page": "Liberty Cap",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Liberty_Cap_icon.png?c88829"
+  },
+  "33": {
+   "page": "Umbilical Cord",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Umbilical_Cord_icon.png?555a64"
+  },
+  "34": {
+   "page": "Child's Heart",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Child%27s_Heart_icon.png?46a22e"
+  },
+  "35": {
+   "page": "Curved Horn",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Curved_Horn_icon.png?bc1116"
+  },
+  "36": {
+   "page": "Rusted Key",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Rusted_Key_icon.png?8dcad1"
+  },
+  "37": {
+   "page": "Goat Hoof",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Goat_Hoof_icon.png?ac33b9"
+  },
+  "38": {
+   "page": "Mom's Pearl",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Mom%27s_Pearl_icon.png?aea5dd"
+  },
+  "39": {
+   "page": "Cancer (Trinket)",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Cancer_icon.png?1a384b"
+  },
+  "40": {
+   "page": "Red Patch",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Red_Patch_icon.png?f52f13"
+  },
+  "41": {
+   "page": "Match Stick",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Match_Stick_icon.png?993fed"
+  },
+  "42": {
+   "page": "Lucky Toe",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Lucky_Toe_icon.png?614a7b"
+  },
+  "43": {
+   "page": "Cursed Skull",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Cursed_Skull_icon.png?e9fb78"
+  },
+  "44": {
+   "page": "Safety Cap",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Safety_Cap_icon.png?c469e8"
+  },
+  "45": {
+   "page": "Ace of Spades",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Ace_of_Spades_icon.png?fba42a"
+  },
+  "46": {
+   "page": "Isaac's Fork",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Isaac%27s_Fork_icon.png?aaaffc"
+  },
+  "48": {
+   "page": "A Missing Page",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_A_Missing_Page_icon.png?ba6343"
+  },
+  "49": {
+   "page": "Bloody Penny",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Bloody_Penny_icon.png?adc9ee"
+  },
+  "50": {
+   "page": "Burnt Penny",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Burnt_Penny_icon.png?ccb17c"
+  },
+  "51": {
+   "page": "Flat Penny",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Flat_Penny_icon.png?e18875"
+  },
+  "52": {
+   "page": "Counterfeit Penny",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Counterfeit_Penny_icon.png?a2093f"
+  },
+  "53": {
+   "page": "Tick",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Tick_icon.png?3644d2"
+  },
+  "54": {
+   "page": "Isaac's Head",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Isaac%27s_Head_icon.png?86ff58"
+  },
+  "55": {
+   "page": "Maggy's Faith",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Maggy%27s_Faith_icon.png?834410"
+  },
+  "56": {
+   "page": "Judas' Tongue",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Judas%27_Tongue_icon.png?4b476d"
+  },
+  "57": {
+   "page": "???'s Soul",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Blue_Baby%27s_Soul_icon.png?106651"
+  },
+  "58": {
+   "page": "Samson's Lock",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Samson%27s_Lock_icon.png?81adaf"
+  },
+  "59": {
+   "page": "Cain's Eye",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Cain%27s_Eye_icon.png?248c4f"
+  },
+  "60": {
+   "page": "Eve's Bird Foot",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Eve%27s_Bird_Foot_icon.png?6cc270"
+  },
+  "61": {
+   "page": "The Left Hand",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_The_Left_Hand_icon.png?a6ed55"
+  },
+  "62": {
+   "page": "Shiny Rock",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Shiny_Rock_icon.png?65f3be"
+  },
+  "63": {
+   "page": "Safety Scissors",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Safety_Scissors_icon.png?58b56b"
+  },
+  "64": {
+   "page": "Rainbow Worm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Rainbow_Worm_icon.png?d744f6"
+  },
+  "65": {
+   "page": "Tape Worm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Tape_Worm_icon.png?6e9ec8"
+  },
+  "66": {
+   "page": "Lazy Worm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Lazy_Worm_icon.png?1f120e"
+  },
+  "67": {
+   "page": "Cracked Dice",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Cracked_Dice_icon.png?79f365"
+  },
+  "68": {
+   "page": "Super Magnet",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Super_Magnet_icon.png?3b2da0"
+  },
+  "69": {
+   "page": "Faded Polaroid",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Faded_Polaroid_icon.png?8f04ff"
+  },
+  "70": {
+   "page": "Louse",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Louse_icon.png?acc322"
+  },
+  "71": {
+   "page": "Bob's Bladder",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Bob%27s_Bladder_icon.png?30bd54"
+  },
+  "72": {
+   "page": "Watch Battery",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Watch_Battery_icon.png?a6dfe1"
+  },
+  "73": {
+   "page": "Blasting Cap",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Blasting_Cap_icon.png?fd42ae"
+  },
+  "74": {
+   "page": "Stud Finder",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Stud_Finder_icon.png?15c1e3"
+  },
+  "75": {
+   "page": "Error",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Error_icon.png?95e138"
+  },
+  "76": {
+   "page": "Poker Chip",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Poker_Chip_icon.png?724e5a"
+  },
+  "77": {
+   "page": "Blister",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Blister_icon.png?910d18"
+  },
+  "78": {
+   "page": "Second Hand",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Second_Hand_icon.png?6ad5d0"
+  },
+  "79": {
+   "page": "Endless Nameless",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Endless_Nameless_icon.png?7d1665"
+  },
+  "80": {
+   "page": "Black Feather",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Black_Feather_icon.png?fa4bce"
+  },
+  "81": {
+   "page": "Blind Rage",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Blind_Rage_icon.png?cad110"
+  },
+  "82": {
+   "page": "Golden Horse Shoe",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Golden_Horse_Shoe_icon.png?deeb05"
+  },
+  "83": {
+   "page": "Store Key",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Store_Key_icon.png?65379f"
+  },
+  "84": {
+   "page": "Rib of Greed",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Rib_of_Greed_icon.png?48e7ec"
+  },
+  "85": {
+   "page": "Karma",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Karma_icon.png?bbcec4"
+  },
+  "86": {
+   "page": "Lil Larva",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Lil_Larva_icon.png?598dd1"
+  },
+  "87": {
+   "page": "Mom's Locket",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Mom%27s_Locket_icon.png?e98887"
+  },
+  "88": {
+   "page": "NO!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_NO%21_icon.png?99426c"
+  },
+  "89": {
+   "page": "Child Leash",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Child_Leash_icon.png?7d32a3"
+  },
+  "90": {
+   "page": "Brown Cap",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Brown_Cap_icon.png?744324"
+  },
+  "91": {
+   "page": "Meconium",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Meconium_icon.png?d87774"
+  },
+  "92": {
+   "page": "Cracked Crown",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Cracked_Crown_icon.png?b0efc4"
+  },
+  "93": {
+   "page": "Used Diaper",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Used_Diaper_icon.png?72e07f"
+  },
+  "94": {
+   "page": "Fish Tail",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Fish_Tail_icon.png?c6f9d6"
+  },
+  "95": {
+   "page": "Black Tooth",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Black_Tooth_icon.png?564ad3"
+  },
+  "96": {
+   "page": "Ouroboros Worm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Ouroboros_Worm_icon.png?137874"
+  },
+  "97": {
+   "page": "Tonsil",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Tonsil_icon.png?dd965b"
+  },
+  "98": {
+   "page": "Nose Goblin",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Nose_Goblin_icon.png?85438f"
+  },
+  "99": {
+   "page": "Super Ball",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Super_Ball_icon.png?1b42ae"
+  },
+  "100": {
+   "page": "Vibrant Bulb",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Vibrant_Bulb_icon.png?a6769a"
+  },
+  "101": {
+   "page": "Dim Bulb",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Dim_Bulb_icon.png?a6a855"
+  },
+  "102": {
+   "page": "Fragmented Card",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Fragmented_Card_icon.png?c4cb05"
+  },
+  "103": {
+   "page": "Equality!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Equality%21_icon.png?fb00a2"
+  },
+  "104": {
+   "page": "Wish Bone",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Wish_Bone_icon.png?2f14e2"
+  },
+  "105": {
+   "page": "Bag Lunch",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Bag_Lunch_icon.png?24889f"
+  },
+  "106": {
+   "page": "Lost Cork",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Lost_Cork_icon.png?3404de"
+  },
+  "107": {
+   "page": "Crow Heart",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Crow_Heart_icon.png?f0cc96"
+  },
+  "108": {
+   "page": "Walnut",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Walnut_icon.png?3c05ea"
+  },
+  "109": {
+   "page": "Duct Tape",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Duct_Tape_icon.png?fab37a"
+  },
+  "110": {
+   "page": "Silver Dollar",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Silver_Dollar_icon.png?b33787"
+  },
+  "111": {
+   "page": "Bloody Crown",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Bloody_Crown_icon.png?374354"
+  },
+  "112": {
+   "page": "Pay to Win",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Pay_to_Win_icon.png?af4ff8"
+  },
+  "113": {
+   "page": "Locust of War",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Locust_of_War_icon.png?24add9"
+  },
+  "114": {
+   "page": "Locust of Pestilence",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Locust_of_Pestilence_icon.png?5615e4"
+  },
+  "115": {
+   "page": "Locust of Famine",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Locust_of_Famine_icon.png?b8a80a"
+  },
+  "116": {
+   "page": "Locust of Death",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Locust_of_Death_icon.png?c3fa55"
+  },
+  "117": {
+   "page": "Locust of Conquest",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Locust_of_Conquest_icon.png?69ba11"
+  },
+  "118": {
+   "page": "Bat Wing",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Bat_Wing_icon.png?15ddfd"
+  },
+  "119": {
+   "page": "Stem Cell",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Stem_Cell_icon.png?83024f"
+  },
+  "120": {
+   "page": "Hairpin",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Hairpin_icon.png?c2a66a"
+  },
+  "121": {
+   "page": "Wooden Cross",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Wooden_Cross_icon.png?d8ea59"
+  },
+  "122": {
+   "page": "Butter!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Butter%21_icon.png?f498ef"
+  },
+  "123": {
+   "page": "Filigree Feather",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Filigree_Feather_icon.png?a7d3db"
+  },
+  "124": {
+   "page": "Door Stop",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Door_Stop_icon.png?22d67d"
+  },
+  "125": {
+   "page": "Extension Cord",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Extension_Cord_icon.png?ae46a7"
+  },
+  "126": {
+   "page": "Rotten Penny",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Rotten_Penny_icon.png?3677af"
+  },
+  "127": {
+   "page": "Baby-Bender",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Baby-Bender_icon.png?76e1e5"
+  },
+  "128": {
+   "page": "Finger Bone",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Finger_Bone_icon.png?de0cf2"
+  },
+  "129": {
+   "page": "Jawbreaker",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Jawbreaker_icon.png?681932"
+  },
+  "130": {
+   "page": "Chewed Pen",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Chewed_Pen_icon.png?1a795e"
+  },
+  "131": {
+   "page": "Blessed Penny",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Blessed_Penny_icon.png?6f25e4"
+  },
+  "132": {
+   "page": "Broken Syringe",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Broken_Syringe_icon.png?9fd623"
+  },
+  "133": {
+   "page": "Short Fuse",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Short_Fuse_icon.png?91cf6a"
+  },
+  "134": {
+   "page": "Gigante Bean",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Gigante_Bean_icon.png?815ba8"
+  },
+  "135": {
+   "page": "A Lighter",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_A_Lighter_icon.png?5bce65"
+  },
+  "136": {
+   "page": "Broken Padlock",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Broken_Padlock_icon.png?5a12fd"
+  },
+  "137": {
+   "page": "Myosotis",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Myosotis_icon.png?d29309"
+  },
+  "138": {
+   "page": "'M",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_%27M_icon.png?22b1c2"
+  },
+  "139": {
+   "page": "Teardrop Charm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Teardrop_Charm_icon.png?933b86"
+  },
+  "140": {
+   "page": "Apple of Sodom",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Apple_of_Sodom_icon.png?9275f7"
+  },
+  "141": {
+   "page": "Forgotten Lullaby",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Forgotten_Lullaby_icon.png?365ea6"
+  },
+  "142": {
+   "page": "Beth's Faith",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Beth%27s_Faith_icon.png?7978a4"
+  },
+  "143": {
+   "page": "Old Capacitor",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Old_Capacitor_icon.png?d3e0ff"
+  },
+  "144": {
+   "page": "Brain Worm",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Brain_Worm_icon.png?b1350e"
+  },
+  "145": {
+   "page": "Perfection",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Perfection_icon.png?adb449"
+  },
+  "146": {
+   "page": "Devil's Crown",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Devil%27s_Crown_icon.png?ad40ba"
+  },
+  "147": {
+   "page": "Charged Penny",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Charged_Penny_icon.png?93bee5"
+  },
+  "148": {
+   "page": "Friendship Necklace",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Friendship_Necklace_icon.png?48e0eb"
+  },
+  "149": {
+   "page": "Panic Button",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Panic_Button_icon.png?6bb594"
+  },
+  "150": {
+   "page": "Blue Key",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Blue_Key_icon.png?b47d23"
+  },
+  "151": {
+   "page": "Flat File",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Flat_File_icon.png?61fccc"
+  },
+  "152": {
+   "page": "Telescope Lens",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Telescope_Lens_icon.png?2252e4"
+  },
+  "153": {
+   "page": "Mom's Lock",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Mom%27s_Lock_icon.png?e5e8df"
+  },
+  "154": {
+   "page": "Dice Bag",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Dice_Bag_icon.png?c25163"
+  },
+  "155": {
+   "page": "Holy Crown",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Holy_Crown_icon.png?9d2908"
+  },
+  "156": {
+   "page": "Mother's Kiss",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Mother%27s_Kiss_icon.png?8e5ac6"
+  },
+  "157": {
+   "page": "Torn Card",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Torn_Card_icon.png?ece538"
+  },
+  "158": {
+   "page": "Torn Pocket",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Torn_Pocket_icon.png?b5713b"
+  },
+  "159": {
+   "page": "Gilded Key",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Gilded_Key_icon.png?31a359"
+  },
+  "160": {
+   "page": "Lucky Sack",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Lucky_Sack_icon.png?404cea"
+  },
+  "161": {
+   "page": "Wicked Crown",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Wicked_Crown_icon.png?975579"
+  },
+  "162": {
+   "page": "Azazel's Stump",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Azazel%27s_Stump_icon.png?8bf3d0"
+  },
+  "163": {
+   "page": "Dingle Berry",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Dingle_Berry_icon.png?7ca554"
+  },
+  "164": {
+   "page": "Ring Cap",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Ring_Cap_icon.png?50681c"
+  },
+  "165": {
+   "page": "Nuh Uh!",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Nuh_Uh%21_icon.png?9407fc"
+  },
+  "166": {
+   "page": "Modeling Clay",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Modeling_Clay_icon.png?4de54c"
+  },
+  "167": {
+   "page": "Polished Bone",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Polished_Bone_icon.png?c245d5"
+  },
+  "168": {
+   "page": "Hollow Heart",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Hollow_Heart_icon.png?70ccdc"
+  },
+  "169": {
+   "page": "Kid's Drawing",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Kid%27s_Drawing_icon.png?41db0f"
+  },
+  "170": {
+   "page": "Crystal Key",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Crystal_Key_icon.png?4250d5"
+  },
+  "171": {
+   "page": "Keeper's Bargain",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Keeper%27s_Bargain_icon.png?bf3856"
+  },
+  "172": {
+   "page": "Cursed Penny",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Cursed_Penny_icon.png?81c5e2"
+  },
+  "173": {
+   "page": "Your Soul",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Your_Soul_icon.png?ad0595"
+  },
+  "174": {
+   "page": "Number Magnet",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Number_Magnet_icon.png?cdd2c2"
+  },
+  "175": {
+   "page": "Strange Key",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Strange_Key_icon.png?e5c1f0"
+  },
+  "176": {
+   "page": "Lil Clot",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Lil_Clot_icon.png?954a9f"
+  },
+  "177": {
+   "page": "Temporary Tattoo",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Temporary_Tattoo_icon.png?f28a08"
+  },
+  "178": {
+   "page": "Swallowed M80",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Swallowed_M80_icon.png?1d4478"
+  },
+  "179": {
+   "page": "RC Remote",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_RC_Remote_icon.png?bb3e5c"
+  },
+  "180": {
+   "page": "Found Soul",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Found_Soul_icon.png?57d1ef"
+  },
+  "181": {
+   "page": "Expansion Pack",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Expansion_Pack_icon.png?4900c1"
+  },
+  "182": {
+   "page": "Beth's Essence",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Beth%27s_Essence_icon.png?65c2f1"
+  },
+  "183": {
+   "page": "The Twins",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_The_Twins_icon.png?755a21"
+  },
+  "184": {
+   "page": "Adoption Papers",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Adoption_Papers_icon.png?f7727e"
+  },
+  "185": {
+   "page": "Cricket Leg",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Cricket_Leg_icon.png?221f98"
+  },
+  "186": {
+   "page": "Apollyon's Best Friend",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Apollyon%27s_Best_Friend_icon.png?d0d6d4"
+  },
+  "187": {
+   "page": "Broken Glasses",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Broken_Glasses_icon.png?efd025"
+  },
+  "188": {
+   "page": "Ice Cube",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Ice_Cube_icon.png?dd7b11"
+  },
+  "189": {
+   "page": "Sigil of Baphomet",
+   "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Sigil_of_Baphomet_icon.png?893db5"
+  }
+ }
+}

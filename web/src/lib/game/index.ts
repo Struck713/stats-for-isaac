@@ -1,6 +1,7 @@
 // Readable names and formatting for the numeric game values stored in runs.
 import type { Hit, Item, Use } from "@/lib/runSchema";
 import names from "./names.json";
+import wiki from "./wiki.json";
 
 type Table = Record<string, string>;
 const table = (t: Table, id: number) => t[String(id)];
@@ -25,6 +26,20 @@ export function itemName(item: Pick<Item, "kind" | "id" | "name">): string {
   if (known) return known;
   if (item.name) return prettyKey(item.name);
   return `${item.kind === "trinket" ? "Trinket" : "Item"} #${item.id}`;
+}
+
+const WIKI = "https://bindingofisaacrebirth.wiki.gg/wiki/";
+// Golden trinkets are their base id with this bit set.
+const GOLDEN_TRINKET = 1 << 15;
+
+// The wiki page and icon for a vanilla item; modded items (which carry a real name) have none.
+export function itemWiki(item: Pick<Item, "kind" | "id" | "name">): { url: string; image?: string } | undefined {
+  if (item.name && !item.name.startsWith("#")) return undefined;
+  const entries: Record<string, { page: string; image?: string }> =
+    item.kind === "trinket" ? wiki.trinkets : wiki.collectibles;
+  const entry = entries[String(item.kind === "trinket" ? item.id & ~GOLDEN_TRINKET : item.id)];
+  if (!entry) return undefined;
+  return { url: WIKI + encodeURIComponent(entry.page.replaceAll(" ", "_")), image: entry.image };
 }
 
 export function usedItemName(use: Use): string {

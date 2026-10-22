@@ -1,4 +1,4 @@
-import { itemName, tearsPerSecond } from "@/lib/game";
+import { itemName, itemWiki, tearsPerSecond } from "@/lib/game";
 import type { Item, PlayerSnapshot } from "@/lib/runSchema";
 import { BombIcon, CoinIcon, HeartIcon, KeyIcon, STAT_ICONS } from "./icons";
 
@@ -81,15 +81,28 @@ export function HudRow({ snapshot }: { snapshot: PlayerSnapshot }) {
 
 export function ItemChip({ item }: { item: Item }) {
   const trinket = item.kind === "trinket";
-  return (
-    <span
-      className="inline-flex items-center gap-1 rounded-md border-2 border-ink px-2 py-0.5 text-sm"
-      style={{ background: trinket ? "#d7cbe0" : "#f4ead2" }}
-      title={`${trinket ? "Trinket" : "Item"} #${item.id}${item.price ? ` (bought for ${item.price > 0 ? `${item.price}¢` : "a devil deal"})` : ""}`}
-    >
+  const wiki = itemWiki(item);
+  const props = {
+    className: "inline-flex items-center gap-1 rounded-md border-2 border-ink px-2 py-0.5 text-sm",
+    style: { background: trinket ? "#d7cbe0" : "#f4ead2" },
+    title: `${trinket ? "Trinket" : "Item"} #${item.id}${item.price ? ` (bought for ${item.price > 0 ? `${item.price}¢` : "a devil deal"})` : ""}`,
+  };
+  const content = (
+    <>
+      {wiki?.image && (
+        // Wiki icons are 32px pixel art; next/image would only re-encode them.
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={wiki.image} alt="" width={24} height={24} loading="lazy" className="-my-0.5 [image-rendering:pixelated]" />
+      )}
       {itemName(item)}
       {item.count && item.count > 1 ? <span className="text-ink-soft">×{item.count}</span> : null}
       {item.price ? <span className="text-ink-soft">{item.price > 0 ? "$" : "†"}</span> : null}
-    </span>
+    </>
+  );
+  if (!wiki) return <span {...props}>{content}</span>;
+  return (
+    <a {...props} href={wiki.url} target="_blank" rel="noopener noreferrer" className={`${props.className} hover:underline`}>
+      {content}
+    </a>
   );
 }
