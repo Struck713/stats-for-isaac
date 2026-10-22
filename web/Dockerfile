@@ -1,7 +1,7 @@
 FROM node:24-alpine AS deps
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm i
 
 # Full source + dev dependencies; the compose `migration` service runs from this stage.
 FROM deps AS migrate
