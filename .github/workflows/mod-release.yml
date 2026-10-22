@@ -1,0 +1,55 @@
+# Packages mod/ into statsforisaac.zip (one statsforisaac/ folder to drop into the game's mods
+# folder). Pushes to main publish it to the rolling `mod-latest` release, so the website can link
+# to a fixed URL:
+#   https://github.com/Struck713/stats-for-isaac/releases/download/mod-latest/statsforisaac.zip
+# Pull requests only build it and attach it to the workflow run.
+name: Mod release
+
+on:
+  push:
+    branches: [main]
+    paths: ["mod/**", ".github/workflows/mod-release.yml"]
+  pull_request:
+    paths: ["mod/**", ".github/workflows/mod-release.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mod-release-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Build tooling and dev docs stay out of the zip; everything else under mod/ ships.
+      - name: Build zip
+        run: |
+          git archive --format=zip --prefix=statsforisaac/ -o statsforisaac.zip HEAD:mod -- \
+            . ':!native' ':!SCHEMA.md' ':!.gitignore'
+          unzip -l statsforisaac.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: statsforisaac
+          path: statsforisaac.zip
+
+      - name: Publish to mod-latest release
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version=$(sed -n 's:.*<version>\(.*\)</version>.*:\1:p' mod/metadata.xml)
+          notes="Stats for Isaac v${version}, built from ${GITHUB_SHA::7}. Extract into the game's mods folder."
+          git tag -f mod-latest
+          git push -f origin mod-latest
+          if gh release view mod-latest >/dev/null 2>&1; then
+            gh release edit mod-latest --title "Mod v${version}" --notes "$notes" --latest
+          else
+            gh release create mod-latest --title "Mod v${version}" --notes "$notes" --latest
+          fi
+          gh release upload mod-latest statsforisaac.zip --clobber
