@@ -6,8 +6,7 @@ local State = require("statsforisaac.state")
 
 local Upload = {}
 
--- Change with `sfi url <url>` (e.g. http://localhost:3000 while developing the site).
-local DEFAULT_URL = "http://localhost:3000"
+local DEFAULT_URL = "https://isaac.nstruck.dev"
 local BATCH_SIZE = 25
 local EXIT_WAIT_SECONDS = 3
 
@@ -30,7 +29,10 @@ local function configPath()
   return modDir .. "/sfi-config.json"
 end
 
+-- Reads `sfi-config.json`, e.g. { "token": "sfi_xxxxxxxx", "url": "http://localhost:3000" }.
+-- `url` is optional and defaults to the live site.
 local function loadConfig()
+  config = {}
   local file = io.open(configPath(), "r")
   if not file then
     return
@@ -42,14 +44,8 @@ local function loadConfig()
   end
 end
 
-local function saveConfig()
-  local file, err = io.open(configPath(), "w")
-  if not file then
-    return false, err
-  end
-  file:write(json.encode(config))
-  file:close()
-  return true
+local function baseUrl()
+  return (config.url or DEFAULT_URL):gsub("/+$", "")
 end
 
 function Upload.init()
@@ -75,10 +71,6 @@ function Upload.init()
   Http.init(socket, ssl, lib .. "cacert.pem")
   loadConfig()
   Upload.available = true
-end
-
-local function baseUrl()
-  return (config.url or DEFAULT_URL):gsub("/+$", "")
 end
 
 -- Finished runs waiting to upload. They're only held in memory, so whatever is left when the game
@@ -221,15 +213,14 @@ local function maskToken(token)
   return token and (token:sub(1, 8) .. "...") or "not set"
 end
 
--- Console subcommands: "token <token>", "url <url>", "upload" and "status".
+-- Console subcommands: "upload" and "status".
 function Upload.command(params)
-  local sub, arg = params:match("^(%S+)%s*(.-)%s*$")
-  if sub == "status" then
+  if params == "status" then
     local lines = {
       "Uploads: " .. (Upload.available and "available" or ("disabled (" .. tostring(Upload.reason) .. ")")),
     }
     if Upload.available then
-      lines[#lines + 1] = "Mod folder: " .. modDir
+      lines[#lines + 1] = "Config: " .. configPath()
       lines[#lines + 1] = "URL: " .. baseUrl()
       lines[#lines + 1] = "Token: " .. maskToken(config.token)
       lines[#lines + 1] = "Runs waiting to upload: " .. (State.data and #Upload.pendingRuns() or "?")
@@ -239,34 +230,21 @@ function Upload.command(params)
     end
     return table.concat(lines, "\n")
   end
+  if params ~= "upload" then
+    return nil
+  end
   if not Upload.available then
     return "Stats for Isaac: uploads are disabled (" .. tostring(Upload.reason) .. ")"
   end
-  if sub == "token" then
-    if not arg:match("^sfi_%w+$") then
-      return "Usage: sfi token sfi_xxxxxxxx (copy it from your account page)"
-    end
-    config.token = arg
-  elseif sub == "url" then
-    if not arg:match("^https?://[%w%.%-]+:?%d*/?$") then
-      return "Usage: sfi url https://example.com"
-    end
-    config.url = arg
-  elseif sub == "upload" then
-    if not config.token then
-      return "Set a token first: sfi token <token>"
-    end
-    Upload.sync()
-    return #Upload.pendingRuns() > 0 and "Uploading..." or "Nothing to upload"
-  else
-    return nil
+  -- Re-read the config so edits to it apply without restarting the game.
+  if not req then
+    loadConfig()
   end
-  local ok, err = saveConfig()
-  if not ok then
-    return "Couldn't save " .. configPath() .. ": " .. tostring(err)
+  if not config.token then
+    return "Set \"token\" in " .. configPath() .. " first"
   end
   Upload.sync()
-  return "Saved. Runs waiting to upload: " .. (State.data and #Upload.pendingRuns() or 0)
+  return #Upload.pendingRuns() > 0 and "Uploading..." or "Nothing to upload"
 end
 
 return Upload

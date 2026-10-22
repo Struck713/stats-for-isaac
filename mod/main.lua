@@ -120,7 +120,7 @@ function mod:onRender()
   Upload.tick()
 end
 
--- Debug console: "sfi dump" prints the current floor's summary; "sfi token/url/upload/status"
+-- Debug console: "sfi dump" prints the current floor's summary; "sfi upload/status"
 -- manage uploads.
 function mod:onCommand(cmd, params)
   if cmd ~= "sfi" then
@@ -150,7 +150,7 @@ function mod:onCommand(cmd, params)
     end
     return table.concat(lines, "\n")
   end
-  return "Usage: sfi dump | sfi token <token> | sfi url <url> | sfi upload | sfi status"
+  return "Usage: sfi dump | sfi upload | sfi status"
 end
 
 mod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, mod.onGameStarted)

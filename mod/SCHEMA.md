@@ -135,7 +135,7 @@ Tears per second = `30 / (maxFireDelay + 1)`. `tearRange` is in world units; div
 
 ## Uploading
 
-With `--luadebug`, the mod POSTs finished runs to `<url>/api/runs` as `{ schemaVersion, runs: Run[] }` (batches of 25) with `Authorization: Bearer <token>`. It does this when a run ends, when a game starts (retrying anything still pending) and, for up to 3 seconds, when exiting to the menu. Runs are encoded one per frame before a batch is sent, so uploading never stalls the game for long. The token and URL are kept in `sfi-config.json` in the mod folder, set with the `sfi token` / `sfi url` console commands. `sfi status` shows what's pending.
+With `--luadebug`, the mod POSTs finished runs to `<url>/api/runs` as `{ schemaVersion, runs: Run[] }` (batches of 25) with `Authorization: Bearer <token>`. It does this when a run ends, when a game starts (retrying anything still pending) and, for up to 3 seconds, when exiting to the menu. Runs are encoded one per frame before a batch is sent, so uploading never stalls the game for long. The token and URL are read from `sfi-config.json` in the mod folder (`{ "token": "sfi_...", "url": "..." }`; `url` defaults to `https://isaac.nstruck.dev`) when the game starts and on `sfi upload`. `sfi status` shows what's pending.
 
 Finished runs wait in memory only. A run the site has answered for (accepted or rejected) is dropped, and anything still waiting when the game exits to the menu is lost. Without `--luadebug` or a token, runs are tracked but never kept. When a pre-v4 save file is loaded, its runs that weren't uploaded yet get one more try that session; the file is then rewritten without them.
 
