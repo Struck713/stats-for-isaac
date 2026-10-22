@@ -21,8 +21,7 @@ each run gets a shareable page.
 3. Sign in on the website, make a token on the Account page, and run `sfi token <token>` in the
    debug console. `sfi status` shows whether uploads are working.
 
-Other console commands: `sfi url <url>` (point at a dev server, e.g. `http://localhost:3000`),
-`sfi upload` (retry now) and `sfi dump` (current floor summary).
+Other console commands: `sfi upload` (retry now) and `sfi dump` (current floor summary).
 
 ### Native library (`mod/native/`)
 

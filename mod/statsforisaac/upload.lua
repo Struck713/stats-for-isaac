@@ -6,8 +6,7 @@ local State = require("statsforisaac.state")
 
 local Upload = {}
 
--- Change with `sfi url <url>` (e.g. http://localhost:3000 while developing the site).
-local DEFAULT_URL = "http://localhost:3000"
+local BASE_URL = "https://isaac.nstruck.dev"
 local BATCH_SIZE = 25
 local EXIT_WAIT_SECONDS = 3
 
@@ -39,6 +38,8 @@ local function loadConfig()
   file:close()
   if ok and type(decoded) == "table" then
     config = decoded
+    -- Older versions let the URL be changed; it's fixed now.
+    config.url = nil
   end
 end
 
@@ -75,10 +76,6 @@ function Upload.init()
   Http.init(socket, ssl, lib .. "cacert.pem")
   loadConfig()
   Upload.available = true
-end
-
-local function baseUrl()
-  return (config.url or DEFAULT_URL):gsub("/+$", "")
 end
 
 -- Finished runs waiting to upload. They're only held in memory, so whatever is left when the game
@@ -167,7 +164,7 @@ local function start()
   wanted = false
   req = Http.request({
     method = "POST",
-    url = baseUrl() .. "/api/runs",
+    url = BASE_URL .. "/api/runs",
     headers = {
       ["Authorization"] = "Bearer " .. config.token,
       ["Content-Type"] = "application/json",
@@ -221,7 +218,7 @@ local function maskToken(token)
   return token and (token:sub(1, 8) .. "...") or "not set"
 end
 
--- Console subcommands: "token <token>", "url <url>", "upload" and "status".
+-- Console subcommands: "token <token>", "upload" and "status".
 function Upload.command(params)
   local sub, arg = params:match("^(%S+)%s*(.-)%s*$")
   if sub == "status" then
@@ -230,7 +227,7 @@ function Upload.command(params)
     }
     if Upload.available then
       lines[#lines + 1] = "Mod folder: " .. modDir
-      lines[#lines + 1] = "URL: " .. baseUrl()
+      lines[#lines + 1] = "URL: " .. BASE_URL
       lines[#lines + 1] = "Token: " .. maskToken(config.token)
       lines[#lines + 1] = "Runs waiting to upload: " .. (State.data and #Upload.pendingRuns() or "?")
         .. " (lost if the game closes first)"
@@ -247,11 +244,6 @@ function Upload.command(params)
       return "Usage: sfi token sfi_xxxxxxxx (copy it from your account page)"
     end
     config.token = arg
-  elseif sub == "url" then
-    if not arg:match("^https?://[%w%.%-]+:?%d*/?$") then
-      return "Usage: sfi url https://example.com"
-    end
-    config.url = arg
   elseif sub == "upload" then
     if not config.token then
       return "Set a token first: sfi token <token>"
