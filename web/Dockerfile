@@ -17,7 +17,7 @@ WORKDIR /app
 ENV NODE_ENV=production NEXT_TELEMETRY_DISABLED=1 HOSTNAME=0.0.0.0 PORT=3000
 COPY --from=build --chown=node:node /app/.next/standalone ./
 COPY --from=build --chown=node:node /app/.next/static ./.next/static
-COPY --from=build --chown=node:node /app/public ./public
+# COPY --from=build --chown=node:node /app/public ./public
 # The app also applies migrations on first DB use, so it needs them at runtime.
 COPY --from=build --chown=node:node /app/drizzle ./drizzle
 USER node
