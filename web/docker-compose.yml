@@ -1,0 +1,59 @@
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}
+      - POSTGRES_DB=statsforisaac
+    volumes:
+      - db_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d statsforisaac"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - app_internal
+
+  migration:
+    build:
+      context: .
+      target: migrate
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - DATABASE_URL=postgres://postgres:${POSTGRES_PASSWORD:-postgres}@db:5432/statsforisaac
+    restart: on-failure
+    networks:
+      - app_internal
+
+  app:
+    build:
+      context: .
+      target: runner
+    restart: always
+    depends_on:
+      migration:
+        condition: service_completed_successfully
+    environment:
+      - DATABASE_URL=postgres://postgres:${POSTGRES_PASSWORD:-postgres}@db:5432/statsforisaac
+      - APP_URL=${APP_URL}
+      - STEAM_API_KEY=${STEAM_API_KEY}
+    expose:
+      - "3000"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:3000').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      start_period: 15s
+      retries: 5
+    networks:
+      - app_internal
+
+networks:
+  app_internal:
+
+volumes:
+  db_data:
