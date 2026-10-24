@@ -112,7 +112,7 @@ export function FloorCard({ floor, endedHere, tilt }: { floor: Floor; endedHere:
         </div>
 
         {enter && (
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 md:shrink-0">
             <StatTable enter={enter} exit={exit} />
             <HudRow snapshot={exit ?? enter} />
           </div>
