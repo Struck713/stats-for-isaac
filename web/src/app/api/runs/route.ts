@@ -5,7 +5,7 @@ import { type NextRequest, NextResponse } from "next/server";
 import { authenticateBearer } from "@/lib/auth/tokens";
 import { appUrl } from "@/lib/auth/steam";
 import { upsertRun } from "@/lib/data";
-import { parseRun, uploadSchema } from "@/lib/runSchema";
+import { parseRun, uploadSchema, wasPlayed } from "@/lib/runSchema";
 
 const MAX_BODY_BYTES = 20 * 1024 * 1024;
 
@@ -34,6 +34,10 @@ export async function POST(request: NextRequest) {
     const parsed = parseRun(input);
     if (!parsed.ok) {
       rejected.push({ uid: parsed.uid, error: parsed.error });
+      continue;
+    }
+    if (!wasPlayed(parsed.run)) {
+      rejected.push({ uid: parsed.run.uid, error: "not played: reset on the first floor" });
       continue;
     }
     const publicId = await upsertRun(userId, parsed.run, upload.data.schemaVersion);

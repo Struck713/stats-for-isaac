@@ -187,6 +187,8 @@ const roomVisit = z.looseObject({
 
 const floor = z.looseObject({
   index: z.number().int(),
+  stage: z.number().int().optional(),
+  absoluteStage: z.number().int().optional(),
   name: z.string(),
   enterFrame: z.number(),
   statsOnEnter: z.array(z.unknown()).default([]),
@@ -241,4 +243,14 @@ export function parseRun(input: unknown): ParsedRun {
   const run = { ...result.data } as unknown as Run;
   delete run.uploaded;
   return { ok: true, run };
+}
+
+// Holding R to scout a start (checking the first item room, then resetting) all happens on the
+// first floor, so an abandoned run only counts once it gets past that floor. Stages are compared
+// rather than floors counted, since a restart can tack the next game's first floor onto the run.
+export function wasPlayed(run: Run): boolean {
+  if (run.status !== "abandoned" || run.partial) return true;
+  const stageOf = (floor: Floor) => floor.absoluteStage ?? floor.stage;
+  const first = run.floors[0];
+  return !!first && run.floors.some((floor) => stageOf(floor) > stageOf(first));
 }
