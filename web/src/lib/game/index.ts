@@ -29,6 +29,7 @@ export function itemName(item: Pick<Item, "kind" | "id" | "name">): string {
 }
 
 const WIKI = "https://bindingofisaacrebirth.wiki.gg/wiki/";
+const wikiUrl = (page: string) => WIKI + encodeURIComponent(page.replaceAll(" ", "_"));
 // Golden trinkets are their base id with this bit set.
 const GOLDEN_TRINKET = 1 << 15;
 
@@ -39,7 +40,13 @@ export function itemWiki(item: Pick<Item, "kind" | "id" | "name">): { url: strin
     item.kind === "trinket" ? wiki.trinkets : wiki.collectibles;
   const entry = entries[String(item.kind === "trinket" ? item.id & ~GOLDEN_TRINKET : item.id)];
   if (!entry) return undefined;
-  return { url: WIKI + encodeURIComponent(entry.page.replaceAll(" ", "_")), image: entry.image };
+  return { url: wikiUrl(entry.page), image: entry.image };
+}
+
+// The wiki page and sprite for a vanilla character; modded characters have none.
+export function characterWiki(id: number): { url: string; image: { url: string; width: number; height: number } } | undefined {
+  const entry = (wiki.characters as Record<string, { page: string; image: { url: string; width: number; height: number } }>)[String(id)];
+  return entry && { url: wikiUrl(entry.page), image: entry.image };
 }
 
 export type SpriteName = keyof typeof wiki.sprites;

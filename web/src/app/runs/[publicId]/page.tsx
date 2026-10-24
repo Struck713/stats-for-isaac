@@ -11,7 +11,7 @@ import { HeartAmount } from "@/components/isaac/Sprite";
 import { ItemChip } from "@/components/isaac/Stats";
 import { ClockIcon } from "@/components/isaac/icons";
 import { getRun } from "@/lib/data";
-import { challengeName, characterName, difficultyName, formatFrames } from "@/lib/game";
+import { challengeName, characterName, characterWiki, difficultyName, formatFrames } from "@/lib/game";
 import type { Item, Run } from "@/lib/runSchema";
 
 const RESULT_TEXT = { won: "won", died: "died", abandoned: "abandoned" } as const;
@@ -64,6 +64,7 @@ async function RunDetails({ params }: PageProps<"/runs/[publicId]">) {
   const { run: meta, owner } = row;
   const run = meta.data;
   const challenge = challengeName(run.challenge);
+  const character = characterWiki(run.character);
   const collected: Item[] = [...run.startingItems, ...run.floors.flatMap((f) => f.rooms.flatMap((r) => r.items))];
   const t = totals(run);
 
@@ -72,7 +73,26 @@ async function RunDetails({ params }: PageProps<"/runs/[publicId]">) {
       <Paper tilt={-0.4}>
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
-            <h1 className="text-5xl">{characterName(run.character, run.characterName)}</h1>
+            <h1 className="flex items-end gap-3 text-5xl">
+              {character && (
+                // Wiki sprites are tiny pixel art; next/image would only re-encode them.
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={character.image.url}
+                  alt=""
+                  width={character.image.width * 2}
+                  height={character.image.height * 2}
+                  className="[image-rendering:pixelated]"
+                />
+              )}
+              {character ? (
+                <a href={character.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  {characterName(run.character, run.characterName)}
+                </a>
+              ) : (
+                characterName(run.character, run.characterName)
+              )}
+            </h1>
             <p className="mt-1 text-lg">
               <Link href={`/u/${owner.steamId}`} className="underline">
                 {owner.personaName}

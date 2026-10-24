@@ -1,9 +1,10 @@
-// Generates src/lib/game/wiki.json (wiki page and icon for each collectible and trinket id, plus the
-// HUD and minimap sprites in SPRITES) from the official Binding of Isaac: Rebirth wiki. The output is committed, so this only
+// Generates src/lib/game/wiki.json (wiki page and icon for each collectible and trinket id, wiki page
+// and sprite for each character, plus the HUD and minimap sprites in SPRITES) from the official Binding of Isaac: Rebirth wiki. The output is committed, so this only
 // needs re-running when the wiki adds items.
 //   npm run gen:wiki
 import { writeFileSync } from "node:fs";
 import path from "node:path";
+import names from "../src/lib/game/names.json";
 
 const api = "https://bindingofisaacrebirth.wiki.gg/api.php";
 const out = path.resolve(__dirname, "../src/lib/game/wiki.json");
@@ -76,6 +77,30 @@ async function table(kind: "collectible" | "trinket"): Promise<Record<number, En
   return Object.fromEntries(Object.entries(result).sort(([a], [b]) => Number(a) - Number(b)));
 }
 
+// Our character names (from PlayerType) that the wiki's player table spells differently.
+const CHARACTER_ALIASES: Record<string, string> = { "Dark Judas": "Black Judas" };
+
+// The wiki's player ids are unreliable, so characters are matched to it by name instead.
+async function characters(): Promise<Record<number, { page: string; image: FileInfo }>> {
+  const pages = new Map((await cargo("player", "_pageName=page,alias")).map((r) => [r.alias, r.page]));
+  const best = new Map<string, Row>();
+  for (const img of await cargo("player_image", "player=alias,file,dlc")) {
+    const cur = best.get(img.alias);
+    if (!cur || Number(img.dlc) > Number(cur.dlc)) best.set(img.alias, img);
+  }
+  const info = await fileInfo([...new Set([...best.values()].map((r) => r.file))]);
+  const result: Record<number, { page: string; image: FileInfo }> = {};
+  for (const [id, name] of Object.entries(names.characters)) {
+    if (Number(id) < 0) continue;
+    const alias = CHARACTER_ALIASES[name] ?? name;
+    const page = pages.get(alias);
+    const image = info.get(best.get(alias)?.file ?? "");
+    if (!page || !image) throw new Error(`Character ${id} (${name}): no wiki page or sprite for "${alias}"`);
+    result[Number(id)] = { page, image };
+  }
+  return result;
+}
+
 // HUD and minimap art used around the site. Minimap icons are keyed by RoomType.
 const SPRITES: Record<string, string> = {
   heartRedFull: "HUD heart red full.png",
@@ -125,12 +150,13 @@ async function sprites(): Promise<Record<string, FileInfo>> {
 }
 
 async function main() {
-  const wiki = { collectibles: await table("collectible"), trinkets: await table("trinket"), sprites: await sprites() };
+  const wiki = { collectibles: await table("collectible"), trinkets: await table("trinket"), characters: await characters(), sprites: await sprites() };
   writeFileSync(out, JSON.stringify(wiki, null, 1) + "\n");
   for (const [k, v] of Object.entries({ collectibles: wiki.collectibles, trinkets: wiki.trinkets })) {
     const entries = Object.values(v);
     console.log(`${k}: ${entries.length} (${entries.filter((e) => !e.image).length} without an icon)`);
   }
+  console.log(`characters: ${Object.keys(wiki.characters).length}`);
   console.log(`Wrote ${out}`);
 }
 
