@@ -1,33 +1,11 @@
 // The floor's layout drawn like the in-game minimap: explored rooms inked in, rooms the player
 // never entered left as faint outlines, and icons for special rooms.
-import { ROOM_SHAPE_CELLS, roomTypeName } from "@/lib/game";
+import { ROOM_SHAPE_CELLS, isSpriteName, roomTypeName } from "@/lib/game";
 import type { MapRoom } from "@/lib/runSchema";
+import { Sprite } from "./Sprite";
 
 const GRID_WIDTH = 13;
 const CELL = 24;
-
-// Glyphs for special RoomTypes (see the RoomType enum).
-const ROOM_GLYPHS: Record<number, string> = {
-  2: "$", // shop
-  4: "♛", // treasure
-  5: "☠", // boss
-  6: "!", // miniboss
-  7: "?", // secret
-  8: "?", // super secret
-  9: "♣", // arcade
-  10: "✝", // curse
-  11: "⚔", // challenge
-  12: "✎", // library
-  13: "♥", // sacrifice
-  14: "⛧", // devil
-  15: "✦", // angel
-  18: "✚", // isaacs
-  19: "♨", // barren
-  20: "⚿", // chest
-  21: "☾", // dice
-  24: "★", // planetarium
-  29: "☠", // ultra secret
-};
 
 interface Cell {
   x: number;
@@ -68,12 +46,13 @@ export function Minimap({ map }: { map: MapRoom[] }) {
         const border = visited ? "3px solid var(--ink)" : "2px dashed rgb(42 28 19 / 0.35)";
         // Icons go in the cell the game treats as the room's main position.
         const isMainCell = c.y * GRID_WIDTH + c.x === c.room.safeGridIndex;
-        const glyph = c.room.type !== undefined ? ROOM_GLYPHS[c.room.type] : undefined;
+        // Special rooms have a sprite named after their RoomType (see gen-wiki.ts).
+        const icon = `room${c.room.type}`;
         return (
           <div
             key={c.key}
             title={`${roomTypeName(c.room.typeName)}${visited ? "" : " (not entered)"}`}
-            className="absolute flex items-center justify-center text-sm leading-none"
+            className="absolute flex items-center justify-center"
             style={{
               left: (c.x - minX) * CELL,
               top: (c.y - minY) * CELL,
@@ -84,11 +63,10 @@ export function Minimap({ map }: { map: MapRoom[] }) {
               borderBottom: sameRoom(c, 0, 1) ? "none" : border,
               borderLeft: sameRoom(c, -1, 0) ? "none" : border,
               borderRight: sameRoom(c, 1, 0) ? "none" : border,
-              color: c.room.type === 5 || c.room.type === 14 ? "var(--blood)" : "var(--ink)",
               opacity: visited ? 1 : 0.7,
             }}
           >
-            {isMainCell && glyph}
+            {isMainCell && isSpriteName(icon) && <Sprite name={icon} />}
           </div>
         );
       })}

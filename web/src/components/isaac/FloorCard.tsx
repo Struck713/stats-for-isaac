@@ -1,7 +1,9 @@
+import { Fragment } from "react";
 import { formatFrames, hitSourceName, roomTypeName, usedItemName } from "@/lib/game";
 import type { Floor } from "@/lib/runSchema";
 import { Minimap } from "./Minimap";
 import { Paper } from "./Paper";
+import { HeartAmount } from "./Sprite";
 import { HudRow, ItemChip, StatTable } from "./Stats";
 
 // "PICKUP_LIL_BATTERY" -> "Lil Battery"
@@ -55,7 +57,7 @@ export function FloorCard({ floor, endedHere, tilt }: { floor: Floor; endedHere:
           <dl className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {s && <Fact label="Explored">{s.roomsExplored}/{s.roomsInLayout} rooms</Fact>}
             {s && <Fact label="Kills">{s.kills}</Fact>}
-            {s && <Fact label="Hits taken">{s.hits} ({s.damageTaken / 2} ♥)</Fact>}
+            {s && <Fact label="Hits taken">{s.hits} (<HeartAmount halves={s.damageTaken} />)</Fact>}
             {coins && <Fact label="Coins">+{coins.gained} / −{coins.spent}</Fact>}
             {bossFights.map((r) => (
               <Fact key={r.enterFrame} label="Boss fight">
@@ -99,8 +101,12 @@ export function FloorCard({ floor, endedHere, tilt }: { floor: Floor; endedHere:
                   return acc;
                 }, {}),
               )
-                .map(([name, amount]) => `${name} (${amount / 2} ♥)`)
-                .join(", ")}
+                .map(([name, amount], i) => (
+                  <Fragment key={name}>
+                    {i > 0 && ", "}
+                    {name} (<HeartAmount halves={amount} />)
+                  </Fragment>
+                ))}
             </p>
           )}
         </div>
