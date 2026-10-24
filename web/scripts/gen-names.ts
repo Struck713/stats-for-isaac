@@ -116,6 +116,16 @@ const characterBase: Record<string, string> = {
   POSSESSOR: "Possessor",
 };
 
+// Tainted characters whose name isn't just "Tainted " + the base name.
+const taintedName: Record<string, string> = {
+  THELOST: "Tainted Lost",
+  THEFORGOTTEN: "Tainted Forgotten",
+  THESOUL: "Tainted Soul",
+  LAZARUS2: "Dead Tainted Lazarus",
+  // Tainted Jacob's ghost form.
+  JACOB2: "Tainted Jacob",
+};
+
 const characters: Record<number, string> = {};
 for (const [value, key] of readEnum("PlayerType")) {
   const base = key.replace(/^PLAYER_/, "");
@@ -123,7 +133,7 @@ for (const [value, key] of readEnum("PlayerType")) {
   const plain = tainted ? base.slice(0, -2) : base;
   if (plain === "NUM_PLAYER_TYPES") continue;
   const name = characterBase[plain] ?? prettyEnum(plain, "");
-  characters[value] = tainted ? `Tainted ${name}` : name;
+  characters[value] = tainted ? (taintedName[plain] ?? `Tainted ${name}`) : name;
 }
 
 const names = {
