@@ -3630,5 +3630,172 @@
    "page": "Sigil of Baphomet",
    "image": "https://bindingofisaacrebirth.wiki.gg/images/Trinket_Sigil_of_Baphomet_icon.png?893db5"
   }
+ },
+ "sprites": {
+  "heartRedFull": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/HUD_heart_red_full.png?5ed71c",
+   "width": 15,
+   "height": 14
+  },
+  "heartRedHalf": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/HUD_heart_red_half.png?c711d0",
+   "width": 15,
+   "height": 14
+  },
+  "heartRedEmpty": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/HUD_heart_red_empty.png?b51e05",
+   "width": 15,
+   "height": 14
+  },
+  "heartSoulFull": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/HUD_heart_soul_full.png?ff9086",
+   "width": 15,
+   "height": 14
+  },
+  "heartSoulHalf": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/HUD_heart_soul_half.png?a5bc13",
+   "width": 15,
+   "height": 14
+  },
+  "coin": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/HUD_penny.png?448029",
+   "width": 9,
+   "height": 11
+  },
+  "bomb": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Bomb.png?bf6eab",
+   "width": 20,
+   "height": 21
+  },
+  "key": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Key.png?1d42d5",
+   "width": 14,
+   "height": 20
+  },
+  "speed": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Attribute_speed_icon.png?cd5dc9",
+   "width": 16,
+   "height": 16
+  },
+  "tears": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Attribute_tears_icon.png?291bfc",
+   "width": 16,
+   "height": 16
+  },
+  "damage": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Attribute_damage_icon.png?827e77",
+   "width": 16,
+   "height": 16
+  },
+  "range": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Attribute_range_icon.png?43d486",
+   "width": 16,
+   "height": 16
+  },
+  "shotSpeed": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Attribute_shot_speed_icon.png?a53052",
+   "width": 16,
+   "height": 16
+  },
+  "luck": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Attribute_luck_icon.png?e94f93",
+   "width": 16,
+   "height": 16
+  },
+  "room2": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Shop_Icon.png?96d13b",
+   "width": 9,
+   "height": 8
+  },
+  "room4": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Treasure_Room_Icon.png?ffd6c6",
+   "width": 9,
+   "height": 8
+  },
+  "room5": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Boss_Room_Icon.png?a6e695",
+   "width": 9,
+   "height": 8
+  },
+  "room6": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Mini-Boss_Room_Icon.png?682536",
+   "width": 9,
+   "height": 8
+  },
+  "room7": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Secret_Room_Icon.png?44bbb7",
+   "width": 9,
+   "height": 8
+  },
+  "room8": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Super_Secret_Room_Icon.png?b70664",
+   "width": 9,
+   "height": 8
+  },
+  "room9": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Arcade_Icon.png?53e09b",
+   "width": 9,
+   "height": 8
+  },
+  "room10": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Curse_Room_Icon.png?4c9b0d",
+   "width": 9,
+   "height": 8
+  },
+  "room11": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Challenge_Room_Icon.png?e4871a",
+   "width": 9,
+   "height": 8
+  },
+  "room12": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Library_Icon.png?fdadcf",
+   "width": 9,
+   "height": 8
+  },
+  "room13": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Sacrifice_Room_Icon.png?bffdca",
+   "width": 9,
+   "height": 8
+  },
+  "room14": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Devil_Room_Icon.png?4d238e",
+   "width": 9,
+   "height": 8
+  },
+  "room15": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Angel_Room_Icon.png?3689e2",
+   "width": 9,
+   "height": 8
+  },
+  "room18": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Bedroom_Icon.png?c757fc",
+   "width": 9,
+   "height": 8
+  },
+  "room19": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Dirty_Bedroom_Icon.png?51639b",
+   "width": 9,
+   "height": 8
+  },
+  "room20": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Vault_Icon.png?3a9fd2",
+   "width": 9,
+   "height": 8
+  },
+  "room21": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Dice_Room_Icon.png?b232a4",
+   "width": 9,
+   "height": 8
+  },
+  "room24": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Planetarium_Icon.png?a5e13f",
+   "width": 9,
+   "height": 8
+  },
+  "room29": {
+   "url": "https://bindingofisaacrebirth.wiki.gg/images/Ultra_Secret_Room_Icon.png?69899a",
+   "width": 9,
+   "height": 8
+  }
  }
 }

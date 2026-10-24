@@ -1,8 +1,8 @@
-import { itemName, itemWiki, tearsPerSecond } from "@/lib/game";
+import { itemName, itemWiki, tearsPerSecond, type SpriteName } from "@/lib/game";
 import type { Item, PlayerSnapshot } from "@/lib/runSchema";
-import { BombIcon, CoinIcon, HeartIcon, KeyIcon, STAT_ICONS } from "./icons";
+import { Sprite } from "./Sprite";
 
-const STATS: { key: keyof typeof STAT_ICONS; label: string; value: (s: PlayerSnapshot) => number }[] = [
+const STATS: { key: SpriteName; label: string; value: (s: PlayerSnapshot) => number }[] = [
   { key: "speed", label: "Speed", value: (s) => s.moveSpeed },
   { key: "tears", label: "Tears", value: (s) => tearsPerSecond(s.maxFireDelay) },
   { key: "damage", label: "Damage", value: (s) => s.damage },
@@ -19,14 +19,13 @@ export function StatTable({ enter, exit }: { enter: PlayerSnapshot; exit?: Playe
     <table className="text-base">
       <tbody>
         {STATS.map(({ key, label, value }) => {
-          const Icon = STAT_ICONS[key];
           const before = value(enter);
           const after = exit ? value(exit) : undefined;
           const delta = after !== undefined ? after - before : 0;
           return (
             <tr key={key}>
               <td className="pr-2 py-0.5">
-                <Icon size={18} />
+                <Sprite name={key} scale={1} className="align-middle" />
               </td>
               <td className="pr-3 font-isaac">{label}</td>
               <td className="pr-2 tabular-nums">{fmt(after ?? before)}</td>
@@ -53,13 +52,13 @@ export function HudRow({ snapshot }: { snapshot: PlayerSnapshot }) {
   const red = num(snapshot, "hearts");
   const containers = Math.ceil(num(snapshot, "maxHearts") / 2);
   const soul = num(snapshot, "soulHearts");
-  const hearts: { amount: 0 | 1 | 2; color: string }[] = [];
+  const hearts: SpriteName[] = [];
   for (let i = 0; i < containers; i++) {
     const left = red - i * 2;
-    hearts.push({ amount: left >= 2 ? 2 : left === 1 ? 1 : 0, color: "var(--blood)" });
+    hearts.push(left >= 2 ? "heartRedFull" : left === 1 ? "heartRedHalf" : "heartRedEmpty");
   }
   for (let i = 0; i < Math.ceil(soul / 2); i++) {
-    hearts.push({ amount: soul - i * 2 >= 2 ? 2 : 1, color: "var(--soul)" });
+    hearts.push(soul - i * 2 >= 2 ? "heartSoulFull" : "heartSoulHalf");
   }
   return (
     <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
@@ -67,13 +66,13 @@ export function HudRow({ snapshot }: { snapshot: PlayerSnapshot }) {
         {hearts.length === 0 ? (
           <span className="text-ink-soft italic">no hearts</span>
         ) : (
-          hearts.map((h, i) => <HeartIcon key={i} amount={h.amount} color={h.color} size={20} />)
+          hearts.map((h, i) => <Sprite key={i} name={h} />)
         )}
       </span>
       <span className="flex items-center gap-3 tabular-nums">
-        <span className="flex items-center gap-1"><CoinIcon size={16} />{num(snapshot, "coins")}</span>
-        <span className="flex items-center gap-1"><BombIcon size={16} />{num(snapshot, "bombs")}</span>
-        <span className="flex items-center gap-1"><KeyIcon size={16} />{num(snapshot, "keys")}</span>
+        <span className="flex items-center gap-1"><Sprite name="coin" alt="Coins" />{num(snapshot, "coins")}</span>
+        <span className="flex items-center gap-1"><Sprite name="bomb" scale={1} alt="Bombs" />{num(snapshot, "bombs")}</span>
+        <span className="flex items-center gap-1"><Sprite name="key" scale={1} alt="Keys" />{num(snapshot, "keys")}</span>
       </span>
     </div>
   );

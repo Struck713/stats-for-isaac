@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
+import { Suspense, type ReactNode } from "react";
 import { CopyLinkButton } from "@/components/isaac/CopyLinkButton";
 import { DeathNote } from "@/components/isaac/DeathNote";
 import { FloorCard } from "@/components/isaac/FloorCard";
 import { Paper, SectionTitle } from "@/components/isaac/Paper";
 import { ResultBadge } from "@/components/isaac/ResultBadge";
+import { HeartAmount } from "@/components/isaac/Sprite";
 import { ItemChip } from "@/components/isaac/Stats";
 import { ClockIcon } from "@/components/isaac/icons";
 import { getRun } from "@/lib/data";
@@ -134,14 +135,14 @@ async function RunDetails({ params }: PageProps<"/runs/[publicId]">) {
       <Paper tilt={-0.3}>
         <SectionTitle>Whole run</SectionTitle>
         <dl className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-          {[
+          {([
             ["Rooms explored", `${t.explored}/${t.rooms}`],
             ["Kills", t.kills],
             ["Bosses beaten", t.bossKills],
-            ["Hits taken", `${t.hits} (${t.damage / 2} ♥)`],
+            ["Hits taken", <>{t.hits} (<HeartAmount halves={t.damage} scale={2} />)</>],
             ["Coins found", t.coinsGained],
             ["Coins spent", t.coinsSpent],
-          ].map(([label, value]) => (
+          ] as [string, ReactNode][]).map(([label, value]) => (
             <div key={label}>
               <dt className="font-isaac text-sm text-ink-soft">{label}</dt>
               <dd className="text-2xl tabular-nums">{value}</dd>

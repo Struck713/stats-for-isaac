@@ -42,6 +42,15 @@ export function itemWiki(item: Pick<Item, "kind" | "id" | "name">): { url: strin
   return { url: WIKI + encodeURIComponent(entry.page.replaceAll(" ", "_")), image: entry.image };
 }
 
+export type SpriteName = keyof typeof wiki.sprites;
+
+export const isSpriteName = (name: string): name is SpriteName => name in wiki.sprites;
+
+// A HUD or minimap sprite from the wiki, with its native pixel size.
+export function sprite(name: SpriteName): { url: string; width: number; height: number } {
+  return wiki.sprites[name];
+}
+
 export function usedItemName(use: Use): string {
   if (use.kind === "card") return table(names.cards, use.id) ?? `Card #${use.id}`;
   if (use.kind === "pill") return table(names.pills, use.id) ?? `Pill #${use.id}`;
