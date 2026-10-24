@@ -25,7 +25,7 @@ export function StatTable({ enter, exit }: { enter: PlayerSnapshot; exit?: Playe
           return (
             <tr key={key}>
               <td className="pr-2 py-0.5">
-                <Sprite name={key} scale={1} className="align-middle" />
+                <Sprite name={key} scale={2} className="align-middle" />
               </td>
               <td className="pr-3 font-isaac">{label}</td>
               <td className="pr-2 tabular-nums">{fmt(after ?? before)}</td>
@@ -62,13 +62,14 @@ export function HudRow({ snapshot }: { snapshot: PlayerSnapshot }) {
   }
   return (
     <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-      <span className="flex flex-wrap gap-0.5" aria-label={`${red / 2} red hearts, ${soul / 2} soul hearts`}>
-        {hearts.length === 0 ? (
-          <span className="text-ink-soft italic">no hearts</span>
-        ) : (
-          hearts.map((h, i) => <Sprite key={i} name={h} />)
-        )}
-      </span>
+      {hearts.length === 0 ? (
+        <span className="text-ink-soft italic">no hearts</span>
+      ) : (
+        // Six hearts per row like the in-game HUD, so a big health bar can't widen the column.
+        <span className="grid w-fit grid-cols-[repeat(6,auto)] gap-0.5" aria-label={`${red / 2} red hearts, ${soul / 2} soul hearts`}>
+          {hearts.map((h, i) => <Sprite key={i} name={h} />)}
+        </span>
+      )}
       <span className="flex items-center gap-3 tabular-nums">
         <span className="flex items-center gap-1"><Sprite name="coin" alt="Coins" />{num(snapshot, "coins")}</span>
         <span className="flex items-center gap-1"><Sprite name="bomb" scale={1} alt="Bombs" />{num(snapshot, "bombs")}</span>
