@@ -11,8 +11,22 @@ const PAGE_SIZE = 25;
 
 export async function generateMetadata({ params }: PageProps<"/u/[steamId]">): Promise<Metadata> {
   const { steamId } = await params;
-  const user = await getUserBySteamId(steamId);
-  return { title: user ? `${user.personaName}'s runs` : "Player not found" };
+  const user = /^\d{17}$/.test(steamId) ? await getUserBySteamId(steamId) : null;
+  if (!user) return { title: "Player not found" };
+  const totals = await getUserTotals(user.id);
+  const winRate = totals.runs > 0 ? Math.round((totals.wins / totals.runs) * 100) : 0;
+  const title = `${user.personaName}'s runs`;
+  const description =
+    `${totals.runs} runs · ${totals.wins} wins (${winRate}%) · ${totals.deaths} deaths` +
+    (totals.favorite ? ` · favorite: ${characterName(totals.favorite.character, totals.favorite.characterName)}` : "");
+  const url = `/u/${steamId}`;
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, type: "profile", url, siteName: "Stats for Isaac" },
+    twitter: { card: "summary_large_image", title, description },
+  };
 }
 
 export default function ProfilePage(props: PageProps<"/u/[steamId]">) {

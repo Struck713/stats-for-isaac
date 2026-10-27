@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(appUrl()),
   title: { default: "Stats for Isaac", template: "%s · Stats for Isaac" },
   description: "Every run of The Binding of Isaac, floor by floor: maps, items, bosses and what killed you.",
+  openGraph: { siteName: "Stats for Isaac", type: "website" },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

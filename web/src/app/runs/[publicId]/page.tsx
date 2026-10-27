@@ -11,6 +11,7 @@ import { HeartAmount } from "@/components/isaac/Sprite";
 import { ItemChip } from "@/components/isaac/Stats";
 import { ClockIcon } from "@/components/isaac/icons";
 import { getRun } from "@/lib/data";
+import { RESULT_COLOR } from "@/lib/embed";
 import { challengeName, characterName, characterWiki, difficultyName, formatFrames } from "@/lib/game";
 import type { Item, Run } from "@/lib/runSchema";
 
@@ -28,7 +29,15 @@ export async function generateMetadata({ params }: PageProps<"/runs/[publicId]">
   const who = characterName(run.character, run.characterName);
   const title = `${who} ${RESULT_TEXT[run.status as keyof typeof RESULT_TEXT] ?? "run"} on ${run.finalFloorName ?? "the first floor"}`;
   const description = `${owner.personaName}'s run · ${formatFrames(run.totalFrames)} · ${run.floorsReached} floors · ${run.itemCount} items${run.killedBy ? ` · killed by ${run.killedBy}` : ""}`;
-  return { title, description, openGraph: { title, description, type: "article" } };
+  const url = `/runs/${run.publicId}`;
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, type: "article", url, siteName: "Stats for Isaac" },
+    twitter: { card: "summary_large_image", title, description },
+    other: { "theme-color": RESULT_COLOR[run.status as keyof typeof RESULT_COLOR] ?? "#a3221b" },
+  };
 }
 
 export default function RunPage(props: PageProps<"/runs/[publicId]">) {
