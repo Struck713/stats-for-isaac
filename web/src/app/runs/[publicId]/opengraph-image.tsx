@@ -1,4 +1,4 @@
-import { COLORS, EMBED_SIZE, EMBED_TYPE, Pixel, RESULT_COLOR, Stat, embedImage, inlineImage } from "@/lib/embed";
+import { COLORS, EMBED_SIZE, EMBED_TYPE, At, Pixel, RESULT_COLOR, Stat, embedImage, inlineImage } from "@/lib/embed";
 import { getRun } from "@/lib/data";
 import { challengeName, characterName, characterWiki, difficultyName, formatFrames, itemWiki } from "@/lib/game";
 
@@ -12,7 +12,7 @@ const MAX_ITEMS = 10;
 export default async function Image({ params }: { params: Promise<{ publicId: string }> }) {
   const { publicId } = await params;
   const row = /^[\w-]{10}$/.test(publicId) ? await getRun(publicId) : null;
-  if (!row) return embedImage(<div style={{ display: "flex", fontSize: 72 }}>Run not found</div>);
+  if (!row) return embedImage(<At top={200}><div style={{ display: "flex", fontSize: 72 }}>Run not found</div></At>);
 
   const { run: meta, owner } = row;
   const data = meta.data;
@@ -34,30 +34,38 @@ export default async function Image({ params }: { params: Promise<{ publicId: st
 
   return embedImage(
     <>
-      <div style={{ display: "flex", alignItems: "center", gap: 28, paddingLeft: 24 }}>
+      <At top={44}>
         <Pixel src={portrait} width={character?.image.width ?? 0} height={character?.image.height ?? 0} scale={2} />
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 72, lineHeight: 1.1 }}>{`${who} ${VERB[status] ?? "run"}`}</div>
-          <div style={{ fontSize: 36, color: COLORS.inkSoft }}>
+        <div style={{ display: "flex", flexDirection: "column", marginLeft: 28 }}>
+          <div style={{ display: "flex", fontSize: 72 }}>{`${who} ${VERB[status] ?? "run"}`}</div>
+          <div style={{ display: "flex", fontSize: 36, color: COLORS.inkSoft }}>
             {`on ${meta.finalFloorName ?? "the first floor"} · ${badge}`}
           </div>
-          {meta.killedBy && <div style={{ fontSize: 32, color: COLORS.blood }}>{`killed by ${meta.killedBy}`}</div>}
+          {meta.killedBy && (
+            <div style={{ display: "flex", fontSize: 32, color: COLORS.blood }}>{`killed by ${meta.killedBy}`}</div>
+          )}
         </div>
-      </div>
-      <div style={{ display: "flex", marginTop: 32, paddingLeft: 24 }}>
+      </At>
+      <At top={260}>
         <Stat label="time" value={formatFrames(meta.totalFrames)} />
         <Stat label="floors" value={String(meta.floorsReached)} />
         <Stat label="items" value={String(meta.itemCount)} />
-      </div>
-      <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 28, paddingLeft: 24 }}>
+      </At>
+      <At top={370}>
         {icons.map((src, i) => (
-          <Pixel key={i} src={src} width={32} height={32} scale={2} />
+          <div key={i} style={{ display: "flex", marginRight: 12 }}>
+            <Pixel src={src} width={32} height={32} scale={2} />
+          </div>
         ))}
-      </div>
-      <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 30, paddingLeft: 24, position: "absolute", bottom: 40, left: 40 }}>
-        {avatar && <Pixel src={avatar} width={40} height={40} scale={1} />}
-        {owner.personaName}
-      </div>
+      </At>
+      <At top={460}>
+        {avatar && (
+          <div style={{ display: "flex", marginRight: 12 }}>
+            <Pixel src={avatar} width={40} height={40} scale={1} />
+          </div>
+        )}
+        <div style={{ display: "flex", fontSize: 30 }}>{owner.personaName}</div>
+      </At>
     </>,
     RESULT_COLOR[status] ?? COLORS.blood,
   );

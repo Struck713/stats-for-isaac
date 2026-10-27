@@ -38,15 +38,22 @@ export async function inlineImage(url: string | null | undefined): Promise<strin
 export function Pixel({ src, width, height, scale }: { src?: string; width: number; height: number; scale: number }) {
   if (!src) return null;
   // eslint-disable-next-line @next/next/no-img-element
-  return <img src={src} width={width * scale} height={height * scale} alt="" style={{ imageRendering: "pixelated" }} />;
+  return <img src={src} width={width * scale} height={height * scale} alt="" style={{ imageRendering: "pixelated", flexShrink: 0 }} />;
 }
 
 export function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", width: 180 }}>
       <div style={{ fontSize: 56, color: COLORS.ink }}>{value}</div>
       <div style={{ fontSize: 24, color: COLORS.inkSoft }}>{label}</div>
     </div>
+  );
+}
+
+// Satori's flex sizing is unreliable here, so blocks sit at explicit offsets inside the card.
+export function At({ top, children }: { top: number; children: ReactNode }) {
+  return (
+    <div style={{ display: "flex", position: "absolute", left: 56, top, width: 1000, alignItems: "center" }}>{children}</div>
   );
 }
 
@@ -64,14 +71,13 @@ export async function embedImage(children: ReactNode, accent: string = COLORS.bl
             background: COLORS.paper,
             border: `8px solid ${COLORS.ink}`,
             borderRadius: 16,
-            padding: 40,
             color: COLORS.ink,
             position: "relative",
           }}
         >
           <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 16, background: accent, display: "flex" }} />
           {children}
-          <div style={{ display: "flex", justifyContent: "flex-end", fontSize: 26, color: COLORS.inkSoft, marginTop: "auto" }}>
+          <div style={{ display: "flex", position: "absolute", right: 40, bottom: 24, fontSize: 26, color: COLORS.inkSoft }}>
             Stats for Isaac
           </div>
         </div>
