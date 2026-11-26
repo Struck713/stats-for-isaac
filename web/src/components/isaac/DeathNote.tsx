@@ -28,8 +28,8 @@ export function DeathNote({ run, items }: { run: Run; items: Item[] }) {
         <>
           <hr className="ink-rule mx-auto my-4 w-1/2" />
           <div className="flex flex-wrap justify-center gap-1.5">
-            {items.map((item, i) => (
-              <ItemChip key={i} item={item} />
+            {items.map((item) => (
+              <ItemChip key={`${item.kind}-${item.id}`} item={item} />
             ))}
           </div>
         </>

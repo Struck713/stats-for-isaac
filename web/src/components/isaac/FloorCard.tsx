@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { formatFrames, hitSourceName, roomTypeName, usedItemName } from "@/lib/game";
+import { formatFrames, hitSourceName, roomTypeName, uniqueItems, usedItemName } from "@/lib/game";
 import type { Floor } from "@/lib/runSchema";
 import { Minimap } from "./Minimap";
 import { Paper } from "./Paper";
@@ -26,7 +26,7 @@ function Fact({ label, children }: { label: string; children: React.ReactNode })
 
 export function FloorCard({ floor, endedHere, tilt }: { floor: Floor; endedHere: boolean; tilt: number }) {
   const s = floor.summary;
-  const items = floor.rooms.flatMap((r) => r.items);
+  const items = uniqueItems(floor.rooms.flatMap((r) => r.items));
   const used = floor.rooms.flatMap((r) => r.used).filter((u) => u.flags === 0);
   const bossFights = floor.rooms.filter((r) => r.bossId !== undefined && r.clearFrames !== undefined);
   const hits = floor.rooms.flatMap((r) => r.damage);
@@ -70,8 +70,8 @@ export function FloorCard({ floor, endedHere, tilt }: { floor: Floor; endedHere:
             <div>
               <h4 className="font-isaac mb-1 text-lg">Picked up</h4>
               <div className="flex flex-wrap gap-1.5">
-                {items.map((item, i) => (
-                  <ItemChip key={i} item={item} />
+                {items.map((item) => (
+                  <ItemChip key={`${item.kind}-${item.id}`} item={item} />
                 ))}
               </div>
             </div>
