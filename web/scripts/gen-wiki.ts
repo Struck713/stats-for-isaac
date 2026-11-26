@@ -78,7 +78,11 @@ async function table(kind: "collectible" | "trinket"): Promise<Record<number, En
 }
 
 // Our character names (from PlayerType) that the wiki's player table spells differently.
-const CHARACTER_ALIASES: Record<string, string> = { "Dark Judas": "Black Judas" };
+const CHARACTER_ALIASES: Record<string, string> = { "Dark Judas": "Black Judas", "Jacob & Esau": "Jacob" };
+
+// Characters whose wiki sprite (by alias) shows the wrong thing: the wiki's "Jacob" sprite is Jacob
+// alone, but the character is the pair.
+const CHARACTER_SPRITES: Record<string, string> = { "Jacob & Esau": "Character Jacob and Esau appearance.png" };
 
 // The wiki's player ids are unreliable, so characters are matched to it by name instead.
 async function characters(): Promise<Record<number, { page: string; image: FileInfo }>> {
@@ -88,13 +92,13 @@ async function characters(): Promise<Record<number, { page: string; image: FileI
     const cur = best.get(img.alias);
     if (!cur || Number(img.dlc) > Number(cur.dlc)) best.set(img.alias, img);
   }
-  const info = await fileInfo([...new Set([...best.values()].map((r) => r.file))]);
+  const info = await fileInfo([...new Set([...best.values()].map((r) => r.file).concat(Object.values(CHARACTER_SPRITES)))]);
   const result: Record<number, { page: string; image: FileInfo }> = {};
   for (const [id, name] of Object.entries(names.characters)) {
     if (Number(id) < 0) continue;
     const alias = CHARACTER_ALIASES[name] ?? name;
     const page = pages.get(alias);
-    const image = info.get(best.get(alias)?.file ?? "");
+    const image = info.get(CHARACTER_SPRITES[name] ?? best.get(alias)?.file ?? "");
     if (!page || !image) throw new Error(`Character ${id} (${name}): no wiki page or sprite for "${alias}"`);
     result[Number(id)] = { page, image };
   }

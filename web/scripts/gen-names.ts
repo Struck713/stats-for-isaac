@@ -111,7 +111,8 @@ const characterBase: Record<string, string> = {
   THEFORGOTTEN: "The Forgotten",
   THESOUL: "The Soul",
   BETHANY: "Bethany",
-  JACOB: "Jacob",
+  // PLAYER_JACOB is the pair as picked on the character select; Esau is only the second player.
+  JACOB: "Jacob & Esau",
   ESAU: "Esau",
   POSSESSOR: "Possessor",
 };
@@ -122,6 +123,7 @@ const taintedName: Record<string, string> = {
   THEFORGOTTEN: "Tainted Forgotten",
   THESOUL: "Tainted Soul",
   LAZARUS2: "Dead Tainted Lazarus",
+  JACOB: "Tainted Jacob",
   // Tainted Jacob's ghost form.
   JACOB2: "Tainted Jacob",
 };
