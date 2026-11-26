@@ -28,6 +28,17 @@ export function itemName(item: Pick<Item, "kind" | "id" | "name">): string {
   return `${item.kind === "trinket" ? "Trinket" : "Item"} #${item.id}`;
 }
 
+// Each item once, in first-pickup order; repeat pickups stay in the run data, just not in lists.
+export function uniqueItems(items: Item[]): Item[] {
+  const seen = new Set<string>();
+  return items.filter((item) => {
+    const key = `${item.kind}:${item.id}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 const WIKI = "https://bindingofisaacrebirth.wiki.gg/wiki/";
 const wikiUrl = (page: string) => WIKI + encodeURIComponent(page.replaceAll(" ", "_"));
 // Golden trinkets are their base id with this bit set.

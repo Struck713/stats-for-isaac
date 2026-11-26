@@ -12,7 +12,7 @@ import { ItemChip } from "@/components/isaac/Stats";
 import { ClockIcon } from "@/components/isaac/icons";
 import { getRun } from "@/lib/data";
 import { RESULT_COLOR } from "@/lib/embed";
-import { challengeName, characterName, characterWiki, difficultyName, formatFrames } from "@/lib/game";
+import { challengeName, characterName, characterWiki, difficultyName, formatFrames, uniqueItems } from "@/lib/game";
 import type { Item, Run } from "@/lib/runSchema";
 
 const RESULT_TEXT = { won: "won", died: "died", abandoned: "abandoned" } as const;
@@ -74,7 +74,10 @@ async function RunDetails({ params }: PageProps<"/runs/[publicId]">) {
   const run = meta.data;
   const challenge = challengeName(run.challenge);
   const character = characterWiki(run.character);
-  const collected: Item[] = [...run.startingItems, ...run.floors.flatMap((f) => f.rooms.flatMap((r) => r.items))];
+  const collected: Item[] = uniqueItems([
+    ...run.startingItems,
+    ...run.floors.flatMap((f) => f.rooms.flatMap((r) => r.items)),
+  ]);
   const t = totals(run);
 
   return (
@@ -154,8 +157,8 @@ async function RunDetails({ params }: PageProps<"/runs/[publicId]">) {
         <Paper tilt={0.5}>
           <SectionTitle>Items</SectionTitle>
           <div className="flex flex-wrap gap-1.5">
-            {collected.map((item, i) => (
-              <ItemChip key={i} item={item} />
+            {collected.map((item) => (
+              <ItemChip key={`${item.kind}-${item.id}`} item={item} />
             ))}
           </div>
         </Paper>
